@@ -561,6 +561,7 @@
             </div>
           </div>
         </div>
+       
        </div>
        <!-- Tabs content Home page profile end  -->
   </div>
@@ -3803,7 +3804,7 @@
    <!--হিসাব-নিকাশ items ==> রিপোর্ট items জমা , বাকি ও খরচ দেখুন ==>Subpage-6.4 start -->
    <div id="রিপোর্টSubpage-6.4" class="content-div" style="display: none">
     <!-- জমা-বাকি-খরচ-দেখুন-রিপোর্ট-Tab -->
-     <div id="জমা-বাকি-খরচ-দেখুন-রিপোর্ট-Tab" class="tab-container mt-4">
+     <div id="জমা-বাকি-খরচ-দেখুন-রিপোর্ট" class="tab-container mt-4">
       <!-- Tabs section -->
       <div>
         <button class="tab-button active hover:bg-[#414366]" id="tab1">সর্বমোট প্রাপ্ত টাকা</button>
@@ -4420,6 +4421,7 @@
             </table>
           </div>
           </div>
+
           <div id="বেসিক-সেটিং-ফেব্রিক্স" class="content-div" style="display: none;">
             <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">ফেব্রিক্স এর বিবরণ</h2>
             <hr class="mt-3 mb-6" />
@@ -4482,6 +4484,26 @@
                   <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
                   <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                  
                 </tr>  
+                <tr class="" style="background-color: var(--bgPrimaryColor);">
+                  <td colspan="13">
+                    <table>
+                      <tbody>
+                        <tr class="text-[13px] flex flex-row gap-2 py-1">
+                        <td><span class="mr-1 ml-1">|</span><a class="hover:text-white" href="">1</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">4</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">5</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">6</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">7</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">8</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">9</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">10</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">...</a></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </td>
+                </tr>
                       
                 <!-- Add more rows as needed -->
               </tbody>             
@@ -4492,7 +4514,227 @@
              <!-- কাপড় ক্রয়  item chlider cntent page start  -->
        <div>
           <div id="কাপড়-ক্রয়-কাপড়-ক্রয়-করুন" class="content-div" style="display: none;">
-            কাপড়-ক্রয়-করুন
+            <div id="কাপড়-ক্রয়-করুন-Tab" class="tab-container mt-4">
+              <!-- Tabs section -->
+              <div>
+                <button class="tab-button active hover:bg-[#414366]" id="tab1">নতুন কাপড় ক্রয় করুন</button>
+                <button class="tab-button hover:bg-[#414366]" id="tab2">পুরাতন কাপড় ক্রয় করুন</button>
+                
+                  <div class="mt-4">
+                    <!-- Order Delivered Details start -->
+                    <div id="content1" class="tab-content">
+                      <div>
+                        <div class="flex flex-col md:flex-row ">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">ইউনিট</label>
+                          </div>
+                          <div class="relative md:w-[200px]">
+                            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                              <option>পুরুষ</option>
+                              <option>মহিলা</option>
+                              <option>বাচ্চা</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for=""> কাপড়ের ক্যাটাগরী </label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input Designation">
+                          </div>
+                        </div>
+              
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for=""> ব্র্যন্ড </label>
+                          </div>
+                          <div>
+                            <input type="password" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input User Name">
+                          </div>
+                        </div>
+              
+                      
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for=""> কাপড়ের কোড </label>
+                          </div>
+                          <div>
+                            <input type="password" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input First Name">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for=""> পাসওয়ার্ড নিশ্চিত করুন </label>
+                          </div>
+                          <div>
+                            <input type="password" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input Password Again">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">কাপড়ের নাম</label>
+                          </div>
+                          <div>
+                            <input type="email" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input Email">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">প্রতি ইউনিটের বিক্রয়</label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Input First Name">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">মূল্য</label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Answer the question">
+                          </div>
+                        </div>
+              
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">পরিমান</label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Answer the question">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">প্রতি ইউনিটের ক্রয় </label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Answer the question">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">মূল্য</label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Answer the question">
+                          </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row mt-">
+                          <div  class="mr-2 w-none md:w-[200px]"> 
+                            <label for="">মোট মূল্য</label>
+                          </div>
+                          <div>
+                            <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="Answer the question">
+                          </div>
+                        </div>
+              
+                      <div class="md:ml-[280px]" > <button class="tab-button">save & continue</button></div>
+                      </div>           
+                    </div>
+            
+                    
+                    <div id="content2" class="tab-content hidden">   
+                      <div class="flex flex-col md:flex-row gpa-4 mt-0 md:mt-4">
+                        <div class="mr-0 md:mr-3">
+                          <label for="তারিখ_থেকে" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">কোন তারিখ থেকে</label>
+                          <input datepicker datepicker-format="mm/dd/yyyy" type="text" id="তারিখ_থেকে" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="কোন তারিখ থেকে" required>
+                        </div>
+                        <div class="mr-0 md:mr-2">
+                          <label for="তারিখ_থেকে" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">কোন তারিখ পর্যন্ত</label>
+                          <input datepicker datepicker-format="mm/dd/yyyy" type="text" id="তারিখ_থেকে" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="কোন তারিখ পর্যন্ত" required>
+                        </div>
+                        <div class="md:mt-0 mt-4">
+                          <img src="img/Search.png" class="mt-0 md:mt-[30px] p-[5px] cursor-pointer hover:bg-[#fff] bg-gray-200 alt=" />
+                        </div>              
+                      </div>
+                       <!-- Table  -->
+                      <div class="overflow-x-auto mt-4">    
+                        <!-- খরচ-যুক্ত-করুন-popup1 end -->
+                        <h3 class="text-[#33CC33] font-bold mt-1">সর্বমোট খরচ: <span>36296646</span> টাকা</h3>
+                        <table class="min-w-full  border border-gray-300 text-center">
+                            <thead class="bg-[#9087E4] text-white text-[12px]">
+                              <tr>
+                                <th class="border border-gray-300 p-2"> অর্ডার নং</th>
+                                <th class="border border-gray-300 p-2">নাম</th>
+                                <th class="border border-gray-300 p-2">মোবাইল</th>
+                                <th class="border border-gray-300 p-2">অর্ডার তারিখ</th> 
+                                <th class="border border-gray-300 p-2">ডেলিঃ তারিখ</th>  
+                                <th class="border border-gray-300 p-2">মোট</th> 
+                                <th class="border border-gray-300 p-2">পূর্বের জমা</th> 
+                                <th class="border border-gray-300 p-2">জমা</th> 
+                                <th class="border border-gray-300 p-2">ছাড়</th> 
+                                <th class="border border-gray-300 p-2">বাকি</th> 
+                                <th class="border border-gray-300 p-2">বিস্তারিত</th>  
+                              </tr>            							
+                            </thead>
+                            <!-- Add your data rows here start -->
+                            <tbody class="text-[12px]">                  
+                              <tr>
+                                <td class="border border-gray-300 p-2">1</td>
+                                <td class="border border-gray-300 p-2"><span>(1)</span>মাস্টার রাজ্জাক</td>
+                                <td class="border border-gray-300 p-2">01720316137</td>
+                                <td class="border border-gray-300 p-2">8 Nov 2023</td>
+                                <td class="border border-gray-300 p-2">8 Nov 2023</td>
+                                <td class="border border-gray-300 p-2">1800</td>
+                                <td class="border border-gray-300 p-2">1000</td>
+                                <td class="border border-gray-300 p-2">800</td>
+                                <td class="border border-gray-300 p-2">0</td>
+                                <td class="border border-gray-300 p-2">0</td>              
+                                <td class="border border-gray-300 p-2"> একছাটা পাঞ্জাবি 1 Piece  </td>              
+                              </tr>                
+                              <tr>
+                                <td class="border border-gray-300 p-2">2</td>
+                                <td class="border border-gray-300 p-2"><span>(2)</span> ফিরোজ ভাই</td>
+                                <td class="border border-gray-300 p-2">01720316137</td>
+                                <td class="border border-gray-300 p-2">8 Nov 2023</td>
+                                <td class="border border-gray-300 p-2">8 Nov 2023</td>
+                                <td class="border border-gray-300 p-2">1800</td>
+                                <td class="border border-gray-300 p-2">1000</td>
+                                <td class="border border-gray-300 p-2">800</td>
+                                <td class="border border-gray-300 p-2">0</td>
+                                <td class="border border-gray-300 p-2">0</td>              
+                                <td class="border border-gray-300 p-2">একছাটা পাঞ্জাবি 1 Piece ; কল্লিদার এরাবিয়ান 1 Piece ; পায়জামা 1 Piece </td>              
+                                            
+                                                  
+                              </tr> 
+                              <tr class="bg-[#9087e4]">
+                                <td colspan="13">
+                                  <table>
+                                    <tbody>
+                                      <tr class="text-[13px] flex flex-row gap-2 py-1">
+                                      <td><span class="mr-1 ml-1">|</span><a class="hover:text-white" href="">1</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">4</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">5</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">6</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">7</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">8</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">9</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">10</a></td>
+                                      <td><span class="mr-1">|</span><a class="hover:text-white" href="">...</a></td>
+                                    </tr>
+                                  </tbody>
+                                  </table>
+                                </td>
+                              </tr>        
+                              <!-- Add more rows as needed -->
+                            </tbody>             
+                          </table>
+                          
+                      </div>
+            
+                   </div>  
+            
+                </div>
+              </div>
+            
+             
+            
+            </div> 
           </div>
           <div id="কাপড়-ক্রয়-রেকর্ড-দেখুন" class="content-div" style="display: none;">
             রেকর্ড-দেখুন
@@ -4508,7 +4750,17 @@
        <!-- কাপড় বিক্রি  item chliren content start  -->
        <div>
           <div id="কাপড়-বিক্র-স্টক-রিপোর্ট" class="content-div" style="display: none;">
-            কাপড়-বিক্র-স্টক-রিপোর্ট
+            <div id="myTab" class="max-w-md mx-auto mt-8">
+              <!-- Tab Buttons -->
+              <div class="flex space-x-4">
+                  <button id="tabButton1" class="tab-button active bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+                  <button id="tabButton2" class="tab-button bg-blue-500 text-white px-4 py-2 rounded">Button 2</button>
+              </div>
+          
+              <!-- Tab Contents -->
+              <div id="content1" class="tab-content">Content for Button 1</div>
+              <div id="content2" class="tab-content hidden">Content for Button 2</div>
+          </div>
           </div>
           <div id="কাপড়-বিক্র-কাপড়-বিক্রি-করুন" class="content-div" style="display: none;">
             কাপড়-বিক্র-কাপড়-বিক্রি-করুন
@@ -4535,7 +4787,7 @@
           ড্যামেজ যুক্ত করুন
         </div>
         <div id="ড্যামেজ-রিপোর্ট" class="content-div" style="display: none;">
-          ড্যামেজ-রিপোর্ট
+          <!-- ড্যামেজ-রিপোর্ট -->
         </div>
        </div>
     </section>

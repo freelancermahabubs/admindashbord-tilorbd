@@ -84,9 +84,8 @@ function changeContent(content, clickedLink) {
    initializeTabs('আয়-ব্যয়ের-রিপোর্ট-Tab'); 
    initializeTabs('একাউন্ট-লগ-রিপোর্ট-Tab'); 
    initializeTabs('অর্ডার-ডেলিভারি-রিপোর্ট-Tab'); 
-   initializeTabs('জমা-বাকি-খরচ-দেখুন-রিপোর্ট-Tab'); 
-   initializeTabs('সর্বমোট-বযয়-টাকা-Tab'); 
-   initializeTabs('গ্রাহকদের-এসএমএস-পাঠানTab'); 
+   initializeTabs('জমা-বাকি-খরচ-দেখুন-রিপোর্ট');
+   initializeTabs('কাপড়-ক্রয়-করুন-Tab');
 });
 
 
