@@ -8,6 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --primaryColor: #7367f0;
+  --bgPrimaryColor: #9087e4;
+}
+
 .backgroudColor {
   backgroud-color: #7367f0;
 }
