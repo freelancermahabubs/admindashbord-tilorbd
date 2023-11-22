@@ -87,7 +87,7 @@
               <hr class="pb-2" />
           </ul>
           <!-- বেসিক সেটিংস End -->
-      </ul>
+         </ul>
       
       <!-- অর্ডার item start -->
       <ul>
@@ -156,11 +156,11 @@
           <hr class="pb-2 md:w-[90%] w-full md:ml-[1.5rem]" />
           <ul id="page-5-submenu" class="hidden pl-4">
               <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাস্টমার-যুক্ত-করুন', this)">
-                  কাস্টমার যুক্ত করুন
+                  <a href="# কাস্টমার-যুক্ত-করুন" class="hover:underline"> কাস্টমার যুক্ত করুন</a>
               </li>
               <hr class="pb-2" />
               <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাস্টমার-লিস্ট', this)">
-                  কাস্টমার লিস্ট
+                  <a href="#কাস্টমার-লিস্ট" class="hover:underline"> কাস্টমার লিস্ট</a>
               </li>
               <hr class="pb-2" />
           </ul>
@@ -233,15 +233,29 @@
       </li>
       <hr class="pb-2 md:w-[90%] w-full md:ml-[1.5rem]" />
       <ul id="page-8-submenu" class="hidden pl-4">
-          <li class="cursor-pointer mb-2 submenu-link" onclick="toggleSubMenu('page-10.1', 'angle-right-icon-10.1')">
-              page 5.1
-              <span class="bg-blue-500 rounded-full">
-                  <i id="angle-right-icon-5.1" class="fas fa-angle-right p-1 text-white ml-2"></i>
-              </span>
-          </li>
+           <li class="cursor-pointer mb-2" onclick="toggleSubMenu('বেসিক-সেটিং', 'angle-right-icon-10.1')">
+          <span class="rounded-full icon pl-[1px] pr-[1px] items-center mr-3">
+              <i id="angle-right-icon-10.1" class="fas fa-angle-right text-white ml-1 text-[14px] font-bold"></i>
+          </span>
+         বেসিক সেটিং
+      </li>
           <hr class="pb-2" />
-          <ul id="page-10.1-submenu" class="hidden pl-4">
-              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('Subpage 10.1')">Subpage 5.1 (ok ok ok)</li>
+          <ul id="বেসিক-সেটিং-submenu" class="hidden pl-4">
+              <li class="cursor-pointer mb-2 text-[15px] submenu-link" onclick="changeContent('বেসিক-সেটিং-মেজারমেন্ট-ইউনিট', this)">
+                <a href="#মেজারমেন্ট-ইউনিট" class="hover:underline">মেজারমেন্ট ইউনিট</a>
+              </li>
+              <hr class="pb-2" />
+              <li class="cursor-pointer mb-2 text-[15px] submenu-link" onclick="changeContent('বেসিক-সেটিং-ব্র্যান্ড-যুক্ত-করুন', this)">
+                  <a href="#ব্র্যান্ড-যুক্ত-করুন" class="hover:underline">ব্র্যান্ড যুক্ত করুন</a>
+              </li>
+              <hr class="pb-2" />
+              <li class="cursor-pointer mb-2 text-[15px] submenu-link" onclick="changeContent('বেসিক-সেটিং-ক্যাটাগরি', this)">
+                  <a href="#ক্যাটাগরি" class="hover:underline">ক্যাটাগরি</a>
+              </li>
+              <hr class="pb-2" />
+              <li class="cursor-pointer mb-2 text-[15px] submenu-link" onclick="changeContent('বেসিক-সেটিং-ফেব্রিক্স', this)">
+                  <a href="#ফেব্রিক্স" class="hover:underline">ফেব্রিক্স</a>
+              </li>
               <hr class="pb-2" />
           </ul>
           <li class="cursor-pointer mb-2" onclick="toggleSubMenu('page-10.2', 'angle-right-icon-10.2')">
@@ -251,7 +265,7 @@
               </span>
           </li>
           <ul id="page-10.2-submenu" class="hidden pl-4">
-              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('Subpage 10.2')">Subpage 5.2 (ok ok ok)</li>
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('Subpage 10.2', this)">Subpage 5.2 (ok ok ok)</li>
           </ul>
       </ul>
     </ul>
@@ -4074,9 +4088,6 @@
       <button class="tab-button mt-4">Export To Word</button>
      </div>
    </div>
-
-
-
    </section>
 <!-- হিসাব-নিকাশ end -->
 
@@ -4163,319 +4174,337 @@
       </div>
     </section>
 <!--  কর্মচারীর-তালিকা end -->
+
+    
+    <!-- ফেব্রিক্স start  -->
+    <section>
+        <div id="বেসিক-সেটিং-মেজারমেন্ট-ইউনিট" class="content-div" style="display: none;">
+            বেসিক-সেটিং-	মেজারমেন্ট-ইউনিট
+        </div>
+        <div id="বেসিক-সেটিং-ব্র্যান্ড-যুক্ত-করুন" class="content-div" style="display: none;">
+            বেসিক-সেটিং-	ব্র্যান্ড-যুক্ত-করুন
+        </div>
+        <div id="বেসিক-সেটিং-ক্যাটাগরি" class="content-div" style="display: none;">
+          ক্যাটাগরি
+        </div>
+        <div id="বেসিক-সেটিং-ফেব্রিক্স" class="content-div" style="display: none;">
+          বেসিক-সেটিং-ফেব্রিক্স
+        </div>
+    </section>
+    <!-- ফেব্রিক্স end -->
   
 
-<!-- এসএমএস start  -->
-<section>
-  <div id="এসএমএস-পাঠান" class="content-div" style="display: none">
-    <!-- এসএমএস-পাঠান -->
-  </div>
+    <!-- এসএমএস start  -->
+    <section>
+      <div id="এসএমএস-পাঠান" class="content-div" style="display: none">
+        <!-- এসএমএস-পাঠান -->
+      </div>
 
-  <div id="ফোন-কন্টাক্ট-লিস্ট" class="content-div" style="display: none">
-    <h2 class="text-base font-semibold text-[#7367f0]">
-      Saved Contact List (Remaining SMS: 1)
-    </h2>
-    <hr class="mt-3 mb-6" />
-    <div class="ml-2 mb-4 md:w-[800px] w-full">
-      <form class="flex flex-col md:flex-row gpa-4 mt-0 md:mt-4">
-        <div class="mr-0 md:mr-3">
-          <h2
-            id="Add-New-Group-popup1"
-            class="block mb-2 text-md font-medium text-[#005087] no-underline hover:underline cursor-pointer md:mt-0 mt-1"
-          >
-            Add New Group
-          </h2>
+      <div id="ফোন-কন্টাক্ট-লিস্ট" class="content-div" style="display: none">
+        <h2 class="text-base font-semibold text-[#7367f0]">
+          Saved Contact List (Remaining SMS: 1)
+        </h2>
+        <hr class="mt-3 mb-6" />
+        <div class="ml-2 mb-4 md:w-[800px] w-full">
+          <form class="flex flex-col md:flex-row gpa-4 mt-0 md:mt-4">
+            <div class="mr-0 md:mr-3">
+              <h2
+                id="Add-New-Group-popup1"
+                class="block mb-2 text-md font-medium text-[#005087] no-underline hover:underline cursor-pointer md:mt-0 mt-1"
+              >
+                Add New Group
+              </h2>
 
-          <div>
-            <div class="relative">
-              <select
-                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-state"
-              >
-                <option selected>[ ALL GROUP ]</option>
-                <option>Vip</option>
-              </select>
-              <div
-                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-              >
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!-- Add New Group -popup1 start -->
-          <div id="Add-New-Group-popup2" class="overlay">
-            <div class="bg-white rounded shadow-md">
-              <div class="bg-[#0C817A] relative pt-4 pb-4">
-                <h2 class="text-white font-bold text-center">
-                  Create New Group
-                </h2>
-                <span
-                  id="Add-New-Group-close"
-                  class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400"
-                  >x</span
-                >
-              </div>
-
-              <div
-                class="mt-4 px-4 pb-[20px] flex flex-col justify-center items-center"
-              >
-                <div class="w-full">
-                  <div class="w-full">
-                    <label
-                      for=""
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                      >Group Name</label
+              <div>
+                <div class="relative">
+                  <select
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-state"
+                  >
+                    <option selected>[ ALL GROUP ]</option>
+                    <option>Vip</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                  >
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
                     >
-                    <div class="flex flex-row items-center gap-2">
-                      <input
-                        type="text"
-                        id="তারিখ_থেকে"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[70%]"
-                        placeholder="কোন তারিখ পর্যন্ত"
-                        required
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
                       />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- Add New Group -popup1 start -->
+              <div id="Add-New-Group-popup2" class="overlay">
+                <div class="bg-white rounded shadow-md">
+                  <div class="bg-[#0C817A] relative pt-4 pb-4">
+                    <h2 class="text-white font-bold text-center">
+                      Create New Group
+                    </h2>
+                    <span
+                      id="Add-New-Group-close"
+                      class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400"
+                      >x</span
+                    >
+                  </div>
+
+                  <div
+                    class="mt-4 px-4 pb-[20px] flex flex-col justify-center items-center"
+                  >
+                    <div class="w-full">
+                      <div class="w-full">
+                        <label
+                          for=""
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Group Name</label
+                        >
+                        <div class="flex flex-row items-center gap-2">
+                          <input
+                            type="text"
+                            id="তারিখ_থেকে"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[70%]"
+                            placeholder="কোন তারিখ পর্যন্ত"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="flex flex-row gap-2 mt-2">
+                        <button class="tab-button text-[14px]">
+                          Save Group
+                        </button>
+                        <button class="tab-button text-[14px]">Cancel</button>
+                      </div>
+                    </div>
+
+                    <div class="w-full mt-2">
+                      <table class="w-full border border-gray-300 text-center">
+                        <thead class="bg-[#9087E4] text-white text-[12px]">
+                          <tr>
+                            <th class="border border-gray-300 p-2">
+                              Group Name
+                            </th>
+                            <th class="border border-gray-300 p-2"></th>
+                            <th class="border border-gray-300 p-2"></th>
+                          </tr>
+                        </thead>
+                        <!-- Add your data rows here start -->
+                        <tbody class="text-[12px]">
+                          <tr>
+                            <td class="border border-gray-300 p-2">vip</td>
+                            <td class="border border-gray-300 p-2">Edit</td>
+                            <td class="border border-gray-300 p-2">Delete</td>
+                          </tr>
+
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-
-                  <div class="flex flex-row gap-2 mt-2">
-                    <button class="tab-button text-[14px]">
-                      Save Group
-                    </button>
-                    <button class="tab-button text-[14px]">Cancel</button>
-                  </div>
-                </div>
-
-                <div class="w-full mt-2">
-                  <table class="w-full border border-gray-300 text-center">
-                    <thead class="bg-[#9087E4] text-white text-[12px]">
-                      <tr>
-                        <th class="border border-gray-300 p-2">
-                          Group Name
-                        </th>
-                        <th class="border border-gray-300 p-2"></th>
-                        <th class="border border-gray-300 p-2"></th>
-                      </tr>
-                    </thead>
-                    <!-- Add your data rows here start -->
-                    <tbody class="text-[12px]">
-                      <tr>
-                        <td class="border border-gray-300 p-2">vip</td>
-                        <td class="border border-gray-300 p-2">Edit</td>
-                        <td class="border border-gray-300 p-2">Delete</td>
-                      </tr>
-
-                      <!-- Add more rows as needed -->
-                    </tbody>
-                  </table>
                 </div>
               </div>
+              <!--  Add New Group -popup2 end -->
             </div>
-          </div>
-          <!--  Add New Group -popup2 end -->
-        </div>
-        <div class="mr-0 md:mr-3">
-          <label
-            for="তারিখ_থেকে"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Name OR Mobile No.</label
-          >
-          <input
-            type="text"
-            id="তারিখ_থেকে"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            required
-          />
-        </div>
-        <div>
-          <button class="tab-button md:mt-[30px] mt-2">search</button>
-        </div>
-      </form>
-    </div>
-    <!-- Add New Mobile Number 	 -->
-    <h2
-      id="Add-New-Mobile-Number-popup1"
-      class="text-md font-medium text-[#005087] no-underline hover:underline cursor-pointer md:mt-0 mt-2"
-    >
-      Add New Mobile Number
-    </h2>
-
-    <!-- Add New Mobile Number popup1 start -->
-    <div id="Add-New-Mobile-Number-popup2" class="overlay">
-      <div class="bg-white w-[260px] rounded shadow-md">
-        <div class="bg-[#0C817A] relative pt-4 pb-4">
-          <h2 class="text-white font-bold text-center">
-            Add To Contact List
-          </h2>
-          <span
-            id="Add-New-Mobile-Number-close"
-            class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400"
-            >x</span
-          >
-        </div>
-
-        <div class="mt-4 px-4 flex flex-col justify-center items-center">
-          <h2
-            class="block mb-2 text-md font-medium text-blue-600 no-underline hover:underline cursor-pointer md:mt-0 mt-1 text-[18px]"
-          >
-            Group Name
-          </h2>
-          <form class="w-full pb-4">
-            <div class="relative w-full">
-              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-state"
-              >
-                <option selected>[ SELECT ]</option>
-                <option>VIP</option>
-              </select>
-              <div
-                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-              >
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="mt-1 w-full">
-              <label for="" class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Person Name</label
-              >
-              <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Person Name" required
-              />
-            </div>
-            <div class="mt-1 w-full">
+            <div class="mr-0 md:mr-3">
               <label
-                for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Mobile Number</label
+                for="তারিখ_থেকে"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Name OR Mobile No.</label
               >
               <input
-                type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Mobile Number" required
+                type="text"
+                id="তারিখ_থেকে"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
               />
             </div>
-            <div class="mt-1 w-full">
-              <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >Address</label
-              >
-              <textarea name="" id="" cols="3" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              ></textarea>
+            <div>
+              <button class="tab-button md:mt-[30px] mt-2">search</button>
             </div>
-
-            <button class="tab-button mt-2">Add To List</button>
           </form>
         </div>
+        <!-- Add New Mobile Number 	 -->
+        <h2
+          id="Add-New-Mobile-Number-popup1"
+          class="text-md font-medium text-[#005087] no-underline hover:underline cursor-pointer md:mt-0 mt-2"
+        >
+          Add New Mobile Number
+        </h2>
+
+        <!-- Add New Mobile Number popup1 start -->
+        <div id="Add-New-Mobile-Number-popup2" class="overlay">
+          <div class="bg-white w-[260px] rounded shadow-md">
+            <div class="bg-[#0C817A] relative pt-4 pb-4">
+              <h2 class="text-white font-bold text-center">
+                Add To Contact List
+              </h2>
+              <span
+                id="Add-New-Mobile-Number-close"
+                class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400"
+                >x</span
+              >
+            </div>
+
+            <div class="mt-4 px-4 flex flex-col justify-center items-center">
+              <h2
+                class="block mb-2 text-md font-medium text-blue-600 no-underline hover:underline cursor-pointer md:mt-0 mt-1 text-[18px]"
+              >
+                Group Name
+              </h2>
+              <form class="w-full pb-4">
+                <div class="relative w-full">
+                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-state"
+                  >
+                    <option selected>[ SELECT ]</option>
+                    <option>VIP</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                  >
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mt-1 w-full">
+                  <label for="" class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Person Name</label
+                  >
+                  <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Person Name" required
+                  />
+                </div>
+                <div class="mt-1 w-full">
+                  <label
+                    for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Mobile Number</label
+                  >
+                  <input
+                    type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Mobile Number" required
+                  />
+                </div>
+                <div class="mt-1 w-full">
+                  <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Address</label
+                  >
+                  <textarea name="" id="" cols="3" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  ></textarea>
+                </div>
+
+                <button class="tab-button mt-2">Add To List</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Add New Mobile Number end -->
+
+        <!-- Total: 0 Contact start -->
+        <div class="mt-0">
+          <h2>Total: 0 Contact.</h2>
+        </div>
       </div>
-    </div>
-    <!-- Add New Mobile Number end -->
 
-    <!-- Total: 0 Contact start -->
-    <div class="mt-0">
-      <h2>Total: 0 Contact.</h2>
-    </div>
-  </div>
-
-  <div id="পাঠানো-এসএমএস-রেকর্ড" class="content-div" style="display: none">
-    <h2 class="text-base font-semibold text-[#7367f0]">
-      প্রেরিত এসএমএস রেকর্ড (অবশিষ্ট এসএমএস: 1)
-    </h2>
-    <hr class="mt-3 mb-6" />
-    <div class="mb-6">
-            <form class="w-full md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">
-              <div class="mt-1">
-                <h2 class="text-[14px]">From Date</h2>
-                <input datepicker datepicker-format="mm/dd/yyyy" type="text" class="w-full md:w-[160px] appearance-none block text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="From Date">
-              </div>
-              <div class="mt-1">
-                <h2 class="text-[14px]">To Date</h2>
-                <input datepicker datepicker-format="mm/dd/yyyy" type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder=" 	To Date">
-              </div>        
-              <div class="mt-1">
-                <h2 class="text-[14px]">Mobile No. or Purpose Of SMS 	 </h2>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder=" 	Mobile No. or Purpose Of SMS 	 ">
-              </div>        
-              
-              <div>
-                <button class="tab-button md:mt-[32px] mt-2">Find</button>
-              </div>
-            </form>
-    </div>
-    <!-- Table  -->
-    <div class="overflow-x-auto mt-3">     
+      <div id="পাঠানো-এসএমএস-রেকর্ড" class="content-div" style="display: none">
+        <h2 class="text-base font-semibold text-[#7367f0]">
+          প্রেরিত এসএমএস রেকর্ড (অবশিষ্ট এসএমএস: 1)
+        </h2>
+        <hr class="mt-3 mb-6" />
+        <div class="mb-6">
+                <form class="w-full md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">
+                  <div class="mt-1">
+                    <h2 class="text-[14px]">From Date</h2>
+                    <input datepicker datepicker-format="mm/dd/yyyy" type="text" class="w-full md:w-[160px] appearance-none block text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="From Date">
+                  </div>
+                  <div class="mt-1">
+                    <h2 class="text-[14px]">To Date</h2>
+                    <input datepicker datepicker-format="mm/dd/yyyy" type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder=" 	To Date">
+                  </div>        
+                  <div class="mt-1">
+                    <h2 class="text-[14px]">Mobile No. or Purpose Of SMS 	 </h2>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder=" 	Mobile No. or Purpose Of SMS 	 ">
+                  </div>        
                   
-      <!-- খরচ-যুক্ত-করুন-popup1 end -->
-      <h3 class="text-[#33CC33] font-bold mb-2">সর্বমোট খরচ: <span>36296646</span> টাকা</h3>
-      <table class="min-w-full  border border-gray-300 text-center">
-          <thead class="bg-[#9087E4] text-white text-[12px]">
-            <tr>
-              <th class="border border-gray-300 p-2">Phone Number</th>
-              <th class="border border-gray-300 p-2">Text SMS</th>
-              <th class="border border-gray-300 p-2">SMS Count</th>
-              <th class="border border-gray-300 p-2">Purpose</th> 
-              <th class="border border-gray-300 p-2">Status</th>  
-              <th class="border border-gray-300 p-2">Date</th>      
-            </tr>            							
-          </thead>
-          <!-- Add your data rows here start -->
-          <tbody class="text-[12px]">                  
-            <tr>
-              <td class="border border-gray-300 p-2">01934322088</td>
-              <td class="border border-gray-300 p-2">	প্রিয় গ্রাহক, আপনার অর্ডারকৃত 1 টি সার্ট, তৈরি হয়েছে। অর্ডার নং 9688। a.mannan tailors and fabrics</td>
-              <td class="border border-gray-300 p-2">2</td>
-              <td class="border border-gray-300 p-2">Completed Work</td>
-              <td class="border border-gray-300 p-2">Sent</td>
-              <td class="border border-gray-300 p-2">13 Mar 2023 (11:33 AM)</td>
-            </tr>                
-            <tr>
-              <td class="border border-gray-300 p-2">01934322088</td>
-              <td class="border border-gray-300 p-2">	প্রিয় গ্রাহক, আপনার অর্ডারকৃত 1 টি সার্ট, তৈরি হয়েছে। অর্ডার নং 9688। a.mannan tailors and fabrics</td>
-              <td class="border border-gray-300 p-2">2</td>
-              <td class="border border-gray-300 p-2">Completed Work</td>
-              <td class="border border-gray-300 p-2">Sent</td>
-              <td class="border border-gray-300 p-2">13 Mar 2023 (11:33 AM)</td>
-            </tr>  
-            <tr class="bg-[#9087e4]">
-              <td colspan="6">
-                <table>
-                  <tbody>
-                    <tr class="text-[13px] flex flex-row gap-2 py-1">
-                    <td><span class="mr-1 ml-1">|</span><a class="hover:text-white" href="">1</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">4</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">5</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">6</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">7</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">8</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">9</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">10</a></td>
-                    <td><span class="mr-1">|</span><a class="hover:text-white" href="">...</a></td>
-                  </tr>
-                </tbody>
-                </table>
-              </td>
-            </tr>        
-            <!-- Add more rows as needed -->
-          </tbody>             
-        </table>
-        
-    </div>
-  </div>
-</section>
-<!-- এসএমএস end  -->
+                  <div>
+                    <button class="tab-button md:mt-[32px] mt-2">Find</button>
+                  </div>
+                </form>
+        </div>
+        <!-- Table  -->
+        <div class="overflow-x-auto mt-3">     
+                      
+          <!-- খরচ-যুক্ত-করুন-popup1 end -->
+          <h3 class="text-[#33CC33] font-bold mb-2">সর্বমোট খরচ: <span>36296646</span> টাকা</h3>
+          <table class="min-w-full  border border-gray-300 text-center">
+              <thead class="bg-[#9087E4] text-white text-[12px]">
+                <tr>
+                  <th class="border border-gray-300 p-2">Phone Number</th>
+                  <th class="border border-gray-300 p-2">Text SMS</th>
+                  <th class="border border-gray-300 p-2">SMS Count</th>
+                  <th class="border border-gray-300 p-2">Purpose</th> 
+                  <th class="border border-gray-300 p-2">Status</th>  
+                  <th class="border border-gray-300 p-2">Date</th>      
+                </tr>            							
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[12px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2">01934322088</td>
+                  <td class="border border-gray-300 p-2">	প্রিয় গ্রাহক, আপনার অর্ডারকৃত 1 টি সার্ট, তৈরি হয়েছে। অর্ডার নং 9688। a.mannan tailors and fabrics</td>
+                  <td class="border border-gray-300 p-2">2</td>
+                  <td class="border border-gray-300 p-2">Completed Work</td>
+                  <td class="border border-gray-300 p-2">Sent</td>
+                  <td class="border border-gray-300 p-2">13 Mar 2023 (11:33 AM)</td>
+                </tr>                
+                <tr>
+                  <td class="border border-gray-300 p-2">01934322088</td>
+                  <td class="border border-gray-300 p-2">	প্রিয় গ্রাহক, আপনার অর্ডারকৃত 1 টি সার্ট, তৈরি হয়েছে। অর্ডার নং 9688। a.mannan tailors and fabrics</td>
+                  <td class="border border-gray-300 p-2">2</td>
+                  <td class="border border-gray-300 p-2">Completed Work</td>
+                  <td class="border border-gray-300 p-2">Sent</td>
+                  <td class="border border-gray-300 p-2">13 Mar 2023 (11:33 AM)</td>
+                </tr>  
+                <tr class="bg-[#9087e4]">
+                  <td colspan="6">
+                    <table>
+                      <tbody>
+                        <tr class="text-[13px] flex flex-row gap-2 py-1">
+                        <td><span class="mr-1 ml-1">|</span><a class="hover:text-white" href="">1</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">4</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">5</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">6</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">7</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">8</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">9</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">10</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">...</a></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </td>
+                </tr>        
+                <!-- Add more rows as needed -->
+              </tbody>             
+            </table>
+            
+        </div>
+      </div>
+    </section>
+    <!-- এসএমএস end  -->
 
  
 
