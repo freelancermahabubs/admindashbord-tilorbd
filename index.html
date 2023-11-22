@@ -243,7 +243,7 @@
       </li>
           <hr class="pb-2" />
             <!-- বেসিক সেটিং item children start  -->
-          <ul id="বেসিক-সেটিং-submenu" class="hidden pl-4">
+          <ul id="বেসিক-সেটিং-submenu" class="hidden pl-4 ml-4">
               <li class="cursor-pointer mb-2 text-[15px] submenu-link" onclick="changeContent('বেসিক-সেটিং-মেজারমেন্ট-ইউনিট', this)">
                 <a href="#মেজারমেন্ট-ইউনিট" class="hover:underline">মেজারমেন্ট ইউনিট</a>
               </li>
@@ -270,7 +270,7 @@
             কাপড় ক্রয়
           </li>
           <hr class="pb-2" />
-          <ul id="কাপড়-ক্রয়-submenu" class="hidden pl-4">
+          <ul id="কাপড়-ক্রয়-submenu" class="hidden pl-4 ml-4">
             <!-- কাপড় ক্রয় item children start  -->
               <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-ক্রয়-কাপড়-ক্রয়-করুন', this)">
                 <a href="#কাপড়-ক্রয়-করুন" class="hover:underline">কাপড় ক্রয় করুন</a>
@@ -281,7 +281,36 @@
               <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-ক্রয়-ফেরত-দিন', this)">
                 <a href="#ফেরত-দিন" class="hover:underline">ফেরত দিন</a>
               </li>
-              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('	কাপড়-ক্রয়-রিপোর্ট', this)">
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-ক্রয়-রিপোর্ট', this)">
+                <a href="#রিপোর্ট" class="hover:underline">রিপোর্ট</a>
+              </li>
+          </ul>
+
+
+
+           <!-- ফেব্রিক্স item কাপড় বিক্রি  item start  -->
+           <li class="cursor-pointer mb-2" onclick="toggleSubMenu('কাপড়-বিক্রি', 'angle-right-icon-10.3')">
+            <span class="rounded-full icon pl-[1px] pr-[1px] items-center mr-3">
+                <i id="angle-right-icon-10.3" class="fas fa-angle-right text-white ml-1 text-[14px] font-bold"></i>
+            </span>
+            কাপড় বিক্রি 
+          </li>
+          <hr class="pb-2" />
+          <ul id="কাপড়-বিক্রি-submenu" class="hidden pl-4 ml-4">
+            <!-- কাপড় ক্রয় item children start  -->
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-বিক্র-স্টক-রিপোর্ট', this)">
+                <a href="#স্টক-রিপোর্ট" class="hover:underline">স্টক রিপোর্ট</a>
+              </li>
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-বিক্র-কাপড়-বিক্রি-করুন', this)">
+                <a href="#কাপড়-বিক্রি-করুন" class="hover:underline">কাপড় বিক্রি করুন</a>
+              </li>
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-বিক্র-রেকর্ড-দেখুন', this)">
+                <a href="#রেকর্ড-দেখুন" class="hover:underline">	রেকর্ড দেখুন</a>
+              </li>
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-বিক্র-ফেরত-দিন', this)">
+                <a href="#ফেরতদিন" class="hover:underline">ফেরত দিন</a>
+              </li>
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('কাপড়-বিক্র-রিপোর্ট', this)">
                 <a href="#রিপোর্ট" class="hover:underline">রিপোর্ট</a>
               </li>
           </ul>
@@ -4223,6 +4252,25 @@
             ফেরত-দিন
           </div>
           <div id="কাপড়-ক্রয়-রিপোর্ট" class="content-div" style="display: none;">
+            রিপোর্ট
+          </div>
+       </div>
+
+       <!-- কাপড় বিক্রি  item chliren content start  -->
+       <div>
+          <div id="কাপড়-বিক্র-স্টক-রিপোর্ট" class="content-div" style="display: none;">
+            কাপড়-বিক্র-স্টক-রিপোর্ট
+          </div>
+          <div id="কাপড়-বিক্র-কাপড়-বিক্রি-করুন" class="content-div" style="display: none;">
+            কাপড়-বিক্র-কাপড়-বিক্রি-করুন
+          </div>
+          <div id="কাপড়-বিক্র-রেকর্ড-দেখুন" class="content-div" style="display: none;">
+            কাপড়-বিক্র-রেকর্ড-দেখুন
+          </div>
+          <div id="কাপড়-বিক্র-ফেরত-দিন" class="content-div" style="display: none;">
+            ফেরত-দিন
+          </div>
+          <div id="কাপড়-বিক্র-রিপোর্ট" class="content-div" style="display: none;">
             রিপোর্ট
           </div>
        </div>
