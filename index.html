@@ -323,6 +323,7 @@
               </li>
               <hr class="pb-2" />
           </ul>
+
            <!-- ফেব্রিক্স item পাইকার  item start  -->
            <li class="cursor-pointer mb-2" onclick="toggleSubMenu('পাইকার', 'angle-right-icon-10.4')">
             <span class="rounded-full icon pl-[1px] pr-[1px] items-center mr-3">
@@ -338,6 +339,28 @@
               </li>      
               <hr class="pb-2" />        
           </ul>
+
+
+             <!-- ফেব্রিক্স item ড্যামেজ  item start  -->
+           <li class="cursor-pointer mb-2" onclick="toggleSubMenu('ড্যামেজ', 'angle-right-icon-10.5')">
+            <span class="rounded-full icon pl-[1px] pr-[1px] items-center mr-3">
+                <i id="angle-right-icon-10.5" class="fas fa-angle-right text-white ml-1 text-[14px] font-bold"></i>
+            </span>
+            ড্যামেজ
+          </li>
+          <hr class="pb-2" />
+          <ul id="ড্যামেজ-submenu" class="hidden pl-4 ml-4">
+            <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('ড্যামেজ-যুক্ত-করুন', this)">
+              <a href="#যুক্ত-করুন" class="hover:underline">যুক্ত করুন</a>
+            </li>      
+            <hr class="pb-2" />        
+            <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('ড্যামেজ-রিপোর্ট', this)">
+              <a href="#রিপোর্ট" class="hover:underline">রিপোর্ট</a>
+            </li>      
+            <hr class="pb-2" />  
+          </ul>
+        
+
       </ul>
     </ul>
 
@@ -373,7 +396,7 @@
         
       </div>
 
-      
+           
     
 
   <div id="right-sidebar-content" class="md:w-[81%] w-full p-4">
@@ -4302,6 +4325,15 @@
        <div>
         <div id="পাইকার-যুক্ত-করুন" class="content-div" style="display: none;">
           পাইকার যুক্ত করুন
+        </div>
+       </div>
+       <!-- ড্যামেজ ===> রিপোর্ট item chliren content start -->
+       <div>
+        <div id="ড্যামেজ-যুক্ত-করুন" class="content-div" style="display: none;">
+          ড্যামেজ যুক্ত করুন
+        </div>
+        <div id="ড্যামেজ-রিপোর্ট" class="content-div" style="display: none;">
+          ড্যামেজ-রিপোর্ট
         </div>
        </div>
     </section>
