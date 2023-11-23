@@ -4291,37 +4291,37 @@
 
 
              <!-- Table ইউনিটের নাম  -->
-        <div class="overflow-x-auto mt-4">  
-            <table class="min-w-full  border border-gray-300 text-center">
-              <thead class="text-white text-[12px]" style="background-color: var(--bgPrimaryColor)">
-                <tr>
-                  <th class="border border-gray-300 p-2"> ইউনিটের নাম</th>
-                  <th class="border border-gray-300 p-2"></th>
-                  <th class="border border-gray-300 p-2"></th>
-                </tr>            							
-              </thead>
-              <!-- Add your data rows here start -->
-              <tbody class="text-[12px]">                  
-                <tr>
-                  <td class="border border-gray-300 p-2">গজ</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                  
-                </tr>                
-                <tr>
-                  <td class="border border-gray-300 p-2">পিস</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                   
-                </tr>   
-                <tr>
-                  <td class="border border-gray-300 p-2">মিটার</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                   
-                </tr>   
-                      
-                <!-- Add more rows as needed -->
-              </tbody>             
-            </table>
-        </div>
+              <div class="overflow-x-auto mt-4">  
+                  <table class="min-w-full  border border-gray-300 text-center">
+                    <thead class="text-white text-[12px]" style="background-color: var(--bgPrimaryColor)">
+                      <tr>
+                        <th class="border border-gray-300 p-2"> ইউনিটের নাম</th>
+                        <th class="border border-gray-300 p-2"></th>
+                        <th class="border border-gray-300 p-2"></th>
+                      </tr>            							
+                    </thead>
+                    <!-- Add your data rows here start -->
+                    <tbody class="text-[12px]">                  
+                      <tr>
+                        <td class="border border-gray-300 p-2">গজ</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                  
+                      </tr>                
+                      <tr>
+                        <td class="border border-gray-300 p-2">পিস</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                   
+                      </tr>   
+                      <tr>
+                        <td class="border border-gray-300 p-2">মিটার</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Edit</td>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">Delete</td>                   
+                      </tr>   
+                            
+                      <!-- Add more rows as needed -->
+                    </tbody>             
+                  </table>
+              </div>
 
           </div>
           <div id="বেসিক-সেটিং-ব্র্যান্ড-যুক্ত-করুন" class="content-div" style="display: none;">
@@ -4888,6 +4888,7 @@
                   <td class="border border-gray-300 p-2">0</td>
                   <td class="border border-gray-300 p-2">0</td>
                 </tr>
+                
                       
                 <!-- Add more rows as needed -->
               </tbody>             
@@ -4900,17 +4901,88 @@
        <!-- কাপড় বিক্রি  item chliren content start  -->
        <div>
           <div id="কাপড়-বিক্র-স্টক-রিপোর্ট" class="content-div" style="display: none;">
-            <div id="myTab" class="max-w-md mx-auto mt-8">
-              <!-- Tab Buttons -->
-              <div class="flex space-x-4">
-                  <button id="tabButton1" class="tab-button active bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
-                  <button id="tabButton2" class="tab-button bg-blue-500 text-white px-4 py-2 rounded">Button 2</button>
+            <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">Stock Report (Remaining Stock Price: 387111.05)</h2>
+            <hr class="mt-3 mb-2" />
+            <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
+              <div class="mt-1">
+                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" required placeholder="code, Name">
               </div>
-          
-              <!-- Tab Contents -->
-              <div id="content1" class="tab-content">Content for Button 1</div>
-              <div id="content2" class="tab-content hidden">Content for Button 2</div>
-          </div>
+             
+              <div>
+                <button class="tab-button md:mt-[12px]">যুক্ত করুন</button>
+              </div>
+            </form>
+
+
+             <!-- Table ইউনিটের নাম  -->
+              <div class="overflow-x-auto mt-4">  
+                  <table class="min-w-full  border border-gray-300 text-center">
+                    <thead class="text-white text-[12px]" style="background-color: var(--bgPrimaryColor)">
+                      <tr>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> S.N</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Code</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Name</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Selling Unit Price</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Current Buying Unit Price</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Selling Quantity</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Buying Quantity</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Damage Quantity</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Return to Supplier</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> Return By Customer</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer">Stock</th>
+                        <th class="border border-gray-300 p-2 hover:underline cursor-pointer">Unit</th>
+                       										
+                      </tr>            							
+                    </thead>
+                    <!-- Add your data rows here start -->
+                    <tbody class="text-[12px]">                  
+                      <tr>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">12</td>    
+                        <td class="border border-gray-300 p-2">thai japan chiken</td>  
+                        <td class="border border-gray-300 p-2">থাই চিকেন</td>  
+                        <td class="border border-gray-300 p-2">450</td>  
+                        <td class="border border-gray-300 p-2">	0	</td>  
+                        <td class="border border-gray-300 p-2">49</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">49</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">গজ</td>  
+                      </tr>                
+                      <tr>
+                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">12</td>    
+                        <td class="border border-gray-300 p-2">thai japan chiken</td>  
+                        <td class="border border-gray-300 p-2">থাই চিকেন</td>  
+                        <td class="border border-gray-300 p-2">450</td>  
+                        <td class="border border-gray-300 p-2">	0	</td>  
+                        <td class="border border-gray-300 p-2">49</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">59</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">0</td>  
+                        <td class="border border-gray-300 p-2">গজ</td>  
+                      </tr> 
+                      <tr class="" style="background-color: var(--bgPrimaryColor);">
+                        <td colspan="13">
+                          <table>
+                            <tbody>
+                              <tr class="text-[13px] flex flex-row gap-2 py-1">
+                              <td><span class="mr-1 ml-1">|</span><a class="text-white" href="">1</a></td>
+                              <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
+                              <td><span class="mr-1">|</span><a class="hover:text-white" href="">3</a></td>                       
+                            </tr>
+                          </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody>             
+                  </table>
+              </div>
+
+              <button class="mb-4 mt-4 tab-button">Export to Excel </button>
           </div>
           <div id="কাপড়-বিক্র-কাপড়-বিক্রি-করুন" class="content-div" style="display: none;">
             কাপড়-বিক্র-কাপড়-বিক্রি-করুন
@@ -4925,6 +4997,7 @@
             রিপোর্ট
           </div>
        </div>
+
        <!-- পাইকার যুক্ত করুন  item chliren content start -->
        <div>
         <div id="পাইকার-যুক্ত-করুন" class="content-div" style="display: none;">
