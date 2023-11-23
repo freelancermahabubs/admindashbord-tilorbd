@@ -160,6 +160,8 @@ initializeDatepicker('অর্ডার-ডেলিভারিdatePicker1');
 initializeDatepicker('অর্ডার-ডেলিভারিdatePicker2');
 initializeDatepicker('লেনদেন-লগdatePicker1');
 initializeDatepicker('লেনদেন-লগdatePicker2');
+initializeDatepicker('ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker1');
+initializeDatepicker('ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker2');
   
 
 

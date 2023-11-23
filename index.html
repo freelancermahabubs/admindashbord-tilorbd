@@ -4813,7 +4813,87 @@
             </form>
           </div>
           <div id="কাপড়-ক্রয়-রিপোর্ট" class="content-div" style="display: none;">
-            রিপোর্ট
+            <h2 class="text-[22px] font-semibold" style="color: var(--primaryColor);">ফেব্রিক্স ক্রয়ের বিবরণ</h2>
+            <hr class="mt-3 mb-3" />
+            <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
+              <div class="md:mt-1">
+                <input id="ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker1"  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 md:mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+              </div>
+              <div class="md:mt-1">
+                <input id="ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker2" datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 md:mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+              </div>
+              <div><button class="tab-button md:mt-[12px]">Find By Data</button></div>
+            </form>
+            <div>
+              <h1 class="bg-[#DDDDDD] py-1 px-1 my-2 md:w-[480px] w-full text-[20px]">(1 Nov 2023 থেকে 23 Nov 2023) সর্বমোট পেইড: টাকা </h1>
+
+              <div class="mt-4">             
+                <h3 class="mb-1 text-[18px]"><span>(1 Nov 2023 থেকে 23 Nov 2023) ক্রয়ের বিবরণ </span></h3>
+                 <div class=" border-t-2 border-[#7e8b95] text-[#63707a] flex flex-row gap-4 ">             
+                   <div class="bg-[#e7f7fd] px-6 rounded-sm py-2 mt-2">
+                     <h2 class="text-[#196689] text-[20px]"> পেইড: টাকা </h2>
+                   </div>
+                   <div class="bg-[#e7f7fd] px-6 rounded-sm py-2 mt-2">
+                     <h2 class="text-[#196689] text-[20px]">বাকি: টাকা </h2>
+                   </div>
+     
+               </div>
+             </div>
+
+              <div class="mt-4">             
+                <h3 class="mb-1 text-[18px]"><span>(1 Nov 2023 থেকে 23 Nov 2023) ফেরতের বিবরণ </span></h3>
+                   <hr class=" border-t-2 border-[#7e8b95] " />
+                  <div class="bg-[#e7f7fd] text-center w-[300px] px-6 rounded-sm py-2 mt-2">                   
+                    <h2 class="text-[#196689] text-[20px] mt-2"> মোট ফেরত: টাকা </h2>
+                  </div>
+             </div>
+
+
+             <h3 class="mb-1 mt-2 text-[18px]"><span>(1 Nov 2023 থেকে 23 Nov 2023) সাপ্লাইয়ারের বিবরণ </span></h3>
+              <hr class=" border-t-2 border-[#7e8b95] " />
+
+               <!-- Table ইউনিটের নাম  -->
+           <div class="overflow-x-auto mt-4">  
+            <table class="min-w-full  border border-gray-300 text-center">
+              <thead class="text-white text-[12px]" style="background-color: var(--bgPrimaryColor)">
+                <tr>
+                  <th class="border border-gray-300 p-2">Supplier</th>
+                  <th class="border border-gray-300 p-2">Phone</th>
+                  <th class="border border-gray-300 p-2">Total Amount</th>
+                  <th class="border border-gray-300 p-2">Return Price</th>
+                  <th class="border border-gray-300 p-2">Discount</th>
+                  <th class="border border-gray-300 p-2">Paid</th>
+                  <th class="border border-gray-300 p-2">Due</th> 
+                  						                 				
+                </tr>            							
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[12px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">উজ্জল ভাই </td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                </tr>     
+                						            
+                <tr>
+                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">উজ্জল ভাই </td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                </tr>
+                      
+                <!-- Add more rows as needed -->
+              </tbody>             
+            </table>
+          </div>
+            </div>
           </div>
        </div>
 
