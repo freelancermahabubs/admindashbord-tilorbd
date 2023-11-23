@@ -4528,7 +4528,7 @@
                           <div  class="mr-2 w-none md:w-[200px]"> 
                             <label for="">ইউনিট</label>
                           </div>
-                          <div class="relative md:w-[200px]">
+                          <div class="relative md:w-[229px] mb-4">
                             <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
                               <option>পুরুষ</option>
                               <option>মহিলা</option>
@@ -4632,7 +4632,7 @@
                           </div>
                         </div>
               
-                      <div class="md:ml-[280px]" > <button class="tab-button">save & continue</button></div>
+                      <div class="md:ml-[209px]" > <button class="tab-button">save & continue</button></div>
                       </div>           
                     </div>
             
@@ -4737,10 +4737,80 @@
             </div> 
           </div>
           <div id="কাপড়-ক্রয়-রেকর্ড-দেখুন" class="content-div" style="display: none;">
-            রেকর্ড-দেখুন
+            <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">ক্রয়ের রেকর্ড</h2>
+            <hr class="mt-3 mb-6" />
+            <!-- Table ইউনিটের নাম  -->
+           <div class="overflow-x-auto mt-4">  
+            <table class="min-w-full  border border-gray-300 text-center">
+              <thead class="text-white text-[12px]" style="background-color: var(--bgPrimaryColor)">
+                <tr>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">সিরিয়াল নং</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer"> 	মোট টাকা</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">ডিসকাউন্ট	</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">% হিসাবে ডিসকাউন্ট	</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">পেইড</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">বাকি</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">বিল নং</th>
+                  <th class="border border-gray-300 p-2 hover:underline cursor-pointer">ক্রয়ের তারিখ</th>                  				
+                </tr>            							
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[12px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">18</td>
+                  <td class="border border-gray-300 p-2">35360</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">35360</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">বিল্লাল ফেব্রিক্স 332332</td>
+                  <td class="border border-gray-300 p-2">9 Jan 2022</td>
+                </tr>     
+                						            
+                <tr>
+                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">18</td>
+                  <td class="border border-gray-300 p-2">35360</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">35360</td>
+                  <td class="border border-gray-300 p-2">0</td>
+                  <td class="border border-gray-300 p-2">বিল্লাল ফেব্রিক্স 332332</td>
+                  <td class="border border-gray-300 p-2">9 Jan 2022</td>
+                </tr>   
+                <tr class="" style="background-color: var(--bgPrimaryColor);">
+                  <td colspan="13">
+                    <table>
+                      <tbody>
+                        <tr class="text-[13px] flex flex-row gap-2 py-1">
+                        <td><span class="mr-1 ml-1">|</span><a class="text-white" href="">1</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">2</a></td>
+                        <td><span class="mr-1">|</span><a class="hover:text-white" href="">3</a></td>                       
+                      </tr>
+                    </tbody>
+                    </table>
+                  </td>
+                </tr>
+                      
+                <!-- Add more rows as needed -->
+              </tbody>             
+            </table>
+          </div>
+            <hr class="mt-3 mb-6" />
+
           </div>
           <div id="কাপড়-ক্রয়-ফেরত-দিন" class="content-div" style="display: none;">
-            ফেরত-দিন
+            <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">ফেরত দেওয়ার জন্য রিসিপট নাম্বার দিন</h2>
+            <hr class="mt-3 mb-2" />
+            <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
+              <div class="mt-1">
+                <label for="" class="mb-2">Receipt No</label>
+                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="" required>
+              </div>
+             
+              <div>
+                <button class="tab-button md:mt-[37px]">Find</button>
+              </div>
+            </form>
           </div>
           <div id="কাপড়-ক্রয়-রিপোর্ট" class="content-div" style="display: none;">
             রিপোর্ট
