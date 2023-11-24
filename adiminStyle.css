@@ -157,3 +157,11 @@ body {
   color: #9087e4; /* Set the desired active link color */
 }
 
+/* Add transition effect to the input */
+#hidden-input {
+  transition: opacity 0.5s ease-in-out;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

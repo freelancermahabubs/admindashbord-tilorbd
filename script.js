@@ -196,4 +196,20 @@ initializeDatepicker('ফেব্রিক্স-ক্রয়ের-বিব�
       setupDropdown("custom-grid-state-2");
       // Add more if needed
     });
-  
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // Get references to the checkbox and input
+    const checkbox = document.getElementById('toggle-checkbox');
+    const input = document.getElementById('hidden-input');
+
+    // Add event listener to the checkbox
+    checkbox.addEventListener('change', function () {
+      // Toggle the visibility of the input based on the checkbox state
+      input.classList.toggle('hidden', !checkbox.checked);
+    });
+  });
+
+
