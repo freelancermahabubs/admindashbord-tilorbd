@@ -597,11 +597,11 @@
       </div>
       <button class="tab-button">Add Dress</button>
      </div>
-     <div> <button id="Customer-popup1" class="tab-button uppercase "><i class="fas fa-user-plus"></i> Customer</button></div>
+     <div>
+       <button id="Customer-popup1" class="tab-button uppercase ">
+        <i class="fas fa-user-plus"></i> Customer</button>
+      </div>
      </div>
-
-
-
      <!-- Customerpopup -->
   
      <!-- Customer-popup1 start -->
@@ -4427,7 +4427,7 @@
             <hr class="mt-3 mb-6" />
             <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
               <div class="mt-1">
-                <label for="" class="mb-2">নতুন ফেব্রিক্স যুক্ত করুন</label>
+                <label for="" id="নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1" class="mb-2 cursor-pointer hover:underline" style="color: var(--primaryColor)">নতুন ফেব্রিক্স যুক্ত করুন</label>
                 <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="নাম, কোড" required>
               </div>
              
@@ -4509,6 +4509,186 @@
               </tbody>             
             </table>
           </div>
+
+          <!--নতুন-ফেব্রিক্স-যুক্ত-করুন popup start -->
+        <div id="নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2" class="overlay  mt-5 md:mt-0 mb-8 md:mb-0 px-2 py-2 h-full">
+          <div class="bg-white md:w-[500px] md:h-[550px] w-full h-full md:mt-[-40px]  rounded shadow-md popup-animation overflow-auto">
+            <div class="bg-[#0C817A] relative px-4 pt-4 pb-4 ">
+              <h2 class="text-white text-lg font-bold text-center"> কাপড় যুক্ত করুন </h2>    
+              <span id="নতুন-ফেব্রিক্স-যুক্ত-করুন-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+            </div>
+
+            <div class="mt-4 px-4 ">
+              <div>
+                <div class="flex flex-col md:flex-row ">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">মাপের ধরণ</label>
+                  </div>
+                  <div class="relative md:w-[229px] mb-2">
+                    <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                      <option value="" selected="selected">[SELECT]</option>
+                      <option value="">গজ</option>
+                      <option value="">পিস</option>
+                      <option value="">মিটার</option>  
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for=""> কাপড়ের ক্যাটাগরী </label>
+                  </div>
+               <div class="relative md:w-[229px] mb-2">
+                    <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                      <option selected="selected" value="0">[ Category ]</option>
+                      <option value="">Pant Piece</option>
+                      <option value="">Shirt Piece</option>
+                      <option value=""> Panjabi fabrics</option>
+                      <option value="">payjama fabrics</option>
+                      <option value="">koti fabrics</option>
+                      <option value="">blazer fabrics </option>
+                      <option value="">sirt+panjabi fabrics</option>
+                      <option value="">ক্যাটালগ সার্ট</option>
+                      <option value="">ক্যাটালগ পাঞ্জাবি</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for=""> ব্র্যন্ড </label>
+                  </div>
+                 <div class="relative md:w-[229px] mb-2">
+                    <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                    <option selected="selected" value="0">[ Brand ]</option>
+                    <option value="">Raymond pant pic</option>
+                    <option value="">Raymond shirt p</option>
+                    <option value="">Arvind shirt</option>
+                    <option value="">SRS pant pic</option>
+                    <option value="">Raymon gabardin</option>
+                    <option value="">Linen club</option>
+                    <option value="">Vimal pant pic</option>
+                    <option value="">Indian 60 pana shaton print</option>
+                    <option value="">60 count gija </option>
+                    <option value="">80 count gija</option>
+                    <option value="">Shoktas shirt pic</option>
+                    <option value="">Moftlal shrt pic</option>
+                    <option value="">Export garments</option>
+                    <option value="">Tissuty print</option>
+                    <option value="">Chaina jeqard</option>
+                    <option value="">Bomberewan print</option>
+                    <option value="">Export jeqard</option>
+                    <option value="">Korian maicro</option>
+                    <option value="">Korisn micro 60 pana</option>
+                    <option value="">60 pana staip maicro</option>
+                    <option value="">President tore color</option>
+                    <option value="">President tore sada</option>
+                    <option value="">Chaina tore</option>
+                    <option value="">Japani 9100</option>
+                    <option value="">Jamani 4100</option>
+                    <option value="">Japani maicro</option>
+                    <option value="">Suwiss micro</option>
+                    <option value="">Tc</option>
+                    <option value="">Toody</option>
+                    <option value="">Cbc</option>
+                    <option value="">Coton pajam</option>
+                    <option value="">36 pana indian</option>
+                    <option value="">Brassho</option>
+                    <option value="">Jamdani</option>
+                    <option value="">Bangla 60 pana suti</option>
+                    <option value="">Dhuti</option>
+                    <option value="">Manglam adi</option>
+                    <option value="">Gaji tore</option>
+                    <option value="">Pakistani</option>
+                    <option value="">Bangla saton</option>
+                    <option value="">Export komdami</option>
+                    <option value="">Bangla panjabi dami</option>
+                    <option value="">Bangla panjabi kom dami</option>
+                    <option value="">Raymond Linen</option>
+                    <option value="">cotonoficiio</option>
+                    <option value="">mafatlal</option>
+                    <option value="">raid&amp;tailor</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for=""> কাপড়ের কোড </label>
+                  </div>
+                  <div>
+                    <input type="password" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for=""> কাপড়ের নাম </label>
+                  </div>
+                  <div>
+                    <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">কাপড়ের কালার</label>
+                  </div>
+                  <div>
+                    <input type="email" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">কাপড়ের স্টাইল</label>
+                  </div>
+                  <div>
+                    <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">প্রতি ইউনিটের বিক্রয় মূল্য</label>
+                  </div>
+                  <div>
+                    <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">কাপড় সম্পর্কে বিস্তারিত</label>
+                  </div>
+                  <div>
+                    <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                  <div  class="mr-2 w-none md:w-[200px]"> 
+                    <label for="">কাপড়ের ছবি</label>
+                  </div>
+                  <div>
+                    <input type="file" class="appearance-none  rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 " placeholder="">
+                  </div>
+                </div>
+      
+              <div class="md:ml-[209px]" > <button class="tab-button">Add to Cart</button></div>
+              </div>     
+            </div>
+          
+          </div>
+        </div>
+
+
+
+
+
+
+
+
           </div>
        </div>
              <!-- কাপড় ক্রয়  item chlider cntent page start  -->

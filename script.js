@@ -124,6 +124,7 @@ function changeContent(content, clickedLink) {
   createPopup('Add-New-Group-popup1', 'Add-New-Group-popup2', 'Add-New-Group-close');
   createPopup('Add-New-Mobile-Number-popup1', 'Add-New-Mobile-Number-popup2', 'Add-New-Mobile-Number-close');
   createPopup('Customer-popup1', 'Customer-popup2', 'Customer-close');
+  createPopup('নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1', 'নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2', 'নতুন-ফেব্রিক্স-যুক্ত-করুন-close');
 
 
 
