@@ -172,7 +172,7 @@ initializeDatepicker('ক্রয়ের-বিবরণdatePicker2');
     // selected Value option start
     document.addEventListener("DOMContentLoaded", function() {
       function toggleContent(selectedValue) {
-        var contents = document.getElementsByClassName("custom-tab-content");
+        var contents = document.getElementsByClassName("All-Account-custom-tab");
         for (var i = 0; i < contents.length; i++) {
           contents[i].style.display = "none";
         }
@@ -196,7 +196,40 @@ initializeDatepicker('ক্রয়ের-বিবরণdatePicker2');
   
       // Call setupDropdown for each dropdown you want to initialize
       setupDropdown("custom-grid-state-1");
-      setupDropdown("custom-grid-state-2");
+      // Add more if needed
+    });
+
+
+
+    // clothing-select option tab
+    document.addEventListener("DOMContentLoaded", function () {
+      function toggleContent(selectedValue) {
+        var contents = document.getElementsByClassName("clothing-tab");
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+        }
+
+        var selectedContent = document.getElementById(selectedValue);
+        if (selectedContent) {
+          selectedContent.style.display = "block";
+        }
+      }
+
+      function setupDropdown(dropdownId) {
+        var selectElement = document.getElementById(dropdownId);
+        var defaultSelectedValue =
+          selectElement.options[selectElement.selectedIndex].value;
+        toggleContent(defaultSelectedValue);
+
+        selectElement.addEventListener("change", function () {
+          var selectedValue =
+            selectElement.options[selectElement.selectedIndex].value;
+          toggleContent(selectedValue);
+        });
+      }
+
+      // Call setupDropdown for each dropdown you want to initialize
+      setupDropdown("clothing-select");
       // Add more if needed
     });
 

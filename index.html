@@ -1256,7 +1256,7 @@
                   <tbody class="text-[12px]">                  
                     <tr>
                       <td class="border border-gray-300 p-2">                        
-                         <a href="#" class="bg-[#FF9400] hover:bg-[#000] text-white rounded-full px-[4px] py-[4px] cursor-pointer"><i class="fa-solid fa-cart-plus"></i>
+                         <a href="#" onclick="changeContent('মাপ-যুক্ত-করার-জন্য-পোশাক-নির্বাচন-করুন')"   class="bg-[#FF9400] hover:bg-[#000] text-white rounded-full px-[4px] py-[4px] cursor-pointer"><i class="fa-solid fa-cart-plus"></i>
                       </td>              					
                       <td class="border border-gray-300 p-2"> 4</td>
                       <td class="border border-gray-300 p-2">	ফিরোজ ভাই</td>
@@ -3507,11 +3507,11 @@
               </div>
             </div>
             
-            <div id="section1Content" class="custom-tab-content mt-4">
+            <div id="section1Content" class="All-Account-custom-tab mt-4">
               <p>This is the content for Without Account (Dropdown 1).</p>
             </div>
             
-            <div id="section2Content" class="custom-tab-content hidden mt-4">
+            <div id="section2Content" class="All-Account-custom-tab  mt-4">
               <h3 class="font-bold mb-1">17 November 2023 Cash (<spa>22,581.62 Tk</spa>)</h3>
               <div class=" border-t-2 border-[#7e8b95] text-[#63707a] mb-2">
                 <h3 class="mt-1 text-[19px]">Account Start: <span>0.00</span> TK </h3>
@@ -3526,7 +3526,7 @@
               </div>
             </div>
             
-            <div id="section3Content" class="custom-tab-content hidden mt-4">
+            <div id="section3Content" class="All-Account-custom-tab mt-4">
               <h3 class="font-bold mb-1">17 November 2023 Cash (<spa>22,581.62 Tk</spa>)</h3>
               <div class=" border-t-2 border-[#7e8b95] text-[#63707a] mb-2">
                 <h3 class="mt-1 text-[19px]">Account Start: <span>0.00</span> TK </h3>
@@ -3541,7 +3541,7 @@
               </div>
             </div>
             
-            <div id="section4Content" class="custom-tab-content hidden mt-4">
+            <div id="section4Content" class="All-Account-custom-tab mt-4">
               <h3 class="font-bold mb-1">17 November 2023 Cash (<spa>22,581.62 Tk</spa>)</h3>
               <div class=" border-t-2 border-[#7e8b95] text-[#63707a] mb-2">
                 <h3 class="mt-1 text-[19px]">Account Start: <span>0.00</span> TK </h3>
@@ -3555,6 +3555,7 @@
                 <h3 class="mt-1 text-[19px]">Net Amount: 0.00 Tk</h3>
               </div>
             </div>
+
              </div>
              <div>
               <div class="flex flex-row items-center gap-2 mt-4">
@@ -4681,15 +4682,9 @@
           
           </div>
         </div>
+      </div>
 
-
-
-
-
-
-
-
-          </div>
+         
        </div>
              <!-- কাপড় ক্রয়  item chlider cntent page start  -->
        <div>
@@ -5316,12 +5311,51 @@
               </div>
             </div>
           </div>
+          </div>
        </div>
 
        <!-- পাইকার যুক্ত করুন  item chliren content start -->
        <div>
         <div id="পাইকার-যুক্ত-করুন" class="content-div" style="display: none;">
-          পাইকার যুক্ত করুন
+          <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">সাপ্লায়ার বা পাইকার যুক্ত করুন</h2>
+          <hr class="mt-3 mb-6" />
+          <form>
+            <div class="flex flex-col md:flex-row mt-">
+              <div  class="mr-2 w-none md:w-[200px]"> 
+                <label for=""> কোম্পানীর নাম </label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>          
+            <div class="flex flex-col md:flex-row mt-2">
+              <div  class="mr-2 w-none md:w-[200px]"> 
+                <label for="">সাপ্লায়ার নাম</label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <div  class="mr-2 w-none md:w-[200px]"> 
+                <label for="">মোবাইল </label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row mt-">
+              <div  class="mr-2 w-none md:w-[200px]"> 
+                <label for="">ঠিকানা</label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="md:ml-[209px]" >
+               <button class="tab-button">যুক্ত করুন</button>
+            </div>
+          </form>
         </div>
        </div>
        <!-- ড্যামেজ ===> রিপোর্ট item chliren content start -->
@@ -5792,6 +5826,319 @@
     </div>
   </div>
     <!-- Employee Details end  -->
+
+  <!-- মাপ যুক্ত করার জন্য পোশাক নির্বাচন করুন start  -->
+    <section>
+         <div id="মাপ-যুক্ত-করার-জন্য-পোশাক-নির্বাচন-করুন" class="content-div" style="display: none;">
+           <div>
+             <div class="bg-[#F8F9FA] md:w-[520px] rounded-md full md:h-[170px] h-full py-2 flex flex-col justify-center items-center">
+               <div class="w-[60px] h-[60px]">
+                <img class="w-full h-full" src="img/user.png" alt="Customer.png">
+               </div>
+               <h2 class="my-1">ফিরোজ ভাই</h2>
+               <div class="flex flex-row gap-2">
+                 <p class="bg-[#FFC107] rounded-md p-1 text-xs font-bold">অর্ডার নং: 13650</p>
+                 <p class="bg-[#28A745] text-white rounded-md p-1 text-xs font-bold">কাস্টমার নং: 4</p>
+                 <p class="bg-[#6C757D] text-white rounded-md p-1 text-xs font-bold">মোবাইল: 01611212220 </p>              
+               </div>
+               <h4 class="bg-[#17A2B8] text-white my-1 p-1 rounded-md text-xs font-bold">পাগলা বাঁজার</h4>
+             </div>
+             <div class="">
+              <div class="relative md:w-[350px] w-full mt-3">
+                <select
+                  id="clothing-select"
+                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                >
+                  <option selected>[ Select Clothing ]</option>
+                  <option value="সার্টContent">সার্ট</option>
+                  <option value="প্যান্টContent">প্যান্ট</option>
+                  <option value="একছাটা-পাঞ্জাবি">একছাটা পাঞ্জাবি</option>
+                  <option value="কল্লিদার-পাঞ্জাবি">কল্লিদার পাঞ্জাবি</option>
+                  <option value="কল্লিদার-বাংলা-জুব্বা">কল্লিদার বাংলা জুব্বা</option>
+                  <option value="একছাটা-এরাবিয়ান">একছাটা এরাবিয়ান</option>
+                  <option value="কল্লিদার-এরাবিয়ান">কল্লিদার এরাবিয়ান</option>
+                  <option value="ফতুয়া">ফতুয়া</option>
+                  <option value="কাতুয়া">কাতুয়া</option>
+                  <option value="ব্যাপারী-শার্ট">ব্যাপারী শার্ট</option>
+                  <option value="কাবলি">কাবলি</option>
+                  <option value="পায়জামা">পায়জামা</option>
+                  <option value="প্যান্ট-কাটিং-পায়জামা">প্যান্ট কাটিং পায়জামা</option>
+                  <option value="শার্ট">শার্ট</option>
+                  <option value="কোটি">কোটি</option>
+                  <option value="ব্লেজার">ব্লেজার</option>
+                  <!-- Add more options as needed -->
+                  <option value="কাজুয়াটি-সারি">কাজুয়াটি সারি</option>
+                  <option value="লেহেঙ্গা">লেহেঙ্গা</option>
+                  <option value="বিয়া-সারি">বিয়া সারি</option>
+                  <option value="শেরওয়ানি">শেরওয়ানি</option>
+                  <!-- Add more options as needed -->
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                >
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+        
+              <!-- Content sections -->
+              <div id="সার্টContent" class="clothing-tab mt-4">
+                 <div class="grid md:gird-cols-4 lg:grid-cols-6 grid-cols-1 gap-4">
+                  <!-- লম্বা -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="লম্বা" class="block text-sm font-medium leading-6 text-gray-900">লম্বা</label>
+                      <div class="mt-1">
+                        <input type="text" name="লম্বা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                   </div>
+
+                   <!-- বডি  and লুজ-->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="বডি" class="block text-sm font-medium leading-6 text-gray-900">বডি</label>
+                      <div class="mt-1">
+                        <input type="text" name="বডি" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+
+                   <!-- কোমর and লুজ  -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="কোমর" class="block text-sm font-medium leading-6 text-gray-900">কোমর</label>
+                      <div class="mt-1">
+                        <input type="text" name="কোমর" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+
+
+                   <!-- হিপ and লুজ  -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+
+
+                    <!-- কাধ -->
+                    <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                      <label for="কাধ" class="block text-sm font-medium leading-6 text-gray-900">কাধ</label>
+                        <div class="mt-1">
+                          <input type="text" name="কাধ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+
+                     <!-- হাতা and মোরা  -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="হাতা" class="block text-sm font-medium leading-6 text-gray-900">হাতা</label>
+                      <div class="mt-1">
+                        <input type="text" name="হাতা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="মোরা" class="block text-sm font-medium leading-6 text-gray-900">মোরা</label>
+                      <div class="mt-1">
+                        <input type="text" name="মোরা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+
+                   <!-- কপ -->
+                    <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="কপ" class="block text-sm font-medium leading-6 text-gray-900">কপ</label>
+                      <div class="mt-1">
+                        <input type="text" name="কপ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                   <!-- মুহুরী -->
+                    <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="মুহুরী" class="block text-sm font-medium leading-6 text-gray-900">মুহুরী</label>
+                      <div class="mt-1">
+                        <input type="text" name="মুহুরী" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                     <!-- কনুই and লুজ  -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="কনুই" class="block text-sm font-medium leading-6 text-gray-900">কনুই</label>
+                      <div class="mt-1">
+                        <input type="text" name="কনুই" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+                   
+
+                     <!-- মাসল and লুজ  -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <div>
+                      <label for="কনুই" class="block text-sm font-medium leading-6 text-gray-900">মাসল</label>
+                      <div class="mt-1">
+                        <input type="text" name="মাসল" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="লুজ" class="block text-sm font-medium leading-6 text-gray-900">লুজ</label>
+                      <div class="mt-1">
+                        <input type="text" name="লুজ" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                   </div>
+
+
+                   <!-- গলা -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="মুহুরী" class="block text-sm font-medium leading-6 text-gray-900">গলা</label>
+                      <div class="mt-1">
+                        <input type="text" name="গলা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                   <!-- বডি মোড়া -->
+                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="বডি মোড়া" class="block text-sm font-medium leading-6 text-gray-900">বডি মোড়া</label>
+                      <div class="mt-1">
+                        <input type="text" name="বডি মোড়া" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                   <!-- তিরা -->
+                   <div class="md:w-[155px] w-full h-full bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="তিরা" class="block text-sm font-medium leading-6 text-gray-900">তিরা</label>
+                      <div class="mt-1">
+                        <input type="text" name="তিরা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+
+                 </div>
+              </div>
+        
+              <div id="প্যান্টContent" class="clothing-tab mt-4">
+                <!-- Content for প্যান্ট -->
+                <p>Content for প্যান্ট goes here.</p>
+              </div>
+        
+              <div id="একছাটা-পাঞ্জাবি" class="clothing-tab mt-4">
+                <!-- Content for একছাটা পাঞ্জাবি -->
+                <p>Content for একছাটা পাঞ্জাবি goes here.</p>
+              </div>
+        
+              <div id="কল্লিদার-পাঞ্জাবি" class="clothing-tab mt-4">
+                <!-- Content for কল্লিদার পাঞ্জাবি -->
+                <p>Content for কল্লিদার পাঞ্জাবি goes here.</p>
+              </div>
+        
+              <div id="কল্লিদার-বাংলা-জুব্বা" class="clothing-tab mt-4">
+                <!-- Content for কল্লিদার বাংলা জুব্বা -->
+                <p>Content for কল্লিদার বাংলা জুব্বা goes here.</p>
+              </div>
+        
+              <div id="একছাটা-এরাবিয়ান" class="clothing-tab mt-4">
+                <!-- Content for একছাটা এরাবিয়ান -->
+                <p>Content for একছাটা এরাবিয়ান goes here.</p>
+              </div>
+        
+              <div id="কল্লিদার-এরাবিয়ান" class="clothing-tab mt-4">
+                <!-- Content for কল্লিদার এরাবিয়ান -->
+                <p>Content for কল্লিদার এরাবিয়ান goes here.</p>
+              </div>
+        
+              <div id="ফতুয়া" class="clothing-tab mt-4">
+                <!-- Content for ফতুয়া -->
+                <p>Content for ফতুয়া goes here.</p>
+              </div>
+        
+              <div id="কাতুয়া" class="clothing-tab mt-4">
+                <!-- Content for কাতুয়া -->
+                <p>Content for কাতুয়া goes here.</p>
+              </div>
+        
+              <div id="ব্যাপারী-শার্ট" class="clothing-tab mt-4">
+                <!-- Content for ব্যাএকাউন্ট লগপারী শার্ট -->
+                <p>Content for ব্যাপারী শার্ট goes here.</p>
+              </div>
+        
+              <div id="কাবলি" class="clothing-tab mt-4">
+                <!-- Content for কাবলি -->
+                <p>Content for কাবলি goes here.</p>
+              </div>
+        
+              <div id="পায়জামা" class="clothing-tab mt-4">
+                <!-- Content for পায়জামা -->
+                <p>Content for পায়জামা goes here.</p>
+              </div>
+        
+              <div id="প্যান্ট-কাটিং-পায়জামা" class="clothing-tab mt-4">
+                <!-- Content for প্যান্ট কাটিং পায়জামা -->
+                <p>Content for প্যান্ট কাটিং পায়জামা goes here.</p>
+              </div>
+        
+              <div id="শার্ট" class="clothing-tab mt-4">
+                <!-- Content for শার্ট -->
+                <p>Content for শার্ট goes here.</p>
+              </div>
+        
+              <div id="কোটি" class="clothing-tab mt-4">
+                <!-- Content for কোটি -->
+                <p>Content for কোটি goes here.</p>
+              </div>
+        
+              <div id="ব্লেজার" class="clothing-tab hidden mt-4">
+                <!-- Content for ব্লেজার -->
+                <p>Content for ব্লেজার goes here.</p>
+              </div>
+          
+          </div>
+
+
+           </div>
+
+        </div>
+    </section>
+  <!-- মাপ যুক্ত করার জন্য পোশাক নির্বাচন করুন end  -->
  
   <div id="print1" class="content-div" style="display: none;">
    Print 1

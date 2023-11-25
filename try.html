@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Title</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <div class="relative md:w-[350px] w-full mt-3">
+        <select
+          id="clothing-select"
+          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        >
+          <option selected>[ Select Clothing ]</option>
+          <option value="সার্টContent">সার্ট</option>
+          <option value="প্যান্টContent">প্যান্ট</option>
+          <option value="একছাটা-পাঞ্জাবি">একছাটা পাঞ্জাবি</option>
+          <option value="কল্লিদার-পাঞ্জাবি">কল্লিদার পাঞ্জাবি</option>
+          <option value="কল্লিদার-বাংলা-জুব্বা">কল্লিদার বাংলা জুব্বা</option>
+          <option value="একছাটা-এরাবিয়ান">একছাটা এরাবিয়ান</option>
+          <option value="কল্লিদার-এরাবিয়ান">কল্লিদার এরাবিয়ান</option>
+          <option value="ফতুয়া">ফতুয়া</option>
+          <option value="কাতুয়া">কাতুয়া</option>
+          <option value="ব্যাপারী-শার্ট">ব্যাপারী শার্ট</option>
+          <option value="কাবলি">কাবলি</option>
+          <option value="পায়জামা">পায়জামা</option>
+          <option value="প্যান্ট-কাটিং-পায়জামা">প্যান্ট কাটিং পায়জামা</option>
+          <option value="শার্ট">শার্ট</option>
+          <option value="কোটি">কোটি</option>
+          <option value="ব্লেজার">ব্লেজার</option>
+          <!-- Add more options as needed -->
+          <option value="কাজুয়াটি-সারি">কাজুয়াটি সারি</option>
+          <option value="লেহেঙ্গা">লেহেঙ্গা</option>
+          <option value="বিয়া-সারি">বিয়া সারি</option>
+          <option value="শেরওয়ানি">শেরওয়ানি</option>
+          <!-- Add more options as needed -->
+        </select>
+        <div
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+        >
+          <svg
+            class="fill-current h-4 w-4"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Content sections -->
+      <div id="সার্টContent" class="clothing-tab hidden mt-4">
+        <!-- Content for সার্ট -->
+        <p>Content for সার্ট goes here.</p>
+      </div>
+
+      <div id="প্যান্টContent" class="clothing-tab hidden mt-4">
+        <!-- Content for প্যান্ট -->
+        <p>Content for প্যান্ট goes here.</p>
+      </div>
+
+      <div id="একছাটা-পাঞ্জাবি" class="clothing-tab hidden mt-4">
+        <!-- Content for একছাটা পাঞ্জাবি -->
+        <p>Content for একছাটা পাঞ্জাবি goes here.</p>
+      </div>
+
+      <div id="কল্লিদার-পাঞ্জাবি" class="clothing-tab hidden mt-4">
+        <!-- Content for কল্লিদার পাঞ্জাবি -->
+        <p>Content for কল্লিদার পাঞ্জাবি goes here.</p>
+      </div>
+
+      <div id="কল্লিদার-বাংলা-জুব্বা" class="clothing-tab hidden mt-4">
+        <!-- Content for কল্লিদার বাংলা জুব্বা -->
+        <p>Content for কল্লিদার বাংলা জুব্বা goes here.</p>
+      </div>
+
+      <div id="একছাটা-এরাবিয়ান" class="clothing-tab hidden mt-4">
+        <!-- Content for একছাটা এরাবিয়ান -->
+        <p>Content for একছাটা এরাবিয়ান goes here.</p>
+      </div>
+
+      <div id="কল্লিদার-এরাবিয়ান" class="clothing-tab hidden mt-4">
+        <!-- Content for কল্লিদার এরাবিয়ান -->
+        <p>Content for কল্লিদার এরাবিয়ান goes here.</p>
+      </div>
+
+      <div id="ফতুয়া" class="clothing-tab hidden mt-4">
+        <!-- Content for ফতুয়া -->
+        <p>Content for ফতুয়া goes here.</p>
+      </div>
+
+      <div id="কাতুয়া" class="clothing-tab hidden mt-4">
+        <!-- Content for কাতুয়া -->
+        <p>Content for কাতুয়া goes here.</p>
+      </div>
+
+      <div id="ব্যাপারী-শার্ট" class="clothing-tab hidden mt-4">
+        <!-- Content for ব্যাপারী শার্ট -->
+        <p>Content for ব্যাপারী শার্ট goes here.</p>
+      </div>
+
+      <div id="কাবলি" class="clothing-tab hidden mt-4">
+        <!-- Content for কাবলি -->
+        <p>Content for কাবলি goes here.</p>
+      </div>
+
+      <div id="পায়জামা" class="clothing-tab hidden mt-4">
+        <!-- Content for পায়জামা -->
+        <p>Content for পায়জামা goes here.</p>
+      </div>
+
+      <div id="প্যান্ট-কাটিং-পায়জামা" class="clothing-tab hidden mt-4">
+        <!-- Content for প্যান্ট কাটিং পায়জামা -->
+        <p>Content for প্যান্ট কাটিং পায়জামা goes here.</p>
+      </div>
+
+      <div id="শার্ট" class="clothing-tab hidden mt-4">
+        <!-- Content for শার্ট -->
+        <p>Content for শার্ট goes here.</p>
+      </div>
+
+      <div id="কোটি" class="clothing-tab hidden mt-4">
+        <!-- Content for কোটি -->
+        <p>Content for কোটি goes here.</p>
+      </div>
+
+      <div id="ব্লেজার" class="clothing-tab hidden mt-4">
+        <!-- Content for ব্লেজার -->
+        <p>Content for ব্লেজার goes here.</p>
+      </div>
+
+      <!-- Additional content sections -->
+      <div id="কাজুয়াটি-সারি" class="clothing-tab hidden mt-4">
+        <!-- Content for কাজুয়াটি সারি -->
+        <p>Content for কাজুয়াটি সারি goes here.</p>
+      </div>
+
+      <div id="লেহেঙ্গা" class="clothing-tab hidden mt-4">
+        <!-- Content for লেহেঙ্গা -->
+        <p>Content for লেহেঙ্গা goes here.</p>
+      </div>
+
+      <div id="বিয়া-সারি" class="clothing-tab hidden mt-4">
+        <!-- Content for বিয়া সারি -->
+        <p>Content for বিয়া সারি goes here.</p>
+      </div>
+
+      <div id="শেরওয়ানি" class="clothing-tab hidden mt-4">
+        <!-- Content for শেরওয়ানি -->
+        <p>Content for শেরওয়ানি goes here.</p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function toggleContent(selectedValue) {
+          var contents = document.getElementsByClassName("clothing-tab");
+          for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = "none";
+          }
+
+          var selectedContent = document.getElementById(selectedValue);
+          if (selectedContent) {
+            selectedContent.style.display = "block";
+          }
+        }
+
+        function setupDropdown(dropdownId) {
+          var selectElement = document.getElementById(dropdownId);
+          var defaultSelectedValue =
+            selectElement.options[selectElement.selectedIndex].value;
+          toggleContent(defaultSelectedValue);
+
+          selectElement.addEventListener("change", function () {
+            var selectedValue =
+              selectElement.options[selectElement.selectedIndex].value;
+            toggleContent(selectedValue);
+          });
+        }
+
+        // Call setupDropdown for each dropdown you want to initialize
+        setupDropdown("clothing-select");
+        // Add more if needed
+      });
+    </script>
+  </body>
+</html>
