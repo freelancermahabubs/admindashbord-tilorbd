@@ -890,7 +890,7 @@
             <h2 class="text-base font-semibold text-[#7367f0]">সাব-অ্যাডমিন এর প্রবেশাধিকার নিয়ন্ত্রণ করুন</h2>
         <hr class="mt-3 mb-3" />
         <div>
-          <div class="relative w-[300px]">
+          <div class="relative w-[300px] mb-2">
             <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
               <option selected>[ সাব-অ্যাডমিন নির্বাচন করুন ]</option>
               <option>Name</option>
@@ -906,89 +906,130 @@
       <!-- আরো পেজ যোগ করুন অথবা সাব-অ্যাডমিন থেকে এক্সেস পেজ মুছে ফেলুন  -->
       <div>
          <!-- Add your data rows here start -->
-         <table class="min-w-full border border-gray-300 text-center">
-          <thead class="bg-[#7367F0] text-white text-[14px]">
+         <table class="min-w-full border border-gray-300 pl-2">
+          <thead class="bg-[#7367F0] text-white text-[14px] text-left pl-1">
             <tr>
-              <th scope="col">ক্যাটাগরি লিংক</th>
-              <th scope="col">সাব ক্যাটাগরি লিংক</th>
+              <th class="border border-gray-300 p-2">ক্যাটাগরি লিংক</th>
+              <th class="p-2">সাব ক্যাটাগরি লিংক</th>
               <th class="border border-gray-300 p-2">
-                <input
-                type="checkbox"
-                name=""
-                class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-              /><label
-                class="">পৃষ্ঠার শিরোনাম (এক্সেস এর জন্য পেজ নির্বাচন করুন)</label
-              ></th>
-                        
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+              <label class="">পৃষ্ঠার শিরোনাম (এক্সেস এর জন্য পেজ নির্বাচন করুন)</label></th>
             </tr>
           </thead>
           <!-- Data Rows -->
-          <tbody class="text-[14px]">
+          <tbody class="text-[14px] text-left">
             <tr>
               <td rowspan="6" class="border border-gray-300 p-2">বেসিক সেটিংস</td>
               <td rowspan="6" class="border border-gray-300 p-2"></td>
               <td class="border border-gray-300 p-2">
-                <input
-                  type="checkbox"
-                  name=""
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">প্রতিস্ঠানের বিবরণ</label
-                >
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">প্রতিস্ঠানের বিবরণ</label>
               </td>
             </tr>
             <tr class="alt">
               <td class="border border-gray-300 p-2">
-                <input
-                  type="checkbox"
-                  name=""
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">পোষাক ও মাপ যুক্ত করুন</label
-                >
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>পোষাক ও মাপ যুক্ত করুন</label>
               </td>
             </tr>
             <tr>
               <td class="border border-gray-300 p-2">
-                <input
-                  type="checkbox"
-                  name=""
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">সাব-অ্যাডমিন তৈরি করুন</label
-                >
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>সাব-অ্যাডমিন তৈরি করুন</label>
               </td>
             </tr>
             <tr class="alt">
               <td class="border border-gray-300 p-2">
-                <input
-                  type="checkbox"
-                  name=""
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">সাব-অ্যাডমিন প্রবেশাধিকার নিয়ন্ত্রণ</label
-                >
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>সাব-অ্যাডমিন প্রবেশাধিকার নিয়ন্ত্রণ</label >
               </td>
             </tr>
             <tr>
               <td class="border border-gray-300 p-2">
-                <!-- Removed the name attribute from the checkbox -->
-                <input
-                  type="checkbox"
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">অ্যাকাউন্ট</label>
+                <input type="checkbox" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>অ্যাকাউন্ট</label>
               </td>
             </tr>
             <tr class="alt">
               <td class="border border-gray-300 p-2">
-                <input
-                  type="checkbox"
-                  name="ctl00$body$LinkGridView$ctl07$LinkCheckBox"
-                  class="form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
-                /><label
-                  class="text-[#7367F0]">মাপ প্রিন্ট সেটিং</label
-                >
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>মাপ প্রিন্ট সেটিং</label>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="6" class="border border-gray-300 p-2">অর্ডার</td>
+              <td rowspan="6" class="border border-gray-300 p-2"></td>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">ডেলিভারি তারিখ পরিবর্তন করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>অর্ডার দিন</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>অর্ডার লিস্ট</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>অর্ডারের কাজ সম্পূন্ন করুন</label >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>অর্ডার স্থায়ীভাবে ডিলেট করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>মাপ প্রিন্ট সেটিং</label>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="6" class="border border-gray-300 p-2">ডেলিভারী</td>
+              <td rowspan="6" class="border border-gray-300 p-2"></td>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">ডেলিভারী দিন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>ডেলিভারী কৃত পোশাক</label>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="6" class="border border-gray-300 p-2">কাস্টমার</td>
+              <td rowspan="6" class="border border-gray-300 p-2"></td>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">কাস্টমার যুক্ত করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>কাস্টমার লিস্ট</label>
               </td>
             </tr>
           </tbody>
@@ -1164,6 +1205,7 @@
 
       <div  class="mt-10 "> <a onclick="changeContent('অর্ডার-দিন', this)" href="#অর্ডারলিস্ট" class="cursor-pointer font-bold text-[18px] hover:underline text-[#005087]">নতুন অর্ডার দিন</a></div>
       </div>
+
       <!-- বেসিক সেটিংস for item => মাপ প্রিন্ট সেটিং end -->
     </section>
     <!-- বেসিক সেটিংস End   -->
@@ -5372,7 +5414,7 @@
   
 
     <!-- এসএমএস start  -->
-    <section>
+     <section>
       <div id="এসএমএস-পাঠান" class="content-div" style="display: none">
         <!-- এসএমএস-পাঠান -->
       </div>
