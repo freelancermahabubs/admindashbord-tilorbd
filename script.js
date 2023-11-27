@@ -281,14 +281,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const customerform = document.getElementById('customerForm');
-const customersubmitBtn = document.getElementById('submitBtn');
+const customerform = document.getElementById("customerForm");
+const customersubmitBtn = document.getElementById("submitBtn");
 
-customersubmitBtn.addEventListener('click', (event) => {
+customersubmitBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const mobileNumber = customerform.querySelector('input[name="mobileNumber"]')?.value;
-  const customerName = customerform.querySelector('input[name="customerName"]')?.value;
+  const mobileNumber = customerform.querySelector(
+    'input[name="mobileNumber"]'
+  )?.value;
+  const customerName = customerform.querySelector(
+    'input[name="customerName"]'
+  )?.value;
   const address = customerform.querySelector('input[name="address"]')?.value;
   const gender = customerform.querySelector('select[name="gender"]')?.value;
 
@@ -296,55 +300,51 @@ customersubmitBtn.addEventListener('click', (event) => {
     mobileNumber: mobileNumber,
     customerName: customerName,
     address: address,
-    gender: gender
+    gender: gender,
   };
   const jsonData = JSON.stringify(data);
 
-  fetch('http://localhost:5001/api/v1/customers', {
-    method: 'POST',
+  fetch("http://localhost:5001/api/v1/customers", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
-    body: jsonData
+    body: jsonData,
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       if (data.success === true) {
         const successToast = Toastify({
-          text: 'Customer added successfully!',
+          text: "Customer added successfully!",
           duration: 3000,
-          gravity: 'top',
-          position: 'right',
+          gravity: "top",
+          position: "right",
           style: {
-            background: '#00b09b',
-            fontSize: '16px',
-            padding: '10px 15px'
+            background: "#00b09b",
+            fontSize: "16px",
+            padding: "10px 15px",
           },
         });
 
-
         successToast.showToast();
-      }
-      else {
+      } else {
         const errorToast = Toastify({
-          text: 'Error adding customer.',
+          text: "Error adding customer.",
           duration: 3000,
-          gravity: 'top',
-          position: 'right',
+          gravity: "top",
+          position: "right",
           style: {
-            background: '#f56565', 
-            fontSize: '16px',
-            padding: '10px 15px'
+            background: "#f56565",
+            fontSize: "16px",
+            padding: "10px 15px",
           },
         });
         errorToast.showToast();
       }
       console.log(data);
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error, "after cal api catch");
-      console.error('Error:', error);
+      console.error("Error:", error);
     });
-
-
 });
