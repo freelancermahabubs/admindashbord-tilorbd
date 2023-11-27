@@ -1,27 +1,26 @@
-
-
 // Left side bar ul li toggle and subMenu
 
 function toggleSubMenu(submenuId, iconId) {
-    const submenu = document.getElementById(submenuId + '-submenu');
-    const angleRightIcon = document.getElementById(iconId);
-  
-    if (submenu) {
-      submenu.classList.toggle('hidden');
-    }
-  
-    if (angleRightIcon) {
-      angleRightIcon.classList.toggle('rotate-90');
-    }
+  const submenu = document.getElementById(submenuId + "-submenu");
+  const angleRightIcon = document.getElementById(iconId);
+
+  if (submenu) {
+    submenu.classList.toggle("hidden");
   }
-    
-// Right Side Bar Create the page start 
+
+  if (angleRightIcon) {
+    angleRightIcon.classList.toggle("rotate-90");
+  }
+}
+
+// Right Side Bar Create the page start
 function changeContent(content, clickedLink) {
   var rightSidebarContent = document.getElementById("right-sidebar-content");
   var contentDiv = document.getElementById(content);
 
   if (rightSidebarContent && contentDiv) {
-    var allContentDivs = rightSidebarContent.getElementsByClassName("content-div");
+    var allContentDivs =
+      rightSidebarContent.getElementsByClassName("content-div");
     for (var i = 0; i < allContentDivs.length; i++) {
       allContentDivs[i].style.display = "none";
     }
@@ -30,7 +29,7 @@ function changeContent(content, clickedLink) {
 
     // Remove the 'active-link' class from all links
     var allLinks = document.querySelectorAll(".submenu-link");
-    allLinks.forEach(function(link) {
+    allLinks.forEach(function (link) {
       link.classList.remove("active-link");
     });
 
@@ -38,106 +37,146 @@ function changeContent(content, clickedLink) {
     if (clickedLink) {
       clickedLink.classList.add("active-link");
     }
-  }   
+  }
 }
 
-  
+var firstClicked = false; // Flag to track if a link has been clicked
 
-
-  var firstClicked = false; // Flag to track if a link has been clicked
-
-  function handleFirstClick(content) {
-    if (!firstClicked) {
-      changeContent(content);
-      firstClicked = true;
-    }
+function handleFirstClick(content) {
+  if (!firstClicked) {
+    changeContent(content);
+    firstClicked = true;
   }
+}
 
-   // Right Side Bar Creact the page end 
+// Right Side Bar Creact the page end
 
-  document.addEventListener('DOMContentLoaded', function() {
-    function initializeTabs(containerId) {
-      const container = document.getElementById(containerId);
-      const tabs = container.querySelectorAll('.tab-button');
-      const tabContents = container.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", function () {
+  function initializeTabs(containerId) {
+    const container = document.getElementById(containerId);
+    const tabs = container.querySelectorAll(".tab-button");
+    const tabContents = container.querySelectorAll(".tab-content");
 
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          tabs.forEach(t => {
-            t.classList.remove('active');
-          });
-
-          tab.classList.add('active');
-
-          tabContents.forEach(content => content.classList.add('hidden'));
-          container.querySelector(`#content${tab.id.slice(-1)}`).classList.remove('hidden');
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => {
+          t.classList.remove("active");
         });
+
+        tab.classList.add("active");
+
+        tabContents.forEach((content) => content.classList.add("hidden"));
+        container
+          .querySelector(`#content${tab.id.slice(-1)}`)
+          .classList.remove("hidden");
       });
-    }
-// Initialize the tabs for another set of tabs
-   initializeTabs('প্রোফাইলTab');  
-   initializeTabs('অর্ডার-দিনTab'); 
-   initializeTabs('অর্ডারলিস্টTab'); 
-   initializeTabs('অর্ডারেরকাজTab'); 
-   initializeTabs('ডেলিভারি-তারিখ-পরিবর্তন-Tab'); 
-   initializeTabs('ডেলিভারী-কৃত-পোশাক-Tab'); 
-   initializeTabs('আয়-ব্যয়ের-রিপোর্ট-Tab'); 
-   initializeTabs('একাউন্ট-লগ-রিপোর্ট-Tab'); 
-   initializeTabs('অর্ডার-ডেলিভারি-রিপোর্ট-Tab'); 
-   initializeTabs('জমা-বাকি-খরচ-দেখুন-রিপোর্ট');
-   initializeTabs('কাপড়-ক্রয়-করুন-Tab');
+    });
+  }
+  // Initialize the tabs for another set of tabs
+  initializeTabs("প্রোফাইলTab");
+  initializeTabs("অর্ডার-দিনTab");
+  initializeTabs("অর্ডারলিস্টTab");
+  initializeTabs("অর্ডারেরকাজTab");
+  initializeTabs("ডেলিভারি-তারিখ-পরিবর্তন-Tab");
+  initializeTabs("ডেলিভারী-কৃত-পোশাক-Tab");
+  initializeTabs("আয়-ব্যয়ের-রিপোর্ট-Tab");
+  initializeTabs("একাউন্ট-লগ-রিপোর্ট-Tab");
+  initializeTabs("অর্ডার-ডেলিভারি-রিপোর্ট-Tab");
+  initializeTabs("জমা-বাকি-খরচ-দেখুন-রিপোর্ট");
+  initializeTabs("কাপড়-ক্রয়-করুন-Tab");
 });
 
+// Popup box start
 
+function createPopup(popupTriggerId, popupId, closePopupId) {
+  const popupTrigger = document.getElementById(popupTriggerId);
+  const popup = document.getElementById(popupId);
+  const closePopup = document.getElementById(closePopupId);
 
+  // Event listener for opening the popup
+  popupTrigger.addEventListener("click", function () {
+    popup.style.display = "flex"; // Show the popup
+  });
 
+  // Event listener for closing the popup
+  closePopup.addEventListener("click", function () {
+    popup.style.display = "none"; // Hide the popup
+  });
+}
 
-
-
-  // Popup box start 
-
-   function createPopup(popupTriggerId, popupId, closePopupId) {
-    const popupTrigger = document.getElementById(popupTriggerId);
-    const popup = document.getElementById(popupId);
-    const closePopup = document.getElementById(closePopupId);
-
-    // Event listener for opening the popup
-    popupTrigger.addEventListener('click', function () {
-      popup.style.display = 'flex'; // Show the popup
-    });
-
-    // Event listener for closing the popup
-    closePopup.addEventListener('click', function () {
-      popup.style.display = 'none'; // Hide the popup
-    });
-  }
-
-  // Initialize popups
-  createPopup('নতুন-খরচের-ধরণ-POPUP-1', 'নতুন-খরচের-ধরণ-POPUP-2', 'নতুন-খরচের-ধরণ-POPUP-close');
-  createPopup('খরচ-যুক্ত-করুন-popup1', 'খরচ-যুক্ত-করুন-popup2', 'খরচ-যুক্ত-করুন-close');
-  createPopup('নতুন-আয়ের-ধরণ-popup1', 'নতুন-আয়ের-ধরণ-popup2', 'নতুন-আয়ের-ধরণ-close');
-  createPopup('আয়-যুক্ত-করুন-popup1', 'আয়-যুক্ত-করুন-popup2', 'আয়-যুক্ত-করুন-close');
-  createPopup('কর্মচারী-যুক্ত-করুন-popup1', 'কর্মচারী-যুক্ত-করুন-popup2', 'কর্মচারী-যুক্ত-করুন-close');
-  createPopup('পারিশ্রমিক-যুক্ত-করুন-popup1', 'পারিশ্রমিক-যুক্ত-করুন-popup2', 'পারিশ্রমিক-যুক্ত-করুন-close');
-  createPopup('খরচ-ঋণ-প্রদান-popup1', 'খরচ-ঋণ-প্রদান-popup2', 'খরচ-ঋণ-প্রদান-close');
-  createPopup('ঋণ-ফেরত-popup1', 'ঋণ-ফেরত-popup2', 'ঋণ-ফেরত-close');
-  createPopup('Add-New-Group-popup1', 'Add-New-Group-popup2', 'Add-New-Group-close');
-  createPopup('Add-New-Mobile-Number-popup1', 'Add-New-Mobile-Number-popup2', 'Add-New-Mobile-Number-close');
-  createPopup('Customer-popup1', 'Customer-popup2', 'Customer-close');
-  createPopup('নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1', 'নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2', 'নতুন-ফেব্রিক্স-যুক্ত-করুন-close');
-
-
-
+// Initialize popups
+createPopup(
+  "নতুন-খরচের-ধরণ-POPUP-1",
+  "নতুন-খরচের-ধরণ-POPUP-2",
+  "নতুন-খরচের-ধরণ-POPUP-close"
+);
+createPopup(
+  "খরচ-যুক্ত-করুন-popup1",
+  "খরচ-যুক্ত-করুন-popup2",
+  "খরচ-যুক্ত-করুন-close"
+);
+createPopup(
+  "নতুন-আয়ের-ধরণ-popup1",
+  "নতুন-আয়ের-ধরণ-popup2",
+  "নতুন-আয়ের-ধরণ-close"
+);
+createPopup(
+  "আয়-যুক্ত-করুন-popup1",
+  "আয়-যুক্ত-করুন-popup2",
+  "আয়-যুক্ত-করুন-close"
+);
+createPopup(
+  "কর্মচারী-যুক্ত-করুন-popup1",
+  "কর্মচারী-যুক্ত-করুন-popup2",
+  "কর্মচারী-যুক্ত-করুন-close"
+);
+createPopup(
+  "পারিশ্রমিক-যুক্ত-করুন-popup1",
+  "পারিশ্রমিক-যুক্ত-করুন-popup2",
+  "পারিশ্রমিক-যুক্ত-করুন-close"
+);
+createPopup(
+  "খরচ-ঋণ-প্রদান-popup1",
+  "খরচ-ঋণ-প্রদান-popup2",
+  "খরচ-ঋণ-প্রদান-close"
+);
+createPopup("ঋণ-ফেরত-popup1", "ঋণ-ফেরত-popup2", "ঋণ-ফেরত-close");
+createPopup(
+  "Add-New-Group-popup1",
+  "Add-New-Group-popup2",
+  "Add-New-Group-close"
+);
+createPopup(
+  "Add-New-Mobile-Number-popup1",
+  "Add-New-Mobile-Number-popup2",
+  "Add-New-Mobile-Number-close"
+);
+createPopup("Customer-popup1", "Customer-popup2", "Customer-close");
+createPopup(
+  "নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1",
+  "নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2",
+  "নতুন-ফেব্রিক্স-যুক্ত-করুন-close"
+);
 
 // Function to initialize the datepicker on a given input element
 function initializeDatepicker(inputId) {
   const input = document.getElementById(inputId);
-  
+
   // Get the current date in the format "DD MMM, YYYY"
   function getCurrentDate() {
     const monthNames = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ];
 
     const now = new Date();
@@ -153,99 +192,128 @@ function initializeDatepicker(inputId) {
 }
 
 // Call the function for each datepicker input
-initializeDatepicker('datePicker1');
-initializeDatepicker('datePicker2');
-initializeDatepicker('একাউন্ট-লগdatePicker1');
-initializeDatepicker('একাউন্ট-লগdatePicker2');
-initializeDatepicker('অর্ডার-ডেলিভারিdatePicker1');
-initializeDatepicker('অর্ডার-ডেলিভারিdatePicker2');
-initializeDatepicker('লেনদেন-লগdatePicker1');
-initializeDatepicker('লেনদেন-লগdatePicker2');
-initializeDatepicker('ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker1');
-initializeDatepicker('ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker2');
-initializeDatepicker('ক্রয়ের-বিবরণdatePicker1');
-initializeDatepicker('ক্রয়ের-বিবরণdatePicker2');
-  
+initializeDatepicker("datePicker1");
+initializeDatepicker("datePicker2");
+initializeDatepicker("একাউন্ট-লগdatePicker1");
+initializeDatepicker("একাউন্ট-লগdatePicker2");
+initializeDatepicker("অর্ডার-ডেলিভারিdatePicker1");
+initializeDatepicker("অর্ডার-ডেলিভারিdatePicker2");
+initializeDatepicker("লেনদেন-লগdatePicker1");
+initializeDatepicker("লেনদেন-লগdatePicker2");
+initializeDatepicker("ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker1");
+initializeDatepicker("ফেব্রিক্স-ক্রয়ের-বিবরণdatePicker2");
+initializeDatepicker("ক্রয়ের-বিবরণdatePicker1");
+initializeDatepicker("ক্রয়ের-বিবরণdatePicker2");
 
+// selected Value option start
+document.addEventListener("DOMContentLoaded", function () {
+  function toggleContent(selectedValue) {
+    var contents = document.getElementsByClassName("All-Account-custom-tab");
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = "none";
+    }
 
+    var selectedContent = document.getElementById(selectedValue + "Content");
+    if (selectedContent) {
+      selectedContent.style.display = "block";
+    }
+  }
 
-    // selected Value option start
-    document.addEventListener("DOMContentLoaded", function() {
-      function toggleContent(selectedValue) {
-        var contents = document.getElementsByClassName("All-Account-custom-tab");
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].style.display = "none";
-        }
-  
-        var selectedContent = document.getElementById(selectedValue + "Content");
-        if (selectedContent) {
-          selectedContent.style.display = "block";
-        }
-      }
-  
-      function setupDropdown(dropdownId) {
-        var selectElement = document.getElementById(dropdownId);
-        var defaultSelectedValue = selectElement.options[selectElement.selectedIndex].value;
-        toggleContent(defaultSelectedValue);
-  
-        selectElement.addEventListener("change", function() {
-          var selectedValue = selectElement.options[selectElement.selectedIndex].value;
-          toggleContent(selectedValue);
-        });
-      }
-  
-      // Call setupDropdown for each dropdown you want to initialize
-      setupDropdown("custom-grid-state-1");
-      // Add more if needed
+  function setupDropdown(dropdownId) {
+    var selectElement = document.getElementById(dropdownId);
+    var defaultSelectedValue =
+      selectElement.options[selectElement.selectedIndex].value;
+    toggleContent(defaultSelectedValue);
+
+    selectElement.addEventListener("change", function () {
+      var selectedValue =
+        selectElement.options[selectElement.selectedIndex].value;
+      toggleContent(selectedValue);
     });
+  }
 
+  // Call setupDropdown for each dropdown you want to initialize
+  setupDropdown("custom-grid-state-1");
+  // Add more if needed
+});
 
+// clothing-select option tab
+document.addEventListener("DOMContentLoaded", function () {
+  function toggleContent(selectedValue) {
+    var contents = document.getElementsByClassName("clothing-tab");
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = "none";
+    }
 
-    // clothing-select option tab
-    document.addEventListener("DOMContentLoaded", function () {
-      function toggleContent(selectedValue) {
-        var contents = document.getElementsByClassName("clothing-tab");
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].style.display = "none";
-        }
+    var selectedContent = document.getElementById(selectedValue);
+    if (selectedContent) {
+      selectedContent.style.display = "block";
+    }
+  }
 
-        var selectedContent = document.getElementById(selectedValue);
-        if (selectedContent) {
-          selectedContent.style.display = "block";
-        }
-      }
+  function setupDropdown(dropdownId) {
+    var selectElement = document.getElementById(dropdownId);
+    var defaultSelectedValue =
+      selectElement.options[selectElement.selectedIndex].value;
+    toggleContent(defaultSelectedValue);
 
-      function setupDropdown(dropdownId) {
-        var selectElement = document.getElementById(dropdownId);
-        var defaultSelectedValue =
-          selectElement.options[selectElement.selectedIndex].value;
-        toggleContent(defaultSelectedValue);
-
-        selectElement.addEventListener("change", function () {
-          var selectedValue =
-            selectElement.options[selectElement.selectedIndex].value;
-          toggleContent(selectedValue);
-        });
-      }
-
-      // Call setupDropdown for each dropdown you want to initialize
-      setupDropdown("clothing-select");
-      // Add more if needed
+    selectElement.addEventListener("change", function () {
+      var selectedValue =
+        selectElement.options[selectElement.selectedIndex].value;
+      toggleContent(selectedValue);
     });
+  }
+
+  // Call setupDropdown for each dropdown you want to initialize
+  setupDropdown("clothing-select");
+  // Add more if needed
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get references to the checkbox and input
+  const checkbox = document.getElementById("toggle-checkbox");
+  const input = document.getElementById("hidden-input");
+
+  // Add event listener to the checkbox
+  checkbox.addEventListener("change", function () {
+    // Toggle the visibility of the input based on the checkbox state
+    input.classList.toggle("hidden", !checkbox.checked);
+  });
+});
 
 
+$(document).ready(function() {
+  $("#submitBtn").on("click", function() {
+    // Get form data
+    var mobileNumber = $("input[placeholder='find customer by phone']").val();
+    var customerName = $("input[placeholder='find customer by name']").val();
+    var address = $("input[placeholder='']").val();
+    var gender = $("#grid-state").val();
 
+    // Validate data (you may add more validation as needed)
 
-    document.addEventListener('DOMContentLoaded', function () {
-    // Get references to the checkbox and input
-    const checkbox = document.getElementById('toggle-checkbox');
-    const input = document.getElementById('hidden-input');
+    // Prepare data for AJAX
+    var data = {
+      mobileNumber: mobileNumber,
+      customerName: customerName,
+      address: address,
+      gender: gender
+    };
 
-    // Add event listener to the checkbox
-    checkbox.addEventListener('change', function () {
-      // Toggle the visibility of the input based on the checkbox state
-      input.classList.toggle('hidden', !checkbox.checked);
+    // Send data to the server using AJAX
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:5001/api/v1/customers", // Change this to your server-side script
+      data: data,
+      success: function(response) {
+        // Handle the response from the server
+        console.log(response);
+        // You may update the UI or show a success message here
+      },
+      error: function(error) {
+        console.error("AJAX error:", error);
+        // Handle the error
+      }
     });
   });
-
-
+});
