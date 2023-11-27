@@ -910,7 +910,7 @@
       <!-- আরো পেজ যোগ করুন অথবা সাব-অ্যাডমিন থেকে এক্সেস পেজ মুছে ফেলুন  -->
       <div>
          <!-- Add your data rows here start -->
-         <table class="min-w-full border border-gray-300 pl-2">
+         <table class="min-w-full border border-gray-300 pl-2 overflow-x-auto">
           <thead class="bg-[#7367F0] text-white text-[14px] text-left pl-1">
             <tr>
               <th class="border border-gray-300 p-2">ক্যাটাগরি লিংক</th>
@@ -931,7 +931,7 @@
               </td>
             </tr>
             <tr class="alt">
-              <td class="border border-gray-300 p-2">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
                 <label>পোষাক ও মাপ যুক্ত করুন</label>
               </td>
@@ -943,7 +943,7 @@
               </td>
             </tr>
             <tr class="alt">
-              <td class="border border-gray-300 p-2">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
                 <label>সাব-অ্যাডমিন প্রবেশাধিকার নিয়ন্ত্রণ</label >
               </td>
@@ -956,13 +956,14 @@
               </td>
             </tr>
             <tr class="alt">
-              <td class="border border-gray-300 p-2">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
                 />
                 <label>মাপ প্রিন্ট সেটিং</label>
               </td>
             </tr>
           </tbody>
+
           <tbody class="text-[14px] text-left">
             <tr>
               <td rowspan="6" class="border border-gray-300 p-2">অর্ডার</td>
@@ -973,7 +974,7 @@
               </td>
             </tr>
             <tr class="alt">
-              <td class="border border-gray-300 p-2">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
                 <label>অর্ডার দিন</label>
               </td>
@@ -985,7 +986,7 @@
               </td>
             </tr>
             <tr class="alt">
-              <td class="border border-gray-300 p-2">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
                 <label>অর্ডারের কাজ সম্পূন্ন করুন</label >
               </td>
@@ -1005,40 +1006,259 @@
               </td>
             </tr>
           </tbody>
-          <tbody class="text-[14px] text-left">
+          
+           <tbody class="text-[14px] text-left">
             <tr>
-              <td rowspan="6" class="border border-gray-300 p-2">ডেলিভারী</td>
-              <td rowspan="6" class="border border-gray-300 p-2"></td>
-              <td class="border border-gray-300 p-2">
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]">ডেলিভারী</td>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]"></td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
                 <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
                 <label class="">ডেলিভারী দিন</label>
               </td>
             </tr>
             <tr class="alt">
               <td class="border border-gray-300 p-2">
-                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
                 <label>ডেলিভারী কৃত পোশাক</label>
               </td>
             </tr>
           </tbody>
+
           <tbody class="text-[14px] text-left">
             <tr>
-              <td rowspan="6" class="border border-gray-300 p-2">কাস্টমার</td>
-              <td rowspan="6" class="border border-gray-300 p-2"></td>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]">কাস্টমার</td>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]"></td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">	কাস্টমার যুক্ত করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>কাস্টমার লিস্ট</label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]">হিসাব-নিকাশ</td>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]"></td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">খরচ যুক্ত করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>অন্যান্য আয় যুক্ত করুন</label>
+              </td>
+            </tr>
+          </tbody>
+          
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="1" class="border border-gray-300 p-2 bg-[#FCFCFC]">কর্মচারী</td>
+              <td rowspan="1" class="border border-gray-300 p-2 bg-[#FCFCFC]"></td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">কর্মচারীর তালিকা</label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="5" class="border border-gray-300 p-2">হিসাব-নিকাশ</td>
+              <td rowspan="5" class="border border-gray-300 p-2">রিপোর্ট</td>
               <td class="border border-gray-300 p-2">
                 <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
-                <label class="">কাস্টমার যুক্ত করুন</label>
+                <label class="">আয় ও ব্যয়ের রিপোর্ট</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>জমা , বাকি ও খরচ দেখুন</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>অর্ডার ও ডেলিভারি রিপোর্ট</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>লেনদেন লগ</label >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label> একাউন্ট লগ</label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="4" class="border border-gray-300 p-2 bg-[#FCFCFC]">ফেব্রিক্স</td>
+              <td rowspan="4" class="border border-gray-300 p-2 bg-[#FCFCFC]">বেসিক সেটিং</td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">মেজারমেন্ট ইউনিট</label>
               </td>
             </tr>
             <tr class="alt">
               <td class="border border-gray-300 p-2">
                 <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
-                <label>কাস্টমার লিস্ট</label>
+                <label>ব্র্যান্ড যুক্ত করুন</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>ক্যাটাগরি</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>ফেব্রিক্স</label >
               </td>
             </tr>
           </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="4" class="border border-gray-300 p-2 bg-[#FCFCFC]">ফেব্রিক্স</td>
+              <td rowspan="4" class="border border-gray-300 p-2 bg-[#FCFCFC]">কাপড় ক্রয় </td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">কাপড় ক্রয় করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>রেকর্ড দেখুন</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>রিপোর্ট</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label> ফেরত দিন</label >
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="5" class="border border-gray-300 p-2">ফেব্রিক্স</td>
+              <td rowspan="5" class="border border-gray-300 p-2">কাপড় বিক্রি </td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">স্টক রিপোর্ট</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name=""class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label>কাপড় বিক্রি করুন</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>রেকর্ড দেখুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>ফেরত দিন</label >
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4" />
+                <label>রিপোর্ট</label >
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="1" class="border border-gray-300 p-2">ফেব্রিক্স</td>
+              <td rowspan="1" class="border border-gray-300 p-2">পাইকার</td>
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">পাইকার যুক্ত করুন</label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]">ফেব্রিক্স</td>
+              <td rowspan="2" class="border border-gray-300 p-2 bg-[#FCFCFC]">ড্যামেজ</td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">যুক্ত করুন</label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>রিপোর্ট</label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody class="text-[14px] text-left">
+            <tr>
+              <td rowspan="3" class="border border-gray-300 p-2 bg-[#FCFCFC]">এসএমএস</td>
+              <td rowspan="3" class="border border-gray-300 p-2 bg-[#FCFCFC]"></td>
+              <td class="border border-gray-300 p-2 bg-[#FCFCFC]">
+                <input type="checkbox"  name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"/>
+                <label class="">এসএমএস পাঠান </label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>ফোন কন্টাক্ট লিস্ট </label>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td class="border border-gray-300 p-2">
+                <input type="checkbox" name="" class="mr-1 form-checkbox text-[#7367F0] focus:ring-[#7367F0] h-4 w-4"
+                />
+                <label>পাঠানো এসএমএস রেকর্ড </label>
+              </td>
+            </tr>
+          </tbody>
+
+
+          
         </table> 
-        <button class="tab-button hover:bg-[#414366] mt-4">সিরিয়ালগুলো আপডেট করুন</button>  
+        <button class="tab-button hover:bg-[#414366] mt-4">Update</button>  
       </div>
     </div>
 
@@ -14793,7 +15013,7 @@
 
               </div>
         
-              <div id="ব্লেজার" class="clothing-tab hidden mt-4">
+              <div id="ব্লেজার" class="clothing-tab mt-4">
                  <div class="grid md:gird-cols-4 lg:grid-cols-6 grid-cols-1 gap-4">
                   <!-- লম্বা -->
                   <div class="md:w-[155px] w-full h-full md:h-[150px] bg-[#F8F9FA] p-[10px] border border-gray-200">
@@ -14879,28 +15099,34 @@
                       <div class="mt-1">
                         <input type="text" name="হাতা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                       </div>
-                    </div
+                    </div>
 
-                      <!-- মুহুরি -->
-                    <div class="md:w-[155px] w-full h-full bg-[#F8F9FA] p-[10px] border border-gray-200">
-                    <label for="মুহুরি" class="block text-sm font-medium leading-6 text-gray-900">মুহুরি</label>
+                   <!-- হমুহুরী-->
+                   <div class="md:w-[155px] w-full h-full bg-[#F8F9FA] p-[10px] border border-gray-200">
+                    <label for="মুহুরী" class="block text-sm font-medium leading-6 text-gray-900">মুহুরী</label>
                       <div class="mt-1">
-                        <input type="text" name="মুহুরি" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <input type="text" name="মুহুরী" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                       </div>
-                    </div>>
-                    
-                         <!-- গলা -->
+                    </div>
+                  
+
+                   <!-- হগলা-->
                    <div class="md:w-[155px] w-full h-full bg-[#F8F9FA] p-[10px] border border-gray-200">
                     <label for="গলা" class="block text-sm font-medium leading-6 text-gray-900">গলা</label>
                       <div class="mt-1">
                         <input type="text" name="গলা" autocomplete="given-name" class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                       </div>
                     </div>
+                  
+
+                </div>
 
 
-                  </div>
 
-                 </div>
+                
+
+
+
                   <!-- বিবরন start -->
               <div class=" border border-[#6C757D] w-full h-full mt-6 rounded-md">
                     <h2 class="py-4 text-white font-bold px-4 bg-[#6C757D]">বিবরন</h2>
@@ -14925,6 +15151,8 @@
 
                       </div>
               </div>
+
+
               <!-- বিস্তারিত বিবরণ start-->
                 <div>                     
                 <div class="mt-6">
