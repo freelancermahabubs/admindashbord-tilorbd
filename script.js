@@ -282,6 +282,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
 $(document).ready(function() {
   $("#submitBtn").on("click", function() {
     // Get form data
