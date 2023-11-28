@@ -281,41 +281,70 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const customerform = document.getElementById("customerForm");
+const customersubmitBtn = document.getElementById("submitBtn");
 
+customersubmitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
 
+  const mobileNumber = customerform.querySelector(
+    'input[name="mobileNumber"]'
+  )?.value;
+  const customerName = customerform.querySelector(
+    'input[name="customerName"]'
+  )?.value;
+  const address = customerform.querySelector('input[name="address"]')?.value;
+  const gender = customerform.querySelector('select[name="gender"]')?.value;
 
-$(document).ready(function() {
-  $("#submitBtn").on("click", function() {
-    // Get form data
-    var mobileNumber = $("input[placeholder='find customer by phone']").val();
-    var customerName = $("input[placeholder='find customer by name']").val();
-    var address = $("input[placeholder='']").val();
-    var gender = $("#grid-state").val();
+  var data = {
+    mobileNumber: mobileNumber,
+    customerName: customerName,
+    address: address,
+    gender: gender,
+  };
+  const jsonData = JSON.stringify(data);
 
-    // Validate data (you may add more validation as needed)
+  fetch("http://localhost:5001/api/v1/customers", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: jsonData,
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success === true) {
+        const successToast = Toastify({
+          text: "Customer added successfully!",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          style: {
+            background: "#00b09b",
+            fontSize: "16px",
+            padding: "10px 15px",
+          },
+        });
 
-    // Prepare data for AJAX
-    var data = {
-      mobileNumber: mobileNumber,
-      customerName: customerName,
-      address: address,
-      gender: gender
-    };
-
-    // Send data to the server using AJAX
-    $.ajax({
-      type: "POST",
-      url: "http://localhost:5001/api/v1/customers", // Change this to your server-side script
-      data: data,
-      success: function(response) {
-        // Handle the response from the server
-        console.log(response);
-        // You may update the UI or show a success message here
-      },
-      error: function(error) {
-        console.error("AJAX error:", error);
-        // Handle the error
+        successToast.showToast();
+      } else {
+        const errorToast = Toastify({
+          text: "Error adding customer.",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          style: {
+            background: "#f56565",
+            fontSize: "16px",
+            padding: "10px 15px",
+          },
+        });
+        errorToast.showToast();
       }
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error, "after cal api catch");
+      console.error("Error:", error);
     });
-  });
 });
