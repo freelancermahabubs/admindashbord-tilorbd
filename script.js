@@ -296,7 +296,7 @@ customersubmitBtn.addEventListener("click", (event) => {
   const address = customerform.querySelector('input[name="address"]')?.value;
   const gender = customerform.querySelector('select[name="gender"]')?.value;
 
-  var data = {
+  const data = {
     mobileNumber: mobileNumber,
     customerName: customerName,
     address: address,
