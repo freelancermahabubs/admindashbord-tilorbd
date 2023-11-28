@@ -95,13 +95,25 @@ function createPopup(popupTriggerId, popupId, closePopupId) {
 
   // Event listener for opening the popup
   popupTrigger.addEventListener("click", function () {
-    popup.style.display = "flex"; // Show the popup
+    // Close any open popups
+    closeOpenPopups();
+
+    // Show the clicked popup
+    popup.style.display = "flex";
   });
 
   // Event listener for closing the popup
   closePopup.addEventListener("click", function () {
     popup.style.display = "none"; // Hide the popup
   });
+
+  // Function to close any open popups
+  function closeOpenPopups() {
+    const openPopups = document.querySelectorAll(".popup");
+    openPopups.forEach((openPopup) => {
+      openPopup.style.display = "none";
+    });
+  }
 }
 
 // Initialize popups
