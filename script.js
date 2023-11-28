@@ -296,21 +296,6 @@ customersubmitBtn.addEventListener("click", (event) => {
   const address = customerform.querySelector('input[name="address"]')?.value;
   const gender = customerform.querySelector('select[name="gender"]')?.value;
 
-const customerform = document.getElementById("customerForm");
-const customersubmitBtn = document.getElementById("submitBtn");
-
-customersubmitBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-
-  const mobileNumber = customerform.querySelector(
-    'input[name="mobileNumber"]'
-  )?.value;
-  const customerName = customerform.querySelector(
-    'input[name="customerName"]'
-  )?.value;
-  const address = customerform.querySelector('input[name="address"]')?.value;
-  const gender = customerform.querySelector('select[name="gender"]')?.value;
-
   var data = {
     mobileNumber: mobileNumber,
     customerName: customerName,
@@ -362,5 +347,4 @@ customersubmitBtn.addEventListener("click", (event) => {
       console.log(error, "after cal api catch");
       console.error("Error:", error);
     });
-});
 });
