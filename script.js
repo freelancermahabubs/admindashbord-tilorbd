@@ -151,11 +151,16 @@ createPopup(
   "Add-New-Mobile-Number-popup2",
   "Add-New-Mobile-Number-close"
 );
+
 createPopup("Customer-popup1", "Customer-popup2", "Customer-close");
-createPopup(
-  "নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1",
-  "নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2",
-  "নতুন-ফেব্রিক্স-যুক্ত-করুন-close"
+
+createPopup("নতুন-ফেব্রিক্স-যুক্ত-করুন-popup1", "নতুন-ফেব্রিক্স-যুক্ত-করুন-popup2", "নতুন-ফেব্রিক্স-যুক্ত-করুন-close"
+);
+
+createPopup("বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-popup1", "বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-popup2", "বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-close"
+);
+
+createPopup("বেসিক-সেটিংস-table-সার্ট-popup1", "বেসিক-সেটিংস-table-সার্ট-popup2", "বেসিক-সেটিংস-table-সার্ট-close"
 );
 
 // Function to initialize the datepicker on a given input element
@@ -280,6 +285,9 @@ document.addEventListener("DOMContentLoaded", function () {
     input.classList.toggle("hidden", !checkbox.checked);
   });
 });
+
+
+
 
 const customerform = document.getElementById("customerForm");
 const customersubmitBtn = document.getElementById("submitBtn");

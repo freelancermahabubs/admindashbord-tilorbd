@@ -747,14 +747,54 @@
       <div id="পোষাক-ও-মাপ" class="content-div" style="display: none;">
         <h2 class="text-base font-semibold text-[#7367f0]">পোষাক এর মাপ ও পোষাক এর নির্দিষ্ট চার্জ যুক্ত করুন</h2>
         <hr class="mt-3 mb-3" />
-        <a class="text-[13px] text-base hover:underline" style="color:#414366;">নতুন পোষাক যুক্ত করুন</a>
+        <a id="বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-popup1" class="text-[18px] text-base hover:underline cursor-pointer" style="color:#414366;">নতুন পোষাক যুক্ত করুন</a>
 
         <!-- বেসিক সেটিংস নতুন পোষাক যুক্ত করুন POPUP -->
-        
+         <div id="বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-popup2" class="overlay">
+           <div class="bg-white w-[260px] rounded shadow-md">
+              <div class="bg-[#0C817A] relative pt-4 pb-4 ">
+                <h2 class="text-white font-bold text-center"> পোষাক যুক্ত করুন </h2>    
+                <span id="বেসিক-সেটিংস-নতুন-পোষাক-যুক্ত-করুন-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+              </div>
+
+              <div class="mt-4 px-4">
+                <h2 class="block mb-2 text-md font-medium  cursor-pointer md:mt-0 mt-1 text-[18px] text-left">কার পোষাক</h2>          
+              <form class="w-full pb-4">
+                <div class="relative w-full">
+                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                    <option>পুরুষ</option>
+                    <option>মহিলা</option>
+                    <option>বাচ্চা</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div> 
+                <div class="mt-1 w-full">
+                  <label for="" class="mb-2 text-sm font-medium text-gray-900 dark:text-white">পোষাকের নাম </label>
+                  <input type="text"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+                <div class="mt-1 w-full">
+                  <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">সিরিয়াল </label>
+                  <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+
+                <div class="mt-1 w-full">
+                  <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">পোষাকের ছবি</label>
+                  <input type="file" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
 
 
 
-        <div id="content1" class="tab-content overflow-x-auto mt-4">
+                <button class="tab-button mt-2">পোষাক যুক্ত করুন</button>
+              </form>
+              </div>
+       
+             </div>
+         </div>
+        <!-- বেসিক সেটিংস নতুন পোষাক যুক্ত করুন POPUP end -->
+
+        <div class="overflow-x-auto mt-4">
           <table class="min-w-full border border-gray-300 text-center">
             <thead class="bg-[#7367F0] text-white text-[14px]">
               <tr>
@@ -774,12 +814,12 @@
                 <td class="border border-gray-300 p-2">
                   <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-pen-to-square "></i></a>
                 </td>
-                <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">সার্ট</td>
+                <td id="বেসিক-সেটিংস-table-সার্ট-popup1" class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">সার্ট</td>
                 <td class="border border-gray-300 p-2 flex justify-center items-center ">
                   <div class="w-[100px] h-[100px] rounded-mb "><img class="w-[100%] h-[100%]" src="img/cloths/clothing3.jpeg" alt=""></div>
                 </td>
-                <td class="border border-gray-300 p-2">
-                  <a href="#" class="bg-[#CC0061] hover:bg-[#000] text-white rounded-full px-[4px] py-[4px] cursor-pointer"><i class="fa-solid fa-ruler-horizontal"></i></a>
+                <td onclick="changeContent('ICON-PAGE', this)" class="border border-gray-300 p-2">
+                  <a  href="#" class="bg-[#CC0061] hover:bg-[#000] text-white rounded-full px-[4px] py-[4px] cursor-pointer"><i class="fa-solid fa-ruler-horizontal"></i></a>
                 </td>
                 <td class="border border-gray-300 p-2"><a href="#" class="bg-[#00C4C8] text-white rounded-full px-[5px] hover:bg-[#000] py-[4px] cursor-pointer"><i class="fa-solid fa-vest-patches"></i></a>
                 </td>
@@ -790,35 +830,63 @@
                   <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-solid fa-trash-can"></i></a>
                 </td>
               </tr>                
-              <tr>
-                <td class="border border-gray-300 p-2">
-                  <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-pen-to-square "></i></a>
-                </td>
-                <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">সার্ট</td>
-                <td class="border border-gray-300 p-2 flex justify-center items-center ">
-                  <div class="w-[100px] h-[100px] rounded-mb "><img class="w-[100%] h-[100%]" src="img/cloths/clothing2.jpeg" alt=""></div>
-                </td>
-                <td class="border border-gray-300 p-2">
-                  <a href="#" class="bg-[#CC0061] hover:bg-[#000] text-white rounded-full px-[4px] py-[4px] cursor-pointer"><i class="fa-solid fa-ruler-horizontal"></i></a>
-                </td>
-                <td class="border border-gray-300 p-2"><a href="#" class="bg-[#00C4C8] text-white rounded-full px-[5px] hover:bg-[#000] py-[4px] cursor-pointer"><i class="fa-solid fa-vest-patches"></i></a>
-                </td>
-                <td class="border border-gray-300 py-1 px-2 w-full md:w-[50px] ">
-                  <input class="border w-[50px] border-[#000] py-2" type="text" placeholder="1">
-                </td>
-                <td class="border border-gray-300 p-2">         
-                  <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-solid fa-trash-can"></i></a>
-                </td>
-              </tr>     
-               
-              
               <!-- Add more rows as needed -->
-            </tbody>     
+            </tbody>      
             
           </table>
           <button class="tab-button hover:bg-[#414366] mt-4">সিরিয়ালগুলো আপডেট করুন</button>  
 
         </div>
+
+        <!-- বেসিক-সেটিংস-table-সার্ট-popup -->
+        <div id="বেসিক-সেটিংস-table-সার্ট-popup2" class="overlay">
+          <div class="bg-white w-[300px] rounded shadow-md pb-2">
+            <div class="bg-[#0C817A] relative pt-4 pb-4 ">
+              <h2 class="text-white font-bold text-center"> নির্দিষ্ট চার্জ যুক্ত করুন </h2>    
+              <span id="বেসিক-সেটিংস-table-সার্ট-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+            </div>
+    
+            <div class="mt-4 px-4">
+                 
+             <form class="w-full pb-4">
+              <div class="mt-1 w-full">
+                <label for="" class="mb-2 text-sm font-medium text-gray-900 dark:text-white">কি বাবদ</label>
+                <input type="text"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              </div>
+              <div class="mt-1 w-full">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">সিরিয়াল </label>
+                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              </div>
+              <button class="tab-button mt-2">যুক্ত করুন</button>
+             </form>
+
+             <table class="min-w-full border border-gray-300 text-center">
+              <thead class="bg-[#7367F0] text-white text-[12px]">
+                <tr>
+                  <th class="border border-gray-300 p-2"> কি বাবদ</th>
+                  <th class="border border-gray-300 p-2">	কত টাকা</th>
+                  <th class="border border-gray-300 p-2">ইডিট</th>
+                  <th class="border border-gray-300 p-2">ডিলিট</th>                            
+                </tr>
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[12px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2">macking charge</td>
+                  <td class="border border-gray-300 p-2">400</td>
+                  <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">	Edit	</td>
+                  <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">Delete</td>     
+                </tr>
+              </tbody>      
+              
+            </table>
+
+            </div>
+           
+          </div>
+        </div>
+
+
       </div>
       <!-- বেসিক সেটিংস item => পোষাক ও মাপ যুক্ত করুন end -->
 
@@ -15224,6 +15292,74 @@
         </div>
     </section>
   <!-- মাপ যুক্ত করার জন্য পোশাক নির্বাচন করুন end  -->
+
+
+  <section>
+        <!-- সার্ট-ICON-PAGE START  -->
+        <div id="ICON-PAGE" class="content-div" style="display: none;">
+          <h2 class="text-base font-semibold text-[#7367f0]">'সার্ট' মাপের ধরণ যুক্ত করুন </h2>
+          <hr class="mt-3 mb-3" />
+          <div class="md:w-[250px] w-full"> <h2>জেন্ডার নির্ধরণ করুন</h2>
+            <div>
+              <form>
+                <div class="mt-1">
+                  <h2>মাপের নাম দিন </h2>
+                  <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+                </div>
+                <div class="mt-1">
+                  <h2>মাপের সিরিয়াল </h2>
+                  <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+                </div>
+                
+                <button class="tab-button mt-4">মাপ যুক্ত করুন</button>
+              </form>
+
+
+            </div>        
+          </div>
+          
+          <h2 onclick="changeContent('পোষাক-ও-মাপ', this)" class="text-base font-semibold text-[#7367f0] cursor-pointer my-2">পূর্বের পেইজে যান</h2>
+
+              
+          <div class="overflow-x-auto mt-4">
+            <table class="min-w-full border border-gray-300 text-center">
+              <thead class="bg-[#7367F0] text-white text-[14px]">
+                <tr>
+                  <th class="border border-gray-300 p-2">ইডিট করুন</th>
+                  <th class="border border-gray-300 p-2">মাপের ধরণের নাম</th>
+                  <th class="border border-gray-300 p-2">মাপের সিরিয়াল</th>
+                  <th class="border border-gray-300 p-2">ডিলিট করুন  </th>	
+                </tr>
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[14px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2">
+                    <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-pen-to-square "></i></a>
+                  </td>
+                  <td onclick="changeContent('পুরাতন-মাপগুলো-সিরিয়াল-করুন', this)" class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">লম্বা - (এর নিচে যে মাপ গুলো, তা যুক্ত করুন)</td>
+                  
+                  <td class="border border-gray-300 py-1 px-2 w-full md:w-[50px] ">
+                    <input class="border w-[50px] border-[#000] py-2" type="text" placeholder="1">
+                  </td>
+                  <td class="border border-gray-300 p-2">         
+                    <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-solid fa-trash-can"></i></a>
+                  </td>
+                </tr>                
+                <!-- Add more rows as needed -->
+              </tbody>      
+              
+            </table>
+            <button class="tab-button hover:bg-[#414366] mt-4">মাপের সিরিয়ালগুলো আপডেট করুন</button>  
+  
+          </div>
+        </div>
+
+        <!-- পুরাতন মাপগুলো সিরিয়াল করুন start  -->
+        <div id="পুরাতন-মাপগুলো-সিরিয়াল-করুন" class="content-div" style="display: none;">
+          পুরাতন মাপগুলো সিরিয়াল করুন
+        </div>
+  </section>
  
   <div id="print1" class="content-div" style="display: none;">
    Print 1
