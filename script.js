@@ -274,8 +274,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Call setupDropdown for each dropdown you want to initialize
   setupDropdown("clothing-select");
+  setupDropdown("পোষাক-যুক্ত-করুন-clothing-select");
   // Add more if needed
 });
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get references to the checkbox and input
