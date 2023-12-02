@@ -61,7 +61,7 @@
           </li>
           <hr class="pb-2 md:w-[90%] w-full md:ml-[1.5rem]" />
           <ul id="page-2-submenu" class="hidden pl-[2.5em] text-[15px]">
-              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('প্রতিস্ঠানের-বিবরণ', this)">
+              <li class="cursor-pointer mb-2 submenu-link" onclick="changeContent('প্রতিস্ঠানের-বিবরণ', this)"> 
                   <a href="#" class="hover:underline">প্রতিস্ঠানের বিবরণ</a>
               </li>
               <hr class="pb-2" />
@@ -2984,7 +2984,7 @@
           <!-- Add your data rows here start -->
           <tbody class="text-[12px]">                  
             <tr>
-              <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#00C8EA] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-list"></i></a>
+              <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a onclick="changeContent('কাস্টমারের-বিস্তারিত-বিবরণ', this)"  href="#" class="bg-[#00C8EA] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-list"></i></a>
               </td>              					
               <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#"  onclick="changeContent('মাপ-যুক্ত-করার-জন্য-পোশাক-নির্বাচন-করুন', this)"  class="bg-[#FF7E00] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[4px] cursor-pointer mr-2"><i class="fa-solid fa-file-circle-plus"></i> </a>
               </td> 
@@ -24539,6 +24539,207 @@
             </div>
           </div>
         </section>
+   </section>
+
+
+   <!-- কাস্টমারের বিস্তারিত বিবরণ -->
+   <section>
+      <div id="কাস্টমারের-বিস্তারিত-বিবরণ" class="content-div" style="display: none;">
+       <h2 class="text-base font-semibold text-[#7367f0]">কাস্টমারের বিস্তারিত বিবরণ</h2>
+        <hr class="mt-3 mb-6" />
+         <!-- Profile Details start -->
+         <div class="bg-[#FAFAFA] md:w-[640px] px-4 py-4 flex flex-row gap-4 mt-4 border border-[#f2f2f2] md:w-[650px] w-full">
+          <!-- profile (Right) ==> left side  -->
+          <div>
+            <div class="w-[130px] h-[120px]">
+              <img class="p-[8px] h-full w-full" src="img/user.png" alt="User Profile picture">
+            </div>          
+          </div>
+          <!-- profile details right side  -->
+          <div class="w-full md:w-[550px]  info">
+            <ul class="-mt-3">
+              <li class="w-full" >Name:</li>
+              <li class="w-full" >মোবাইল:: </li>
+              <li class="w-full" >ঠিকানা:</li>
+            </ul>
+          </div>
+          <!-- Right Sidebar end -->
+        </div>
+
+        <div class="flex flex-row cursor-pointer mt-4" style="color: var(--primaryColor)">
+          <a href="#" class="hover:underline">নতুন কাস্টমার যুক্ত করুন </a>
+          <span class="px-1">|</span>
+          <div href="#" class="hover:underline">কাস্টমার লিস্ট পেইজে যান</div>a>
+        </div>
+
+          <div id="কাস্টমারের-বিস্তারিত-বিবরণTab" class="tab-container mt-3">
+          <button class="tab-button active" id="tab1"> কাস্টমারের মাপ</button>
+          <button class="tab-button" id="tab2"> বাকি টাকা সংগ্রহ করুন</button>
+          <button class="tab-button" id="tab3">পেইড রেকর্ড</button>
+          <button class="tab-button" id="tab4">সদ্য অর্ডার কৃত পোষাক
+          </button>
+
+    
+          <div class="mt-4">
+            <div id="content1" class="tab-content">
+              <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+                <thead class="bg-gray-200 text-[14px]">
+                  <tr>
+                    <th class="border border-gray-300 p-2">#</th>
+                    <th class="border border-gray-300 p-2">ইস্যু তারিখ</th>
+                    <th class="border border-gray-300 p-2">শেষ হওয়ার তারিখ</th>
+                    <th class="border border-gray-300 p-2">মোট টাকা</th>
+                    <th class="border border-gray-300 p-2">ডিসকাউন্ট</th>
+                    <th class="border border-gray-300 p-2">জমা</th>
+                    <th class="border border-gray-300 p-2">বাকি</th>
+                    <th class="border border-gray-300 p-2">নিবন্ধন তারিখ</th>
+                    <th class="border border-gray-300 p-2">বিস্তারিত</th>
+                    <th class="border border-gray-300 p-2">লেনদেনের অবস্থা</th>
+                    <th class="border border-gray-300 p-2"></th>
+                  </tr>
+                </thead>
+                <!-- Add your data rows here start -->
+                <tbody class="text-[14px]">                  
+                  <tr>
+                    <td class="border border-gray-300 p-2">                      
+                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
+                    </td>
+                    <td class="border border-gray-300 p-2">2023-10-15</td>
+                    <td class="border border-gray-300 p-2">2023-10-30</td>
+                    <td class="border border-gray-300 p-2">1000</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">900</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">2023-10-10</td>
+                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
+                    <td class="border border-gray-300 p-2">Due</td>
+                    <td onclick="changeContent('print1')" class="border border-gray-300 p-2">
+                      <a href="#"><i class="fa-solid fa-print"></i></a>
+                    </td>
+                  </tr>                
+                  <tr>
+                    <td class="border border-gray-300 p-2">                      
+                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
+                    </td>
+                    <td class="border border-gray-300 p-2">2023-10-15</td>
+                    <td class="border border-gray-300 p-2">2023-10-30</td>
+                    <td class="border border-gray-300 p-2">1000</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">900</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">2023-10-10</td>
+                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
+                    <td class="border border-gray-300 p-2">Due</td>
+                    <td class="border border-gray-300 p-2">
+                      <a onclick="changeContent('print2')" href="#"><i class="fa-solid fa-print"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2">  </td>
+                    <td class="border border-gray-300 p-2 text-black font-"> Total 100 </td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+                <!-- <tfoot >
+                  <tr>
+                    <td colspan="6" class="text-right border border-gray-300 p-2">Total:</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td colspan="3"></td>
+                  </tr>
+                </tfoot> -->
+              </table>
+            </div>
+            <div id="content2" class="tab-content hidden">
+              <table class="overflow-x-auto border border-gray-300 text-center" >
+                <thead class="text-[14px] text-white" style="background-color: var(--bgPrimaryColor)">
+                  <tr>
+                    <th class="border border-gray-300 p-2">অর্ডার নং</th>
+                    <th class="border border-gray-300 p-2">অর্ডার</th>
+                    <th class="border border-gray-300 p-2">ডেলিভারী</th>
+                    <th class="border border-gray-300 p-2">পোষাকের বিবরণ</th>
+                    <th class="border border-gray-300 p-2">মোট টাকা</th>
+                    <th class="border border-gray-300 p-2">নগদ পেইড</th>
+                    <th class="border border-gray-300 p-2">বাকি</th>
+                    <th class="border border-gray-300 p-2">ডিসকাউন্ট</th>
+                    <th class="border border-gray-300 p-2">ডেলিভারির অবস্থাস্তারিত</th>
+                  </tr>
+                </thead>
+                <!-- Add your data rows here start -->
+                <tbody class="text-[14px]">                  
+                  <tr>
+                    <td class="border border-gray-300 p-2">13756</td>
+                    <td class="border border-gray-300 p-2">2 Dec 23</td>
+                    <td class="border border-gray-300 p-2">17 Dec 23</td>
+                    <td class="border border-gray-300 p-2">একছাটা পাঞ্জাবি 1 Piece </td>
+                    <td class="border border-gray-300 p-2">1875</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">
+                      <div>
+                        <h2>875 /-</h2>
+                        <input type="number" class="border border-gray-300" placeholder="Input Pay Amount mt-1">
+                      </div>
+                    </td>
+                    <td class="border border-gray-300 p-2">
+                      <div>
+                        <h2>0 /-</h2>
+                        <input type="number" class="border border-gray-300" placeholder="Input Pay Amount mt-1">
+                      </div>
+                    </td>
+                    <td class="border border-gray-300 p-2">Pending</td>
+                  </tr> 
+                  <tr class="bg-[#F4F4F4]">
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2 font-bold">875 /-</td>
+                    <td class="border border-gray-300 p-2 font-bold">1000 /-</td>
+                    <td class="border border-gray-300 p-2 font-bold">875 /- </td>
+                    <td class="border border-gray-300 p-2"></td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+              </table>
+            </div>
+            <div id="content3" class="tab-content hidden">
+              <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+                <thead class="text-white text-[14px]" style="background-color: var(--bgPrimaryColor)">
+                  <tr>
+                    <th class="border border-gray-300 p-2">Order No.</th>
+                    <th class="border border-gray-300 p-2">Amount</th>
+                    <th class="border border-gray-300 p-2">Account</th>
+                    <th class="border border-gray-300 p-2">P. Status</th>
+                    <th class="border border-gray-300 p-2">Paid Date</th>
+                  </tr>
+                </thead>
+                <tbody class="text-[14px]">                  
+                  <tr>
+                    <td class="border border-gray-300 p-2">13756</td>
+                    <td class="border border-gray-300 p-2">1000</td>
+                    <td class="border border-gray-300 p-2">Cash</td>
+                    <td class="border border-gray-300 p-2">Advance</td>
+                    <td class="border border-gray-300 p-2">2 Dec 2023</td>
+                  </tr> 
+                </tbody>
+              </table>
+            </div>
+            <div id="content4" class="tab-content hidden">
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
    </section>
  
   <div id="print1" class="content-div" style="display: none;">

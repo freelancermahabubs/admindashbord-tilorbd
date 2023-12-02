@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeTabs("অর্ডার-ডেলিভারি-রিপোর্ট-Tab");
   initializeTabs("জমা-বাকি-খরচ-দেখুন-রিপোর্ট");
   initializeTabs("কাপড়-ক্রয়-করুন-Tab");
+  initializeTabs("কাস্টমারের-বিস্তারিত-বিবরণTab");
 });
 
 // Popup box start
