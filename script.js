@@ -280,9 +280,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Get references to the checkbox and input
   const checkbox = document.getElementById("toggle-checkbox");
