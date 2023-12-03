@@ -276,6 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call setupDropdown for each dropdown you want to initialize
   setupDropdown("clothing-select");
   setupDropdown("পোষাক-যুক্ত-করুন-clothing-select");
+  setupDropdown("কাস্টমারের-বিস্তারিত-বিবরণ-select");
   // Add more if needed
 });
 
