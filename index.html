@@ -5146,7 +5146,7 @@
               <!-- Add your data rows here start -->
               <tbody class="text-[12px]">                  
                 <tr>
-                  <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">18</td>
+                  <td onclick="changeContent('রেকর্ড-দেখুন-employee-details', this)" class="border border-gray-300 p-2 cursor-pointer" style="color: var(--primaryColor)">18</td>
                   <td class="border border-gray-300 p-2">35360</td>
                   <td class="border border-gray-300 p-2">0</td>
                   <td class="border border-gray-300 p-2">0</td>
@@ -5328,7 +5328,7 @@
                     <!-- Add your data rows here start -->
                     <tbody class="text-[12px]">                  
                       <tr>
-                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">12</td>    
+                        <td class="border border-gray-300 p-2 cursor-pointer" style="color: var(--primaryColor)" onclick="changeContent('স্টক-রিপোর্ট-details', this)">12</td>    
                         <td class="border border-gray-300 p-2">thai japan chiken</td>  
                         <td class="border border-gray-300 p-2">থাই চিকেন</td>  
                         <td class="border border-gray-300 p-2">450</td>  
@@ -5340,21 +5340,7 @@
                         <td class="border border-gray-300 p-2">0</td>  
                         <td class="border border-gray-300 p-2">0</td>  
                         <td class="border border-gray-300 p-2">গজ</td>  
-                      </tr>                
-                      <tr>
-                        <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">12</td>    
-                        <td class="border border-gray-300 p-2">thai japan chiken</td>  
-                        <td class="border border-gray-300 p-2">থাই চিকেন</td>  
-                        <td class="border border-gray-300 p-2">450</td>  
-                        <td class="border border-gray-300 p-2">	0	</td>  
-                        <td class="border border-gray-300 p-2">49</td>  
-                        <td class="border border-gray-300 p-2">0</td>  
-                        <td class="border border-gray-300 p-2">0</td>  
-                        <td class="border border-gray-300 p-2">59</td>  
-                        <td class="border border-gray-300 p-2">0</td>  
-                        <td class="border border-gray-300 p-2">0</td>  
-                        <td class="border border-gray-300 p-2">গজ</td>  
-                      </tr> 
+                      </tr>   
                       <tr class="" style="background-color: var(--bgPrimaryColor);">
                         <td colspan="13">
                           <table>
@@ -24559,9 +24545,9 @@
         </div>
 
         <div class="flex flex-row cursor-pointer mt-4" style="color: var(--primaryColor)">
-          <a href="#" class="hover:underline">নতুন কাস্টমার যুক্ত করুন </a>
+          <a onclick="changeContent('কাস্টমার-যুক্ত-করুন', this)" href="#" class="hover:underline">নতুন কাস্টমার যুক্ত করুন </a>
           <span class="px-1">|</span>
-          <a href="#" class="hover:underline">কাস্টমার লিস্ট পেইজে যান</a>
+          <a onclick="changeContent('কাস্টমার-লিস্ট', this)" href="#" class="hover:underline">কাস্টমার লিস্ট পেইজে যান</a>
         </div>
 
           <div id="কাস্টমারের-বিস্তারিত-বিবরণTab" class="tab-container mt-3">
@@ -24578,7 +24564,7 @@
               <div class="relative md:w-[350px] w-full mt-3">
                 <select
                   id="কাস্টমারের-বিস্তারিত-বিবরণ-select"
-                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 text-sm rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 >
                   <option selected>[ মাপ যুক্ত করার জন্য পোশাক নির্বাচন করুন ]</option>
                   <option value="সার্ট-selected-option">সার্ট</option>
@@ -26899,10 +26885,10 @@
                     </div> 
 
                      <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
-              <div class="flex flex-row gap-3 mt-6">
+                   <div class="flex flex-row gap-3 mt-6">
                 <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
                 <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
-              </div>
+                 </div>
 
               </div>
               <!-- কল্লিদার-পাঞ্জাবি -->
@@ -30405,6 +30391,14 @@
                  </div> 
 
 
+                 <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
+
               </div>
 
               <!-- "ব্যাপারী-শার্ট -->
@@ -30640,6 +30634,13 @@
                       <textarea  class="border border-[#6C757D] rounded-md text-[15px] px-4 py-4" rows="6" cols="50" name="comment" form="usrform">Enter text here...</textarea>
                   </div>
                  </div> 
+
+                 <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
 
 
               </div>
@@ -31119,6 +31120,12 @@
                   </div>
                  </div> 
 
+                 <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
                
               </div>
               <!-- পায়জামা -->
@@ -31542,6 +31549,13 @@
                     </div>
                 </div>
 
+                <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
                <!-- বিস্তারিত বিবরণ start-->
                <div class="bg-[#FAFAFA] border border-gray-200 px-4 py-4 my-4">
                 <div>
@@ -31550,7 +31564,15 @@
                 </div>
                </div> 
 
+               <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                  <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                  <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
               </div>
+
               <!-- প্যান্ট-কাটিং-পায়জামা -->
               <div id="প্যান্ট-কাটিং-পায়জামা-selected-option" class="clothing-tab mt-4">
                   <div class="grid md:gird-cols-4 lg:grid-cols-6 grid-cols-1 gap-4">
@@ -31811,6 +31833,13 @@
                       <textarea  class="border border-[#6C757D] rounded-md text-[15px] px-4 py-4" rows="6" cols="50" name="comment" form="usrform">Enter text here...</textarea>
                   </div>
                  </div> 
+
+                 <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
 
               </div>
               <!-- শার্ট -->
@@ -32911,6 +32940,13 @@
                   </div>
                  </div> 
 
+                 <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
                   
               </div>
               <!-- কোটি -->
@@ -32983,7 +33019,15 @@
                   </div>
                 </div> 
 
+                <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
               </div>
+
               <!-- ব্লেজার -->
               <div id="ব্লেজার-selected-option" class="clothing-tab mt-4">
                   <div class="grid md:gird-cols-4 lg:grid-cols-6 grid-cols-1 gap-4">
@@ -33129,6 +33173,13 @@
                 </div>
                </div> 
 
+               <!-- two button মাপ যুক্ত অথবা পরিবর্তন করুন and মাপ প্রিন্ট করুন -->
+                   <div class="flex flex-row gap-3 mt-6">
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">মাপ যুক্ত অথবা পরিবর্তন করুন</button>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm  text-white px-4 py-2 font-normal rounded-md" onclick="changeContent('মাপ-পরিন্ট-করুন')">মাপ প্রিন্ট করুন</button>
+                 </div>
+
+
               </div>
               </div>
             </div>
@@ -33264,11 +33315,84 @@
         </div>
 
       </div>
+
+
+      
+   <!-- মাপ-পরিন্ট-করুন page start  -->
+   <div id="মাপ-পরিন্ট-করুন" class="content-div" style="display: none;">
+    <div id="মাপ-পরিন্ট-করুনTab" class="tab-container mt-3">
+      <button class="tab-button active" id="tab1"> কাস্টমারের মাপ</button>
+      <button class="tab-button" id="tab2"> বাকি টাকা সংগ্রহ করুন</button>
+    </div>
+
+    <div>
+      <div id="content1" class="tab-content">
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div id="content2" class="tab-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perferendis tempore modi voluptate rerum magnam.
+      </div>
+    </div>
+
+   </div>
    </section>
+
+
+   <!-- ফেব্রিক্স >>>>>   -->
+   <section>
+    <!--ফেব্রিক্স >>>>> রেকর্ড দেখুন employee details -->
+    <div id="রেকর্ড-দেখুন-employee-details" class="content-div" style="display: none;">
+      <div>
+        <h2 class="mb-4" style="color: var(--primaryColor)"><span class="hover:underline cursor-pointer mr-2" onclick="changeContent('কাপড়-ক্রয়-কাপড়-ক্রয়-করুন', this)"><< ক্রয় করুন</span> <span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-ক্রয়-রেকর্ড-দেখুন', this)"><< রেকর্ড দেখুন</span></h2>
+
+        <div class="font-bold text-center text-xs mb-2">
+          <h5 class="mb-1">Date: 9 Jan 22 | R.No: 18</h5>
+          <h5>Bill No: বিল্লাল ফেব্রিক্স 332</h5>
+        </div>
+      </div>
+      <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+        <thead class="text-white text-[14px]" style="background-color: var(--bgPrimaryColor)">
+          <tr>
+            <th class="border border-gray-300 p-2">Code</th>
+            <th class="border border-gray-300 p-2">Fabric</th>
+            <th class="border border-gray-300 p-2">Quantity</th>
+            <th class="border border-gray-300 p-2">U.Price</th>
+            <th class="border border-gray-300 p-2">Total</th>
+            				
+          </tr>
+        </thead>
+        <tbody class="text-[12px]">                  
+          <tr>
+            <td class="border border-gray-300 p-2 font-bold">btexkhadi</td>
+            <td class="border border-gray-300 p-2">বি টেক্স খাদি লাইট</td>
+            <td class="border border-gray-300 p-2">136</td>
+            <td class="border border-gray-300 p-2">260</td>
+            <td class="border border-gray-300 p-2">35360</td>
+          </tr> 
+        </tbody>
+      </table>
+
+      <div class="font-bold text-center text-xs mb-2 text-end mt-2">
+        <h5 class="mb-1">Total: <span>35360</span> /- </h5>
+        <h5 class="mb-1">Paid: <span>35360</span> /- </h5>
+        <h5>Due: <span>0<span> /- </h5>
+      </div>
+
+      <!-- print photo  -->
+      <div class="mt-2 cursor-pointer">
+        <img src="img/Printing.png" alt="">
+      </div>
+
+    </div>
+
+    <!--ফেব্রিক্স >>>>> স্টক রিপোর্ট  details -->
+    <div id="স্টক-রিপোর্ট-details" class="content-div" style="display: none;">
+      <h2>Ba
+    </div>
+   </section>
+
  
-  <div id="মাপ-পরিন্ট-করুন" class="content-div" style="display: none;">
-   <p>মাপ-পরিন্ট-করুন</p>
-  </div>
+  
 
   <div id="print2" class="content-div" style="display: none;">
    Print 2
