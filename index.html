@@ -5388,7 +5388,7 @@
                 <!-- Add your data rows here start -->
                 <tbody class="text-[12px]">                  
                   <tr>
-                    <td class="border border-gray-300 p-2" style="color: var(--primaryColor)">12</td>    
+                    <td class="border border-gray-300 p-2 cursor-pointer" style="color: var(--primaryColor)" onclick="changeContent('বিক্রির-রেকর্ড-দেখুন-details', this)">12</td>    
                     <td class="border border-gray-300 p-2">1800</td>  
                     <td class="border border-gray-300 p-2">0</td>  
                     <td class="border border-gray-300 p-2">0</td>  
@@ -33343,7 +33343,7 @@
     <!--ফেব্রিক্স >>>>> রেকর্ড দেখুন employee details -->
     <div id="রেকর্ড-দেখুন-employee-details" class="content-div" style="display: none;">
       <div>
-        <h2 class="mb-4" style="color: var(--primaryColor)"><span class="hover:underline cursor-pointer mr-2" onclick="changeContent('কাপড়-ক্রয়-কাপড়-ক্রয়-করুন', this)"><< ক্রয় করুন</span> <span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-ক্রয়-রেকর্ড-দেখুন', this)"><< রেকর্ড দেখুন</span></h2>
+        <h2 class="mb-4" style="color: var(--primaryColor)"><span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-বিক্র-কাপড়-বিক্রি-করুন', this)"><< ক্রয় করুন</span> <span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-ক্রয়-রেকর্ড-দেখুন', this)"><< রেকর্ড দেখুন</span></h2>
 
         <div class="font-bold text-center text-xs mb-2">
           <h5 class="mb-1">Date: 9 Jan 22 | R.No: 18</h5>
@@ -33387,8 +33387,131 @@
 
     <!--ফেব্রিক্স >>>>> স্টক রিপোর্ট  details -->
     <div id="স্টক-রিপোর্ট-details" class="content-div" style="display: none;">
-      <h2>Ba
+      <h2 class="cursor-pointer mb-4 hover:underline" style="color: var(--primaryColor)" onclick="changeContent('কাপড়-বিক্র-স্টক-রিপোর্ট', this)">Back</h2>
+      <div>
+        <ul class="">
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px]">Fabric SN: <span>19</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Fabric Code:  <span>chtc</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Fabric Code:  <span> চায়না টরে কালার</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Selling Unit Price: <span>160</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Stock Fabric Quantity: <span>388.5</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Total Selling Quantity: <span>688.5</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Total Buying Quantity: <span>0</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Total Damage Quantity: <span>0</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Supplier Total Return Quantity: <span>0</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Customer Total Return Quantity: <span>0</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Customer Return Quantity Add in Stock: <span>0</span></li>
+          <li class="px-2 py-1 border border-[#f2f2f2] text-[#777] text-[15px] mt-2">Current Buying Unit Price: <span>120</span></li>
+        </ul>
+      </div>
+      <div class="font-serif mt-3">
+        <h2>Buying Details</h2>
+        <h2 class="mt-4">Selling Details</h2>
+      </div>
+
+      <div class="mt-3">
+      <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+        <thead class="text-white text-[14px]" style="background-color: var(--bgPrimaryColor)">
+          <tr>
+            <th class="border border-gray-300 p-2">SN</th>
+            <th class="border border-gray-300 p-2">Quantity</th>
+            <th class="border border-gray-300 p-2">Unit Price</th>
+            <th class="border border-gray-300 p-2">Selling Price</th>
+            <th class="border border-gray-300 p-2">Buying U.P</th>
+            <th class="border border-gray-300 p-2">Date</th>            					
+          </tr>
+        </thead>
+        <tbody class="text-[12px]">                  
+          <tr>
+            <td class="border border-gray-300 p-2 font-bold">16</td>
+            <td class="border border-gray-300 p-2">3</td>
+            <td class="border border-gray-300 p-2">136</td>
+            <td class="border border-gray-300 p-2">260</td>
+            <td class="border border-gray-300 p-2">60</td>
+            <td class="border border-gray-300 p-2">15 Jan 2022</td>
+          </tr> 
+        </tbody>
+      </table>
+      </div>
     </div>
+
+     <!--ফেব্রিক্স >>>>> বিক্রির রেকর্ড দেখুন  details -->
+     <div id="বিক্রির-রেকর্ড-দেখুন-details" class="content-div" style="display: none">
+      <h2 class="mb-4" style="color: var(--primaryColor)"><span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-বিক্র-কাপড়-বিক্রি-করুন', this)"><< বিক্রি করুন </span> <span class="hover:underline cursor-pointer" onclick="changeContent('কাপড়-বিক্র-রেকর্ড-দেখুন', this)"><< বিক্রির রেকর্ড দেখুন</span></h2>
+
+      <div>
+        <h2 class="text-base font-bold text-center">a.mannan tailors and fabrics</h2>
+        <div class="text-xs text-center mt-4 mb-4 font-bold">
+          <h2>Receipt No: 285</h2>
+          <h2>Selling Date: 16 Nov 23</h2>
+        </div>
+      </div>
+
+      <div class="mt-3">
+        <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+          <thead class="text-white text-[14px] bg-black">
+            <tr>
+              <th class="border border-gray-300 p-2">Code</th>
+              <th class="border border-gray-300 p-2">Fabric</th>
+              <th class="border border-gray-300 p-2">Quantity</th>
+              <th class="border border-gray-300 p-2">Unit Price</th>
+              <th class="border border-gray-300 p-2">Total</th>      					
+            </tr>
+          </thead>
+          <tbody class="text-[12px]">                  
+            <tr>
+              <td class="border border-gray-300 p-2 font-bold">blz</td>
+              <td class="border border-gray-300 p-2">blazer</td>
+              <td class="border border-gray-300 p-2">1</td>
+              <td class="border border-gray-300 p-2">1800</td>
+              <td class="border border-gray-300 p-2">1800</td>
+            </tr> 
+          </tbody>
+        </table>
+        </div>
+        <div class="font-bold text-center text-xs mb-2 text-end mt-2">
+          <h5 class="mb-1">Total: <span>35360</span> /- </h5>
+          <h5 class="mb-1">Paid: <span>35360</span> /- </h5>
+          <h5>Due: <span>0<span> /- </h5>
+        </div>
+
+
+
+        <div class="flex flex-row gap-3 md:w-[300px] w-full">
+          <input type="text" class="w-[170px] border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mobile Number" required>
+
+          <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md inli">Send SMS</button>
+        </div>
+
+        <div>
+          <div class="flex flex-row items-center gap-2 mt-1">
+            <div class="flex flex-row items-center gap-3 cursor-pointer">
+              <img src="img/Ssettings.png" alt="">
+              <h2 id="মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-1" class="hover:underline text-base" style="color: var(--primaryColor)">মানি রিসিট প্রিন্ট সেটিং</h2>
+            </div>
+            <img class="ml-8 cursor-pointer" src="img/Printing.png" alt="">
+          </div>
+
+           <!-- মানি রিসিট প্রিন্ট সেটিং start -->
+        <div id="মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-2" class="overlay">
+          <div class="bg-white w-[350px] rounded shadow-md">
+            <div class="bg-[#0C817A] relative pt-4 pb-4 ">
+              <h2 class="text-white font-bold text-center"> মানি রিসিট প্রিন্ট সেটিং </h2>    
+              <span id="মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+            </div>
+
+            <div class="mt-4 px-4">
+              <h2 class="font-bold">প্রিন্ট এর জন্য নির্বাচন করুন</h2>
+              <hr class="h-[1px] mt-3 mb-3" style="background: linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));" />
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+
+
+     </div>
    </section>
 
  

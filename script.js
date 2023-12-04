@@ -168,6 +168,9 @@ createPopup("বেসিক-সেটিংস-table-সার্ট-popup1", "
 createPopup("মাপ-যুক্ত-করুন-popup1", "মাপ-যুক্ত-করুন-popup2", "মাপ-যুক্ত-করুন-close"
 );
 
+createPopup("মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-1", "মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-2", "মানি-রিসিট-প্রিন্ট-সেটিং-POPUP-close"
+);
+
 // Function to initialize the datepicker on a given input element
 function initializeDatepicker(inputId) {
   const input = document.getElementById(inputId);
