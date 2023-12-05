@@ -5589,12 +5589,149 @@
        <!-- ড্যামেজ ===> রিপোর্ট item chliren content start -->
        <div>
         <div id="ড্যামেজ-যুক্ত-করুন" class="content-div" style="display: none;">
-          ড্যামেজ যুক্ত করুন
+          <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">Add Damaged Fabrics</h2>
+          <hr class="mt-3 mb-6" />
+          <form>
+            <div class="flex flex-col md:flex-row mt-">
+              <div  class="mr-2 w-none md:w-[100px]"> 
+                <label for="">Fabric</label>
+              </div>
+              <div>
+                <div class="relative md:w-[230px]">
+                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">     
+                      <option selected="selected" value="0">[ Fabrics ]</option>
+                      <option value="">cbc</option>
+                      <option value="">pctc</option>
+                      <option value="">pctw</option>
+                      <option value="">chtc</option>
+                      <option value="">chtw</option>
+                      <option value="">thcw</option>
+                      <option value="">kmc42</option>
+                      <option value="">kmw42</option>
+                      <option value="">kms42</option>
+                      <option value="">kmd60</option>
+                      <option value="">nt9100c</option>
+                      <option value="">nt9100w</option>
+                      <option value="">pkgrace</option>
+                      <option value="">pkgtc</option>
+                      <option value="">j666w</option>
+                      <option value="">thaitorayc</option>
+                      <option value="">jopel</option>
+                      <option value="">arotica</option>
+                      <option value="">madic</option>
+                      <option value="">madiw</option>
+                      <option value="">brush36</option>
+                      <option value="">brush45</option>
+                      <option value="">brushch36</option>
+                      <option value="">brushch45</option>
+                      <option value="">rimic</option>
+                      <option value="">rimiw</option>
+                      <option value="">rimip</option>
+                      <option value="">rimij</option>
+                      <option value="">jamdaniw</option>
+                      <option value="">exl</option>
+                      <option value="">exhc</option>
+                      <option value="">exhw</option>
+                      <option value="">insutton</option>
+                      <option value="">bnadi</option>
+                      <option value="">inslubadiw</option>
+                      <option value="">linenclub</option>
+                      <option value="">raymond linen</option>
+                      <option value="">slubdgtlp</option>
+                      <option value="">gizaprint1</option>
+                      <option value="">kmw60</option>
+                      <option value="">btexkhadi</option>
+                      <option value="">80cgizacs</option>
+                      <option value="">bombayrayonp</option>
+                      <option value="">exlcheck1</option>
+                      <option value="">boalamojacqurd1</option>
+                      <option value="">cotonificiop001</option>
+                      <option value="">chainajaquard001</option>
+                      <option value="">exadi001</option>
+                      <option value="">cotonificiop002</option>
+                      <option value="11513">panameraDGprint</option>
+                      <option value="">exhcheck1</option>
+                      <option value="">slubkhadi</option>
+                      <option value="">madrinojqrd</option>
+                      <option value="">luthaijq01</option>
+                      <option value="">biralagb</option>
+                      <option value="">jqrd45</option>
+                      <option value="">arvadi</option>
+                      <option value="">ichikn</option>
+                      <option value="">dgprint60</option>
+                      <option value="">coton60</option>
+                      <option value="">stch60</option>
+                      <option value="">sctr001</option>
+                      <option value="">sctr005</option>
+                      <option value="">blz</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>          
+            <div class="flex flex-col md:flex-row mt-2">
+              <div  class="mr-2 w-none md:w-[100px]"> 
+                <label for="">Quantity</label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <div  class="mr-2 w-none md:w-[100px]"> 
+                <label for="">Total Price </label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row mt-">
+              <div  class="mr-2 w-none md:w-[100px]"> 
+                <label for="">Date</label>
+              </div>
+              <div>
+                <input type="text" class="shadow appearance-none border border-gray-500 rounded md:w-[230px] w-full py-1 px-3 text-gray-700 mb-3 leading-tight focus:ring-blue-500 focus:border-blue-500" placeholder="">
+              </div>
+            </div>
+            <div class="md:ml-[109px]" >
+               <button class="tab-button">যুক্ত করুন</button>
+            </div>
+          </form>
+
+          <div class="overflow-x-auto mt-5">
+            <h2 class="mb-1 font-semibold">Damaged Records</h2>
+            <table class="min-w-full border border-gray-300 text-center">
+              <thead class="bg-[#7367F0] text-white text-[12px]">
+                <tr>
+                  <th class="border border-gray-300 p-2">Fabrics Code</th>
+                  <th class="border border-gray-300 p-2">Fabrics Name</th>
+                  <th class="border border-gray-300 p-2">Quantity</th>
+                  <th class="border border-gray-300 p-2">Price</th>
+                  <th class="border border-gray-300 p-2">Date</th> 
+                </tr>
+              </thead>
+              <!-- Add your data rows here start -->
+              <tbody class="text-[12px]">                  
+                <tr>
+                  <td class="border border-gray-300 p-2">pctc</td>
+                  <td class="border border-gray-300 p-2">প্রেসিডেন্ট চয়েস টরে </td>
+                  <td class="border border-gray-300 p-2">0.5</td>
+                  <td class="border border-gray-300 p-2">110</td>
+                  <td class="border border-gray-300 p-2">18 Jan 2022</td>
+                </tr>                
+                <!-- Add more rows as needed -->
+              </tbody> 
+            </table>
+          </div>
         </div>
+
         <div id="ড্যামেজ-রিপোর্ট" class="content-div" style="display: none;">
-          <!-- ড্যামেজ-রিপোর্ট -->
+          ড্যামেজ-রিপোর্ট
         </div>
        </div>
+
     </section>
     <!-- ফেব্রিক্স end -->
   
@@ -6018,9 +6155,6 @@
       </div>
 
     </div>
-
-
-
 
     <div class="mt-2">
       <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
