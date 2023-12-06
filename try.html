@@ -164,6 +164,150 @@
       </div>
     </div>
 
+    <div id="এসএমএস-পাঠান-Tab" class="tab-container">
+      <button class="tab-button active" id="tab1">ইনভয়েস</button>
+      <button class="tab-button" id="tab2">পাসওয়ার্ড পরিবর্তন</button>
+
+      <div class="mt-4">
+        <div id="content1" class="tab-content">
+          <table
+            class="min-w-full overflow-x-auto border border-gray-300 text-center"
+          >
+            <thead class="bg-gray-200 text-[14px]">
+              <tr>
+                <th class="border border-gray-300 p-2">#</th>
+                <th class="border border-gray-300 p-2">ইস্যু তারিখ</th>
+                <th class="border border-gray-300 p-2">শেষ হওয়ার তারিখ</th>
+                <th class="border border-gray-300 p-2">মোট টাকা</th>
+                <th class="border border-gray-300 p-2">ডিসকাউন্ট</th>
+                <th class="border border-gray-300 p-2">জমা</th>
+                <th class="border border-gray-300 p-2">বাকি</th>
+                <th class="border border-gray-300 p-2">নিবন্ধন তারিখ</th>
+                <th class="border border-gray-300 p-2">বিস্তারিত</th>
+                <th class="border border-gray-300 p-2">লেনদেনের অবস্থা</th>
+                <th class="border border-gray-300 p-2"></th>
+              </tr>
+            </thead>
+            <!-- Add your data rows here start -->
+            <tbody class="text-[14px]">
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <a
+                    href="#"
+                    class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"
+                    ><i class="fa-regular fa-hand-pointer"></i
+                  ></a>
+                </td>
+                <td class="border border-gray-300 p-2">2023-10-15</td>
+                <td class="border border-gray-300 p-2">2023-10-30</td>
+                <td class="border border-gray-300 p-2">1000</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">900</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">2023-10-10</td>
+                <td class="border border-gray-300 p-2">
+                  1000 Tk. Service Charge JUL-2023
+                </td>
+                <td class="border border-gray-300 p-2">Due</td>
+                <td
+                  onclick="changeContent('print1')"
+                  class="border border-gray-300 p-2"
+                >
+                  <a href="#"><i class="fa-solid fa-print"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <a
+                    href="#"
+                    class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"
+                    ><i class="fa-regular fa-hand-pointer"></i
+                  ></a>
+                </td>
+                <td class="border border-gray-300 p-2">2023-10-15</td>
+                <td class="border border-gray-300 p-2">2023-10-30</td>
+                <td class="border border-gray-300 p-2">1000</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">900</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">2023-10-10</td>
+                <td class="border border-gray-300 p-2">
+                  1000 Tk. Service Charge JUL-2023
+                </td>
+                <td class="border border-gray-300 p-2">Due</td>
+                <td class="border border-gray-300 p-2">
+                  <a onclick="changeContent('print2')" href="#"
+                    ><i class="fa-solid fa-print"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 text-black font-">
+                  Total 100
+                </td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+            <!-- <tfoot >
+              <tr>
+                <td colspan="6" class="text-right border border-gray-300 p-2">Total:</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td colspan="3"></td>
+              </tr>
+            </tfoot> -->
+          </table>
+        </div>
+        <div id="content2" class="tab-content hidden">
+          <form class="w-full md:w-[300px]">
+            <div class="mt-1">
+              <h2>পুরাতন পাসওয়ার্ড</h2>
+              <input
+                type="password"
+                class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500"
+              />
+            </div>
+            <div class="mt-1">
+              <h2>নতুন পাসওয়ার্ড</h2>
+              <input
+                type="password"
+                class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500"
+              />
+            </div>
+            <div class="mt-1">
+              <h2>নতুন পাসওয়ার্ড পুনরায়</h2>
+              <input
+                type="password"
+                class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500"
+              />
+            </div>
+
+            <div class="mt-2 flex flex-row gap-2">
+              <button
+                class="allButton bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md text-white hover:bg-[#414366]"
+              >
+                পরিবর্তন করুন
+              </button>
+              <button
+                class="bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md text-white hover:bg-[#414366] hover:bg-[#414366]"
+              >
+                বাতিল করুন
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         function toggleContent(selectedValue) {

@@ -5791,108 +5791,145 @@
     <!-- এসএমএস start  -->
      <section>
       <div id="এসএমএস-পাঠান" class="content-div" style="display: none">
+        <h2 class="text-base font-semibold text-[#7367f0]">গ্রাহকদের এসএমএস পাঠান (অবশিষ্ট এসএমএস: 1)</h2>
+      <hr class="mt-3 mb-4" />
+
+        <h2 class="font-semibold mb-2">সর্বমোট : <span>6746</span> জন কাস্টমার পাওয়া গেছে</h2>
         <div id="এসএমএস-পাঠান-Tab" class="tab-container">
-          <button class="tab-button active" id="tab1">ইনভয়েস</button>
-          <button class="tab-button" id="tab2">পাসওয়ার্ড পরিবর্তন</button>
+          <button class="tab-button active" id="tab1">নির্বাচিত গ্রাহকদের এসএমএস পাঠান</button>
+          <button class="tab-button" id="tab2">সকল গ্রাহকদের এসএমএস পাঠান</button>
     
           <div class="mt-4">
             <div id="content1" class="tab-content">
-              <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
-                <thead class="bg-gray-200 text-[14px]">
-                  <tr>
-                    <th class="border border-gray-300 p-2">#</th>
-                    <th class="border border-gray-300 p-2">ইস্যু তারিখ</th>
-                    <th class="border border-gray-300 p-2">শেষ হওয়ার তারিখ</th>
-                    <th class="border border-gray-300 p-2">মোট টাকা</th>
-                    <th class="border border-gray-300 p-2">ডিসকাউন্ট</th>
-                    <th class="border border-gray-300 p-2">জমা</th>
-                    <th class="border border-gray-300 p-2">বাকি</th>
-                    <th class="border border-gray-300 p-2">নিবন্ধন তারিখ</th>
-                    <th class="border border-gray-300 p-2">বিস্তারিত</th>
-                    <th class="border border-gray-300 p-2">লেনদেনের অবস্থা</th>
-                    <th class="border border-gray-300 p-2"></th>
-                  </tr>
-                </thead>
-                <!-- Add your data rows here start -->
-                <tbody class="text-[14px]">                  
-                  <tr>
-                    <td class="border border-gray-300 p-2">                      
-                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
-                    </td>
-                    <td class="border border-gray-300 p-2">2023-10-15</td>
-                    <td class="border border-gray-300 p-2">2023-10-30</td>
-                    <td class="border border-gray-300 p-2">1000</td>
-                    <td class="border border-gray-300 p-2">100</td>
-                    <td class="border border-gray-300 p-2">900</td>
-                    <td class="border border-gray-300 p-2">100</td>
-                    <td class="border border-gray-300 p-2">2023-10-10</td>
-                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
-                    <td class="border border-gray-300 p-2">Due</td>
-                    <td onclick="changeContent('print1')" class="border border-gray-300 p-2">
-                      <a href="#"><i class="fa-solid fa-print"></i></a>
-                    </td>
-                  </tr>                
-                  <tr>
-                    <td class="border border-gray-300 p-2">                      
-                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
-                    </td>
-                    <td class="border border-gray-300 p-2">2023-10-15</td>
-                    <td class="border border-gray-300 p-2">2023-10-30</td>
-                    <td class="border border-gray-300 p-2">1000</td>
-                    <td class="border border-gray-300 p-2">100</td>
-                    <td class="border border-gray-300 p-2">900</td>
-                    <td class="border border-gray-300 p-2">100</td>
-                    <td class="border border-gray-300 p-2">2023-10-10</td>
-                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
-                    <td class="border border-gray-300 p-2">Due</td>
-                    <td class="border border-gray-300 p-2">
-                      <a onclick="changeContent('print2')" href="#"><i class="fa-solid fa-print"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2">  </td>
-                    <td class="border border-gray-300 p-2 text-black font-"> Total 100 </td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                    <td class="border border-gray-300 p-2"></td>
-                  </tr>
-                  <!-- Add more rows as needed -->
-                </tbody>
-                <!-- <tfoot >
-                  <tr>
-                    <td colspan="6" class="text-right border border-gray-300 p-2">Total:</td>
-                    <td class="border border-gray-300 p-2">100</td>
-                    <td colspan="3"></td>
-                  </tr>
-                </tfoot> -->
-              </table>
+              <div class="mb-6">
+                <form class="w-full md:w-[600px] flex items-center flex-col md:flex-row w-full gap-4 ">
+                  <div class="mt-1">
+                    <h2 class="text-[14px]">কাস্টমার নাম্বার</h2>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="কাস্টমার নাম্বার">
+                  </div> 
+                  <div class="mt-1">
+                    <h2>অথবা</h2>
+                  </div>       
+                  <div class="mt-1">
+                    <h2 class="text-[14px]">মোবাইল নাম্বার</h2>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="মোবাইল নাম্বার">
+                  </div>        
+                  
+                  <div>
+                    <img src="img/Search.png" class="bg-[#f1f1f1] hover:bg-[#fff] p-[5px] mt-0 md:mt-[21px] cursor-pointer" alt="">
+                  </div>
+                </form>
+              </div>
+              <div class="overflow-x-auto">       
+                <table class="min-w-full border border-gray-300 text-center">
+                  <thead class="bg-[#7367F0] text-white text-[14px]">
+                    <tr>
+                      <th class="border border-gray-300 p-2">
+                        <input id="selectAll"  type="checkbox" name="">
+                      </th>
+                      <th class="border border-gray-300 p-2">কাস্টমার নং</th>
+                      <th class="border border-gray-300 p-2">নাম</th>
+                      <th class="border border-gray-300 p-2">মোবাইল</th>
+                      <th class="border border-gray-300 p-2">ঠিকানা</th>
+                      <th class="border border-gray-300 p-2">নিবন্ধনের তারিখ</th> 
+                    </tr>
+                  </thead>
+                  <!-- Add your data rows here start -->
+                  <tbody class="text-[14px]">                  
+                    <tr>
+                      <td class="border border-gray-300 p-2">
+                        <input   type="checkbox" name="">
+                      </td>
+                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">1</td>
+                      <td class="border border-gray-300 p-2">
+                        দেলোয়ার হোসেন 
+                      </td>
+                      <td class="border border-gray-300 p-2">
+                        01915611548
+                      </td>
+                      <td class="border border-gray-300 p-2">
+                        নুর বাগ
+                      </td>
+                      <td class="border border-gray-300 p-2 text-center">              
+                        12 Nov 2023
+                      </td>            
+                                  
+                    </tr> 
+                    <tr class="bg-[#9087e4]">
+                      <td colspan="20">
+                        <table>
+                          <tbody>
+                            <tr class="text-[13px] flex flex-row gap-2 py-1">
+                              <td>
+                                <span class="mr-1 ml-1">|</span
+                                ><a class="text-white" href="">1</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">2</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">4</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">5</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">6</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">7</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">8</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">9</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">10</a>
+                              </td>
+                              <td>
+                                <span class="mr-1">|</span
+                                ><a class="hover:text-white" href="">...</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>  			  		
+              
+                    <!-- Add more rows as needed -->
+                  </tbody>             
+                </table>           
+  
+  
+                <div class="mt-4">
+                  <h2 class="mb-2 font-bold">বার্তা লিখুন</h2>
+                  <textarea name="" rows="2" cols="20" class="px-2 py-2 border border-gary-400" style="width:300px;"></textarea>
+                  <div class="mb-2" style="color: var(--primaryColor)">
+                     Length: <span class="length">0</span>/ <span class="per_message">160</span>.  Count: <span class="messages">0</span> SMS
+                  </div>
+                  <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">বার্তা পাঠান</button>               
+                </div>
+              </div> 
             </div>
             <div id="content2" class="tab-content hidden">
-              <form class="w-full md:w-[300px]">
-                <div class="mt-1">
-                  <h2>পুরাতন পাসওয়ার্ড</h2>
-                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+              <div class="mt-4">
+                <h2 class="mb-2 font-bold">বার্তা লিখুন</h2>
+                <textarea name="" rows="2" cols="20" class="px-2 py-2 border border-gary-400" style="width:300px;"></textarea>
+                <div class="mb-2" style="color: var(--primaryColor)">
+                   Length: <span class="length">0</span>/ <span class="per_message">160</span>.  Count: <span class="messages">0</span> SMS
                 </div>
-                <div class="mt-1">
-                  <h2>নতুন পাসওয়ার্ড</h2>
-                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
-                </div>
-                <div class="mt-1">
-                  <h2>নতুন পাসওয়ার্ড পুনরায়</h2>
-                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
-                </div>
-    
-                <div class="mt-2 flex flex-row gap-2">
-                  <button class="allButton bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md  text-white hover:bg-[#414366]">পরিবর্তন করুন</button>
-                  <button class="bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md  text-white hover:bg-[#414366] hover:bg-[#414366]">বাতিল করুন</button>
-                </div>
-              </form>
+                <button class="transition duration-300 ease-in-out bg-[#9087e4] hover:bg-[#414366] text-sm text-white px-4 py-2 font-normal rounded-md">বার্তা পাঠান</button>               
+              </div>
             </div>
           </div>
         </div>
