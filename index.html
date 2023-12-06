@@ -5728,10 +5728,62 @@
         </div>
 
         <div id="ড্যামেজ-রিপোর্ট" class="content-div" style="display: none;">
-          ড্যামেজ-রিপোর্ট
-        </div>
-       </div>
+          <h2 class="text-lg font-semibold " style="color: var(--primaryColor)">Damage Report</h2>
+          <hr class="mt-3 mb-4" />
+          <div class="mt-2">
+            <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-1">    
+              <div class="mt-1">
+                <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4  leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="From date">
+              </div>
+              <div class="mt-1">
+                <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="To date">
+              </div>
+              <div><button class="tab-button md:mt-[12px]">Find By Date</button></div>
+            </form>
+          </div>
 
+          <div class="mt-6">
+            <h2 class="text-[20px]">Damage</h2>
+            <hr class="mt-1 border border-[#888893] bg-[#153659] h-[2px]">
+          </div>
+
+          <div>
+              <div class="m-[6px] md:w-[290px] w-full">
+                <h2 class="text-[20px] text-center text-[#196689] bg-[#e7f7fd] px-[30px] py-[10px]">Damage Amount: <span style="color: var(--primaryColor)">850</span> Tk </h2>
+              </div>
+              <div class="flex items-center text-center gap-2 mt-4 w-full">
+
+                <div class="text-[17px] px-2 py-[12px] bg-[#e7f7fd]">
+                  <h2 style="color: var(--primaryColor)">kmc42 (কোরিয়ান মাইক্রো কালার)</h2>
+                  <h2 class="text-[#014366]">1.5 (গজ) Damage | Price: 190 Tk </h2>
+                </div>
+
+                <div class="text-[17px] px-2 py-[12px] bg-[#e7f7fd]">
+                  <h2 style="color: var(--primaryColor)">bnadi (বাংলা আদি)</h2>
+                  <h2 class="text-[#014366]">1 (গজ) Damage | Price: 120 Tk </h2>
+                </div>
+
+                <div class="text-[17px] px-2 py-[12px] bg-[#e7f7fd]">
+                  <h2 style="color: var(--primaryColor)">gizaprint1 (100 গিজা প্রিন্ট)</h2>
+                  <h2 class="text-[#014366]">1 (গজ) Damage | Price: 260 Tk</h2>
+                </div>
+                
+                <div class="text-[17px] px-2 py-[12px] bg-[#e7f7fd]">
+                  <h2 style="color: var(--primaryColor)"> bombayrayonp (বোম্বে রেওয়ান প্রিন্ট)</h2>
+                  <h2 class="text-[#014366]">0.5 (গজ) Damage | Price: 170 Tk </h2>
+                </div>
+
+                <div class="text-[17px] px-2 py-[12px] bg-[#e7f7fd]">
+                  <h2 style="color: var(--primaryColor)">  pctc (প্রেসিডেন্ট চয়েস টরে কালার)</h2>
+                  <h2 class="text-[#014366]"> 0.5 (গজ) Damage | Price: 110 Tk </h2>
+                </div>
+               
+               <div>
+          </div>
+             </div>
+          </div>
+       </div>
+      </div>
     </section>
     <!-- ফেব্রিক্স end -->
   
@@ -5739,7 +5791,111 @@
     <!-- এসএমএস start  -->
      <section>
       <div id="এসএমএস-পাঠান" class="content-div" style="display: none">
-        <!-- এসএমএস-পাঠান -->
+        <div id="এসএমএস-পাঠান-Tab" class="tab-container">
+          <button class="tab-button active" id="tab1">ইনভয়েস</button>
+          <button class="tab-button" id="tab2">পাসওয়ার্ড পরিবর্তন</button>
+    
+          <div class="mt-4">
+            <div id="content1" class="tab-content">
+              <table class="min-w-full overflow-x-auto border border-gray-300 text-center">
+                <thead class="bg-gray-200 text-[14px]">
+                  <tr>
+                    <th class="border border-gray-300 p-2">#</th>
+                    <th class="border border-gray-300 p-2">ইস্যু তারিখ</th>
+                    <th class="border border-gray-300 p-2">শেষ হওয়ার তারিখ</th>
+                    <th class="border border-gray-300 p-2">মোট টাকা</th>
+                    <th class="border border-gray-300 p-2">ডিসকাউন্ট</th>
+                    <th class="border border-gray-300 p-2">জমা</th>
+                    <th class="border border-gray-300 p-2">বাকি</th>
+                    <th class="border border-gray-300 p-2">নিবন্ধন তারিখ</th>
+                    <th class="border border-gray-300 p-2">বিস্তারিত</th>
+                    <th class="border border-gray-300 p-2">লেনদেনের অবস্থা</th>
+                    <th class="border border-gray-300 p-2"></th>
+                  </tr>
+                </thead>
+                <!-- Add your data rows here start -->
+                <tbody class="text-[14px]">                  
+                  <tr>
+                    <td class="border border-gray-300 p-2">                      
+                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
+                    </td>
+                    <td class="border border-gray-300 p-2">2023-10-15</td>
+                    <td class="border border-gray-300 p-2">2023-10-30</td>
+                    <td class="border border-gray-300 p-2">1000</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">900</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">2023-10-10</td>
+                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
+                    <td class="border border-gray-300 p-2">Due</td>
+                    <td onclick="changeContent('print1')" class="border border-gray-300 p-2">
+                      <a href="#"><i class="fa-solid fa-print"></i></a>
+                    </td>
+                  </tr>                
+                  <tr>
+                    <td class="border border-gray-300 p-2">                      
+                      <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full px-[5px] py-[4px] cursor-pointer"><i class="fa-regular fa-hand-pointer"></i></a>
+                    </td>
+                    <td class="border border-gray-300 p-2">2023-10-15</td>
+                    <td class="border border-gray-300 p-2">2023-10-30</td>
+                    <td class="border border-gray-300 p-2">1000</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">900</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td class="border border-gray-300 p-2">2023-10-10</td>
+                    <td class="border border-gray-300 p-2">1000 Tk. Service Charge JUL-2023</td>
+                    <td class="border border-gray-300 p-2">Due</td>
+                    <td class="border border-gray-300 p-2">
+                      <a onclick="changeContent('print2')" href="#"><i class="fa-solid fa-print"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2">  </td>
+                    <td class="border border-gray-300 p-2 text-black font-"> Total 100 </td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                    <td class="border border-gray-300 p-2"></td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+                <!-- <tfoot >
+                  <tr>
+                    <td colspan="6" class="text-right border border-gray-300 p-2">Total:</td>
+                    <td class="border border-gray-300 p-2">100</td>
+                    <td colspan="3"></td>
+                  </tr>
+                </tfoot> -->
+              </table>
+            </div>
+            <div id="content2" class="tab-content hidden">
+              <form class="w-full md:w-[300px]">
+                <div class="mt-1">
+                  <h2>পুরাতন পাসওয়ার্ড</h2>
+                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+                </div>
+                <div class="mt-1">
+                  <h2>নতুন পাসওয়ার্ড</h2>
+                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+                </div>
+                <div class="mt-1">
+                  <h2>নতুন পাসওয়ার্ড পুনরায়</h2>
+                  <input type="password" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500">
+                </div>
+    
+                <div class="mt-2 flex flex-row gap-2">
+                  <button class="allButton bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md  text-white hover:bg-[#414366]">পরিবর্তন করুন</button>
+                  <button class="bg-[#9087e4] px-[8px] py-[10px] text-[14px] font-normal rounded-md  text-white hover:bg-[#414366] hover:bg-[#414366]">বাতিল করুন</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="ফোন-কন্টাক্ট-লিস্ট" class="content-div" style="display: none">
@@ -6051,138 +6207,140 @@
  
   
   <!--কর্মচারীর-তালিকা Employee Details start  -->
-  <div id="EmployeeDetails" class="content-div" style="display: none">
-      <h2 class="text-[22px] font-normal">[<span>1</span>] জহিরুল ইসলাম 01879965794 <span class="bg-[#007BFF] rounded-md px-3 py-1 text-white">ব্যালেন্স: 0.00 টাকা</span> </h2>
-    <hr class="mt-3 mb-3" />
-     <!-- 3 button  -->
-    <div class="">
-      <button id="পারিশ্রমিক-যুক্ত-করুন-popup1" class="px-2 py-1 bg-[#007bff] hover:bg-[#0069D9] rounded-md text-white">পারিশ্রমিক যুক্ত করুন</button>
-      <button id="খরচ-ঋণ-প্রদান-popup1" class="px-2 py-1 bg-[#28a745] hover:bg-[#218838] rounded-md text-white">খরচ/ঋণ প্রদান</button>
-      <button id="ঋণ-ফেরত-popup1" class="px-2 py-1 bg-[#9087E4] hvoer:bg-[#9087E4] rounded-md text-white">ঋণ ফেরত</button>
-    </div>
-
-    <!-- Employee Details popup added data start -->
-    <div>
-      <!-- পারিশ্রমিক যুক্ত করুন start popup1 -->
-      <div id="পারিশ্রমিক-যুক্ত-করুন-popup2" class="overlay ">
-        <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
-          <div class="bg-[#007bff] relative px-4 pt-4 pb-4 ">
-            <h2 class="text-white font-bold">পারিশ্রমিক যুক্ত করুন</h2>    
-            <span id="পারিশ্রমিক-যুক্ত-করুন-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+      <section>
+        <div id="EmployeeDetails" class="content-div" style="display: none">
+          <h2 class="text-[22px] font-normal">[<span>1</span>] জহিরুল ইসলাম 01879965794 <span class="bg-[#007BFF] rounded-md px-3 py-1 text-white">ব্যালেন্স: 0.00 টাকা</span> </h2>
+        <hr class="mt-3 mb-3" />
+         <!-- 3 button  -->
+        <div class="">
+          <button id="পারিশ্রমিক-যুক্ত-করুন-popup1" class="px-2 py-1 bg-[#007bff] hover:bg-[#0069D9] rounded-md text-white">পারিশ্রমিক যুক্ত করুন</button>
+          <button id="খরচ-ঋণ-প্রদান-popup1" class="px-2 py-1 bg-[#28a745] hover:bg-[#218838] rounded-md text-white">খরচ/ঋণ প্রদান</button>
+          <button id="ঋণ-ফেরত-popup1" class="px-2 py-1 bg-[#9087E4] hvoer:bg-[#9087E4] rounded-md text-white">ঋণ ফেরত</button>
+        </div>
+    
+        <!-- Employee Details popup added data start -->
+        <div>
+          <!-- পারিশ্রমিক যুক্ত করুন start popup1 -->
+          <div id="পারিশ্রমিক-যুক্ত-করুন-popup2" class="overlay ">
+            <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
+              <div class="bg-[#007bff] relative px-4 pt-4 pb-4 ">
+                <h2 class="text-white font-bold">পারিশ্রমিক যুক্ত করুন</h2>    
+                <span id="পারিশ্রমিক-যুক্ত-করুন-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+              </div>
+              
+               
+              <div class="mt-4 px-4 ">
+                <form>
+                  <div class="mt-1">
+                    <label for="">কাজের নাম </label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">টাকা</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">তারিখ</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+    
+                  <butto class="tab-button mt-3">যুক্ত করুন</butto>
+                </form>
+              </div>
+            
+            </div>
           </div>
-          
-           
-          <div class="mt-4 px-4 ">
-            <form>
-              <div class="mt-1">
-                <label for="">কাজের নাম </label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+    
+          <!-- খরচ/ঋণ প্রদান start -->
+          <div id="খরচ-ঋণ-প্রদান-popup2" class="overlay ">
+            <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
+              <div class="bg-[#28a745] relative px-4 pt-4 pb-4 ">
+                <h2 class="text-white font-bold"> খরচ/ঋণ প্রদান </h2>    
+                <span id="খরচ-ঋণ-প্রদান-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
               </div>
-              <div class="mt-2">
-                <label for="">টাকা</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+    
+              <div class="mt-4 px-4 ">
+                <form>
+                  <div class="mt-1">
+                    <label for="">পাওনা টাকা বা ঋণের বিবরণ</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">ফোন</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">পদবী</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+    
+                  <butto class="tab-button mt-3">যুক্ত করুন</butto>
+                </form>
               </div>
-              <div class="mt-2">
-                <label for="">তারিখ</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-
-              <butto class="tab-button mt-3">যুক্ত করুন</butto>
-            </form>
+            
+            </div>
           </div>
-        
+    
+          <!-- ঋণ ফেরত start -->
+          <div id="ঋণ-ফেরত-popup2" class="overlay ">
+            <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
+              <div class="bg-[#9087E4] relative px-4 pt-4 pb-4 ">
+                <h2 class="text-white font-bold">  ঋণ ফেরত</h2>    
+                <span id="ঋণ-ফেরত-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+              </div>
+             
+              <div class="mt-4 px-4 ">
+                <form>
+                  <div class="mt-1">
+                    <label for="">ফেরতের বর্ণনা  </label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">ফোন</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+                  <div class="mt-2">
+                    <label for="">পদবী</label>
+                    <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
+                  </div>
+    
+                  <butto class="tab-button mt-3">যুক্ত করুন</butto>
+                </form>
+              </div>
+            
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="mt-2">
+          <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
+            <div class="mt-1">
+              <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4  leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="From date">
+            </div>
+            <div class="mt-1">
+              <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="To date">
+            </div>
+            <div><button class="tab-button md:mt-[12px]">Find</button></div>
+          </form>
+        </div>
+    
+        <div class="flex md:flex-row flex-col gap-2 mt-4">
+          <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
+              <h3>0</h3>
+              <h2>পারিশ্রমিক</h2>
+          </div>
+          <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
+              <h3>0</h3>
+              <h2>খরচ/ঋণ</h2>
+          </div>
+          <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
+              <h3>0</h3>
+              <h2>ঋণ ফেরত</h2>
+          </div>
         </div>
       </div>
-
-      <!-- খরচ/ঋণ প্রদান start -->
-      <div id="খরচ-ঋণ-প্রদান-popup2" class="overlay ">
-        <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
-          <div class="bg-[#28a745] relative px-4 pt-4 pb-4 ">
-            <h2 class="text-white font-bold"> খরচ/ঋণ প্রদান </h2>    
-            <span id="খরচ-ঋণ-প্রদান-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
-          </div>
-
-          <div class="mt-4 px-4 ">
-            <form>
-              <div class="mt-1">
-                <label for="">পাওনা টাকা বা ঋণের বিবরণ</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-              <div class="mt-2">
-                <label for="">ফোন</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-              <div class="mt-2">
-                <label for="">পদবী</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-
-              <butto class="tab-button mt-3">যুক্ত করুন</butto>
-            </form>
-          </div>
-        
-        </div>
-      </div>
-
-      <!-- ঋণ ফেরত start -->
-      <div id="ঋণ-ফেরত-popup2" class="overlay ">
-        <div class="bg-white md:w-[500px] h-[360px] md:mt-[-150px]  rounded shadow-md popup-animation">
-          <div class="bg-[#9087E4] relative px-4 pt-4 pb-4 ">
-            <h2 class="text-white font-bold">  ঋণ ফেরত</h2>    
-            <span id="ঋণ-ফেরত-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
-          </div>
-         
-          <div class="mt-4 px-4 ">
-            <form>
-              <div class="mt-1">
-                <label for="">ফেরতের বর্ণনা  </label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-              <div class="mt-2">
-                <label for="">ফোন</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-              <div class="mt-2">
-                <label for="">পদবী</label>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="Date">
-              </div>
-
-              <butto class="tab-button mt-3">যুক্ত করুন</butto>
-            </form>
-          </div>
-        
-        </div>
-      </div>
-
-    </div>
-
-    <div class="mt-2">
-      <form class="md:w-[700px] flex flex-col md:flex-row w-full gap-4 ">    
-        <div class="mt-1">
-          <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4  leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="From date">
-        </div>
-        <div class="mt-1">
-          <input  datepicker datepicker-autohide type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="To date">
-        </div>
-        <div><button class="tab-button md:mt-[12px]">Find</button></div>
-      </form>
-    </div>
-
-    <div class="flex md:flex-row flex-col gap-2 mt-4">
-      <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
-          <h3>0</h3>
-          <h2>পারিশ্রমিক</h2>
-      </div>
-      <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
-          <h3>0</h3>
-          <h2>খরচ/ঋণ</h2>
-      </div>
-      <div class="bg-[#DDDDDD] md:w-[350px] w-full h-[80px] py-2 flex flex-col justify-center items-center">
-          <h3>0</h3>
-          <h2>ঋণ ফেরত</h2>
-      </div>
-    </div>
-  </div>
+      </section>
     <!-- Employee Details end  -->
 
   

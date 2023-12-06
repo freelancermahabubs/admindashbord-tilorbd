@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeTabs("জমা-বাকি-খরচ-দেখুন-রিপোর্ট");
   initializeTabs("কাপড়-ক্রয়-করুন-Tab");
   initializeTabs("কাস্টমারের-বিস্তারিত-বিবরণTab");
+  initializeTabs("এসএমএস-পাঠান-Tab");
   initializeTabs("মাপ-পরিন্ট-করুনTab");
 });
 
