@@ -2699,83 +2699,61 @@
 
           <!-- অর্ডারের মাপ ও স্টাইল-popup1 start -->
         <div id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-2" class="overlay">
-          <div class="bg-white w-[350px] rounded shadow-md">
+          <div class="bg-white w-[805px] rounded shadow-md">
             <div class="bg-[#0C817A] relative pt-4 pb-4 ">
-              <h2 class="text-white font-bold text-center"> খরচ যুক্ত করুন </h2>    
+              <h2 class="text-white font-bold text-center"> অর্ডারের মাপ ও স্টাইল </h2>    
               <span id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
             </div>
 
-            <div class="mt-4 px-4 flex flex-col justify-center items-center">
-              <div class="w-full">
-                <label for="তারিখ_থেকে" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">কোন তারিখ পর্যন্ত</label>
-                <div class="flex flex-row items-center gap-2">
-                  <input type="text" id="তারিখ_থেকে" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[70%]" placeholder="কোন তারিখ পর্যন্ত" required>
-                <button class="tab-button text-[14px]">যুক্ত করুন</button>
+            <div class="mt-4 px-4">
+              <div id="অর্ডারের-মাপ-ও-স্টাইল-Tab" class="tab-container">
+                <button class="tab-button active" id="tab1">নাম ছাড়া মাপ</button>
+                <button class="tab-button" id="tab2">নাম সহ মাপ</button>
+          
+                <div class="mt-4">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                    <div class="text-center border border-gray-500 py-2">
+                      <h2>কল্লিদার পাঞ্জাবি</h2>
+                      <h4 class="font-bold">1 P.</h4>
+                    </div>
+                    <div class="text-center border border-gray-500 py-2">
+                      <h2>অর্ডার নং:</h2>
+                      <h4 class="font-bold"><span>13726(1)</span></h4>
+                    </div>
+                    <div class="text-center border border-gray-500 py-2">
+                      <h2>ডেলিভারী:</h2>
+                      <h4 class="font-bold"><span>9 Dec 2023</span></h4>
+                    </div>
+                  </div>
+                  <div id="content1" class="tab-content">
+                    <div class="flex gap-2">
+                      <div class="px-1 py-2 border border-gay-500">
+                        <h2 class="font-semibold">43</h2>
+                      </div>
+                      <div class="px-1 py-2 border border-gay-500">
+                        <h2 class="font-semibold">39.5</h2>
+                        <hr class="py-2" />
+                        <h2 class="font-semibold">45</h2>
+                      </div>
+                      <div class="px-1 py-2 border border-gay-500">
+                        <h2 class="font-semibold">38</h2>
+                      </div>
+                      <div class="px-1 py-2 border border-gay-500">
+                        <h2 class="font-semibold">16.5</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="content2" class="tab-content hidden">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit provident veniam nisi! Cupiditate deleniti nemo atque quos doloribus? Iure, consectetur.
+                  </div>
                 </div>
               </div>
-
-              <div class="w-full mt-2">
-
-                <table class="w-full  border border-gray-300 text-center">
-                  <thead class="bg-[#9087E4] text-white text-[12px]">
-                    <tr>
-                      <th class="border border-gray-300 p-2">খরচের ধরণ</th>
-                      <th class="border border-gray-300 p-2"></th>  
-                      <th class="border border-gray-300 p-2"></th>  
-                            
-                    </tr>            							
-                  </thead>
-                  <!-- Add your data rows here start -->
-                  <tbody class="text-[12px]">                  
-                    <tr>
-                      <td class="border border-gray-300 p-2">মাস্টার রাজ্জাক </td>
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-regular fa-pen-to-square"></i></a>
-                      </td> 
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-trash-can"></i></a>
-                      </td> 
-                    </tr>               
-                    <tr>
-                      <td class="border border-gray-300 p-2">মাস্টার রাজ্জাক </td>
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-regular fa-pen-to-square"></i></a>
-                      </td> 
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-trash-can"></i></a>
-                      </td> 
-                    </tr>               
-                    <tr>
-                      <td class="border border-gray-300 p-2">মাস্টার রাজ্জাক </td>
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#00C869] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-regular fa-pen-to-square"></i></a>
-                      </td> 
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#EC1C23] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-trash-can"></i></a>
-                      </td> 
-                    </tr>               
-                           
-                    <!-- Add more rows as needed -->
-                  </tbody>             
-                </table>
-                <!-- pagination  -->
-                <nav class="bg-[#9087e4]">
-                  <ul class="flex flex-row gap-2">                
-                    <li><span class="ml-2 mr-2">|</span><a class="text-white hover:bg-[#9087e4]" href="#">1</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">2</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">3</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">4</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">5</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">6</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">7</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">8</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">9</a></li>                 
-                    <li><span class="mr-2">|</span><a class="hover:text-white hover:bg-[#9087e4]" href="#">10</a></li>                 
-                  </ul>
-                </nav>
-              </div>
-
+             
             </div>
 
           </div>
         </div>
-        <!-- অর্ডারের-মাপ-ও-স্টাইল-POPUP-1 end -->
-
-
+        <!-- অর্ডারের-মাপ-ও-স্টাইল-POPUP end -->
       </div>
 
 
