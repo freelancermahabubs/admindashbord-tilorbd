@@ -13,9 +13,9 @@ body {
   --bgPrimaryColor: #9087e4;
 }
 
-.backgroudColor {
+/* .backgroudColor {
   backgroud-color: #7367f0;
-}
+} */
 
 /* .tableHeaderBackgroundColor {
   backgroud-color: #9087e4;
@@ -85,7 +85,6 @@ body {
   display: none;
 }
 
-////
 
 /* Tab active color  */
 .all-button {
