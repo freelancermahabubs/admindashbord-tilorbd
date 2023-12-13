@@ -1723,7 +1723,7 @@
                     <tbody class="text-[12px]">                  
                       <tr>
                         <td class="border border-gray-300 p-2">
-                          <a href="#" onclick="changeContent('Print-Mesurement-Page', this)" class="bg-[#00C8EA] hover:bg-[#000] text-white rounded-full px-[4px] py-[3px] cursor-pointer"><i class="fa-solid fa-print"></i></a>                           <span>0</span>                    
+                          <a href="#" onclick="changeContent('Print-Mesurement-Page', this)"  class="bg-[#00C8EA] hover:bg-[#000] text-white rounded-full px-[4px] py-[3px] cursor-pointer"><i class="fa-solid fa-print"></i></a><span>0</span>                    
                       
                         </td>
                         <td class="border border-gray-300 p-2">13493</td>
@@ -34101,7 +34101,7 @@
         <h2 class="text-base font-semibold text-[#7367f0]">Print Mesurement</h2>
         <hr class="mt-3 mb-2" />
         <div>
-          <h2 onclick="changeContent('A4-Size-Mesurement-Print-Page')"  class="text-[18px] text-[#005087] hover:underline cursor-pointer hover:text-[#7367f0]">A4 Size Mesurement Print</h2>
+          <h2 onclick="changeContent('A4-Size-Mesurement-Print-Page', this)" class="text-[18px] text-[#005087] hover:underline cursor-pointer hover:text-[#7367f0]">A4 Size Mesurement Print</h2>
         <div class="flex flex-row gap-1 items-center mt-1">
           <img src="img/Ssettings.png" alt="">
           <h4 class="text-[14px] text-[#0055bd] hover:underline cursor-pointer hover:text-[#7367f0]">মাপ প্রিন্ট সেটিং</h4>
@@ -34167,50 +34167,113 @@
         </div>
         <div  class="mt-10 "> <a onclick="changeContent('অর্ডার-দিন', this)" href="#অর্ডারলিস্ট" class="cursor-pointer font-bold text-[18px] hover:underline text-[#005087]">নতুন অর্ডার দিন</a></div>
       </div>
-
       </div>
 
       <!-- A4-Size-Mesurement-Print-Page start -->
-      <div id="A4-Size-Mesurement-Print-Page" class="content-div" style="display: none;">
-         <div class="w-100% h-full md:h-[120px] flex md:flex-row flex-col justify-between items-center mt-4">          
-            <div class="border border-[#777] flex justify-center items-center md:w-[260px] w-full h-full">
-              Sample              
-            </div>
-
-            <div class="md:mt-0 mt-3 text-[15px] flex flex-col justify-center items-center font-bold text-center md:w-[500px] w-full">
-                <img class="w-[80px] h-[80px] object-fit" src="img/adminLogo.png" alt="">
-                <h3 class="mt-1"> User Name tailors and fabrics </h3>
-            </div>
-
-            <div class="md:mt-0 mt-3 md:w-[260px] w-full text-center font-bold text-[15px]">
-               <div class="bg-[#595959] text-white mb-1 px-1 py-1">
-                 <p>Order No.</p>
-                 <p>13878(1) </p>
-               </div>
-               <div class="bg-[#595959] text-white mb-1 px-1 py-1">
-                 <p> Delivery Date</p>
-                 <p> 22 Dec 23 </p>
-               </div>
-            </div>
+   <div id="A4-Size-Mesurement-Print-Page" class="content-div" style="display: none;">
+    <div class="my-2 cursor-pinter">
+      <img src="img/Printing.png" alt="">
+    </div>
+      <div class="w-100% h-full md:h-[120px] flex md:flex-row flex-col justify-between items-center mt-4">          
+         <div class="border border-[#777] flex justify-center items-center md:w-[260px] w-full h-full">
+           Sample              
          </div>
 
+         <div class="md:mt-0 mt-3 text-[15px] flex flex-col justify-center items-center font-bold text-center md:w-[500px] w-full">
+             <img class="w-[80px] h-[80px] object-fit" src="img/adminLogo.png" alt="">
+             <h3 class="mt-1"> User Name tailors and fabrics </h3>
+         </div>
 
-         <div class="w-full mt-6">
-          <ul>
-            <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" ><span class="font-semibold text-[#777] ">user name</span></li>
-            <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" ><span class="text-[#777] ">Mobile: 01751664216</span></li>
-            <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" >Order Date: 12 Dec 23</li>
-          </ul>
+         <div class="md:mt-0 mt-3 md:w-[260px] w-full text-center font-bold text-[15px]">
+            <div class="bg-[#595959] text-white mb-1 px-1 py-1">
+              <p>Order No.</p>
+              <p>13878(1) </p>
+            </div>
+            <div class="bg-[#595959] text-white mb-1 px-1 py-1">
+              <p> Delivery Date</p>
+              <p> 22 Dec 23 </p>
+            </div>
+         </div>
+         
+      </div>
+      <div class="w-full mt-6">
+       <ul>
+         <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" ><span class="font-semibold text-[#777] ">user name</span></li>
+         <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" ><span class="text-[#777] ">Mobile: 01751664216</span></li>
+         <li class="border border-gray-300 mt-2 px-2 py-1 text-[14px] text-[#777]" >Order Date: 12 Dec 23</li>
+       </ul>
+     </div>
+
+     <!-- details  -->
+      <div class="flex flex-col md:flex-row gap-2 mt-4">
+        <div class="w-full md:w-[220px]">
+          <div class="bg-[#595959] text-white border border-[#777] p-[6px]">
+            <h2 class="text-[17px] font-bold">একছাটা পাঞ্জাবি 1 Piece</h2>
+          </div>
+          <div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>লম্বা</p>
+              <p >43</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>লুজ</p>
+              <p >42.5</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>বডি</p>
+              <p >32.5</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>কোমর</p>
+              <p >35</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>লুজ</p>
+              <p >30</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>হিপ</p>
+              <p >18.0</p>              
+            </div>
+            <div class="flex flex-row justify-between text-[#686868] text-[14px] border-b-[1px] border-[#8a8a8a] mt-1.5">
+              <p>মুহুরী</p>
+              <p >15.0</p>              
+            </div>
+           
+            <div class="border-[1px] border-[#c7c7c7] py-[18px] px-[18px] h-[200px] mt-3">
+              <img class="w-full h-full" src="img/cloths/DressHandler.jpg" alt="">
+            </div>
+
+          </div>
         </div>
-
-         <div>
-          
-         </div>
+        <!-- বিবরণ right side  -->
+        <div>
+          <div class="border-[1px] h-auto w-full border-[#d0d0d0] px-1.5 py-1 ">
+            <h2>বিবরণ</h2>
+           <div class="flex flex-wrap gap-1">
+            <div class="mt-2 p-[5px] text-[#5b5b5b] flex flex-col justify-center items-center" style="border: 1px dotted #afafaf">
+              <img src="img/Style_Name.png" alt="">
+              <h2>শেরওয়ানি কলার রাউন 1.25</h2>
+            </div>
+            <div class="mt-2 p-[5px] text-[#5b5b5b] flex flex-col justify-center items-center" style="border: 1px dotted #afafaf">
+              <img src="img/Style_Name.png" alt="">
+              <h2>সিঙ্গেল প্লেট 1.25</h2>
+            </div>
+           </div>
+          <div>
+          </div>
+          </div>
+        </div>
       </div>
 
+      <div>
+       
+      </div>
+   </div>
    </section>
 
-  <div id="print2" class="content-div" style="display: none;">
+
+  <div id="Print-Mesurement-Page" class="content-div" style="display: none;">
    Print 2
   </div>
 
