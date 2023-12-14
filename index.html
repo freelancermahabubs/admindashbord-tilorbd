@@ -1826,8 +1826,6 @@
           <div id="অর্ডারেরকাজTab" class="tab-container">
             <button class="tab-button active hover:bg-[#414366]" id="tab1">নতুন কাস্টমার</button>
             <button class="tab-button hover:bg-[#414366]" id="tab2">পুরাতন কাস্টমার</button>
-
-
             <div class="mt-4">
               <div id="content1" class="tab-content">
                 <div class="ml-2 mb-4 md:w-[600px] w-full">
@@ -1882,8 +1880,6 @@
               </div>
             </div>
           </div>
-
-
           <!-- অর্ডারের কাজ table start -->
           <div class="overflow-x-auto mt-6">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 md:gap-0 gap-2">
@@ -1914,12 +1910,12 @@
                     </tr>
                   </thead>
                   <!-- Add your data rows here start -->
-                  <tbody class="text-[14px]">                  
+                  <tbody class="text-[12px]">                  
                     <tr>
                       <td class="border border-gray-300 p-2">
                         <input type="checkbox" name="">
                       </td>
-                      <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">13493</td>
+                      <td id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-1" class="border border-gray-300 p-2 hover:text-[#003399] text-[#076db3] font-bold cursor-pointer hover:underline">13493</td>
                       <td class="border border-gray-300 p-2">
                         (4886) নজরুল ইসলাম 
                       </td>
@@ -2013,24 +2009,24 @@
           <!-- অর্ডার স্থায়ীভাবে ডিলেট করুন Right Side page start -->
         <div id="অর্ডার-স্থায়ীভাবে-ডিলেট" class="content-div" style="display: none;">
           <h2 class="text-base font-semibold text-[#7367f0]">স্থায়ীভাবে অর্ডার ডিলেট করুন</h2>
-          <hr class="mt-3 mb-6" />
+          <hr class="mt-3 mb-2" />
           <div class="mb-6">
             <form class="w-full md:w-[600px] flex flex-col md:flex-row w-full gap-4 ">
               <div class="mt-1">
                 <h2 class="text-[14px]">অর্ডার নাম্বার</h2>
-                <input type="text" class=" appearance-none block text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="অর্ডার নাম্বার">
+                <input type="text" class=" appearance-none block text-gray-700 border border-gray-400 rounded md:mt-2 py-1.5 px-2 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500 text-sm" placeholder="অর্ডার নাম্বার">
               </div>
               <div class="mt-1">
                 <h2 class="text-[14px]">কাস্টমারের নাম</h2>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="কাস্টমারের নাম">
+                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-1.5 px-2 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500 text-sm" placeholder="কাস্টমারের নাম">
               </div>        
               <div class="mt-1">
                 <h2 class="text-[14px]">মোবাইল নাম্বার</h2>
-                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-2 px-4 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500" placeholder="মোবাইল নাম্বার">
+                <input type="text" class="appearance-none block w-full text-gray-700 border border-gray-400 rounded md:mt-2 py-1.5 px-2 mb-3 leading-tight focus:outline-none focus:shadow focus:border-gray-500 text-sm" placeholder="মোবাইল নাম্বার">
               </div>        
               
               <div>
-                <img src="img/Search.png" class="mt-0 md:mt-[36px]" alt="">
+                <img src="img/Search.png" class="hover:cursor-pointer bg-[#ddd] hover:bg-white mt-0 md:mt-[36px]" alt="">
               </div>
             </form>
           </div>
@@ -2041,71 +2037,34 @@
               <button class="bg-[#8594AE] mr-1 px-1  text-white">Partly Delivered</button>
               <button class="bg-[#404C66] mr-1 px-1  text-white">Delivered</button>
             </div>
-
+            <!-- অর্ডার স্থায়ীভাবে ডিলেট করুন table start  -->
             <div class="overflow-x-auto">       
               <table class="min-w-full border border-gray-300 text-center">
-                <thead class="bg-[#7367F0] text-white text-[14px]">
+                <thead class="bg-[#7367F0] text-white text-[13px]">
                   <tr>
                     <th class="border border-gray-300 p-2">
                       <input id="selectAll"  type="checkbox" name="">
                     </th>
-                    <th class="border border-gray-300 p-2">অর্ডার নং</th>
-                    <th class="border border-gray-300 p-2">কাস্টমারের নাম</th>
-                    <th class="border border-gray-300 p-2">মোবাইল</th>
-                    <th class="border border-gray-300 p-2">পোষাকের বিবরণ</th>
-                    <th class="border border-gray-300 p-2">অর্ডার</th>
-                    <th class="border border-gray-300 p-2">ডেলিভারী</th>     
-                    <th class="border border-gray-300 p-2">মোট টাকা</th>
-                    <th class="border border-gray-300 p-2">ছাড়</th>
-                    <th class="border border-gray-300 p-2">পেইড</th>
-                    <th class="border border-gray-300 p-2">বাকি</th>				
-                    <th class="border border-gray-300 p-2">ডেলিভারির অবস্থা</th>                          
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">অর্ডার নং</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">কাস্টমারের নাম</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">মোবাইল</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">পোষাকের বিবরণ</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">অর্ডার</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">ডেলিভারী</th>     
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">মোট টাকা</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">ছাড়</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">পেইড</th>
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">বাকি</th>				
+                    <th class="border border-gray-300 p-2 underline hover:no-underline">ডেলিভারির অবস্থা</th>                          
                   </tr>
                 </thead>
                 <!-- Add your data rows here start -->
-                <tbody class="text-[14px]">                  
+                <tbody class="text-[12px]">    			  		
                   <tr>
                     <td class="border border-gray-300 p-2">
                       <input   type="checkbox" name="">
                     </td>
-                    <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">13493</td>
-                    <td class="border border-gray-300 p-2">
-                      নাসির খান 
-                    </td>
-                    <td class="border border-gray-300 p-2">
-                      01915611548
-                    </td>
-                    <td class="border border-gray-300 p-2">
-                      কল্লিদার পাঞ্জাবি 1 Piece ; ফতুয়া 1 Piece
-                    </td>
-                    <td class="border border-gray-300 p-2 text-center">              
-                      12 Nov 2023
-                    </td>
-                    <td class="border border-gray-300 p-2">
-                    15 Nov 2023
-                    </td>
-                    <td class="border border-gray-300 p-2">
-                      500
-                    </td>
-                    <td class="border border-gray-300 p-2">     
-                      0
-                    </td>              
-                    <td class="border border-gray-300 p-2">     
-                      0
-                    </td>              
-                    <td class="border border-gray-300 p-2">     
-                      500
-                    </td>              
-                    <td class="border border-gray-300 p-2">     
-                      Delivered
-                    </td>              
-                                
-                  </tr>   			  		
-                  <tr>
-                    <td class="border border-gray-300 p-2">
-                      <input   type="checkbox" name="">
-                    </td>
-                    <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer">13493</td>
+                    <td class="border border-gray-300 p-2">13493</td>
                     <td class="border border-gray-300 p-2">
                       নজরুল ইসলাম 
                     </td>
@@ -2522,7 +2481,7 @@
                       </td>
                       <td class="border border-gray-300 p-2 text-[#076db3] cursor-pointer"> <a href="#" class="bg-[#00C8EA] hover:bg-[#000] text-white rounded-full pt-[4px] pb-[4px] pl-[5px] pr-[6px] cursor-pointer mr-2"><i class="fa-solid fa-print"></i></a>
                       </td>
-                      <td id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-1" class="border border-gray-300 p-2 text-[#003399] font-bold cursor-pointer underline">134</td>
+                      <td id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-1" class="border border-gray-300 p-2 hover:text-[#003399] font-bold cursor-pointer hover:underline">134</td>
                       <td class="border border-gray-300 p-2">
                         (4886) নজরুল ইসলাম 
                       </td>
@@ -2634,49 +2593,6 @@
         
                 <button class="tab-button hover:bg-[#414366] mt-4 mb-4">Send SMS</button>
           </div>  
-
-          <!-- অর্ডারের মাপ ও স্টাইল-popup1 start -->
-        <div id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-2" class="overlay">
-          <div class="bg-white w-[805px] rounded shadow-md">
-            <div class="bg-[#0C817A] relative pt-4 pb-4 ">
-              <h2 class="text-white font-bold text-center"> অর্ডারের মাপ ও স্টাইল </h2>    
-              <span id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
-            </div>
-
-            <div class="mt-4 px-4">
-              <div id="অর্ডারের-মাপ-ও-স্টাইল-Tab" class="tab-container">
-                <button class="tab-button active" id="tab1">নাম ছাড়া মাপ</button>
-                <button class="tab-button" id="tab2">নাম সহ মাপ</button>
-          
-                <div class="mt-4">
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                    <div class="text-center border border-gray-500 py-2">
-                      <h2>কল্লিদার পাঞ্জাবি</h2>
-                      <h4 class="font-bold">1 P.</h4>
-                    </div>
-                    <div class="text-center border border-gray-500 py-2">
-                      <h2>অর্ডার নং:</h2>
-                      <h4 class="font-bold"><span>13726(1)</span></h4>
-                    </div>
-                    <div class="text-center border border-gray-500 py-2">
-                      <h2>ডেলিভারী:</h2>
-                      <h4 class="font-bold"><span>9 Dec 2023</span></h4>
-                    </div>
-                  </div>
-                  <div id="content1" class="tab-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque nemo corporis numquam pariatur? Vel minima perferendis repudiandae quae dicta.</p>
-                  </div>
-                  <div id="content2" class="tab-content hidden">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit provident veniam nisi! Cupiditate deleniti nemo atque quos doloribus? Iure, consectetur.
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-
-          </div>
-        </div>
-        <!-- অর্ডারের-মাপ-ও-স্টাইল-POPUP end -->
       </div>
 
 
@@ -34287,6 +34203,52 @@
        
       </div>
    </div>
+   </section>
+
+   <!-- অর্ডার নং popup section  -->
+   <section>
+          <!-- অর্ডারের মাপ ও স্টাইল-popup2 start -->
+          <div id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-2" class="overlay">
+            <div class="bg-white w-[805px] rounded shadow-md">
+              <div class="bg-[#0C817A] relative pt-4 pb-4 ">
+                <h2 class="text-white font-bold text-center"> অর্ডারের মাপ ও স্টাইল </h2>    
+                <span id="অর্ডারের-মাপ-ও-স্টাইল-POPUP-close" class="absolute cursor-pointer right-[8px] top-[1px] text-white hover:text-gray-400">x</span>      
+              </div>
+  
+              <div class="mt-4 px-4">
+                <div id="অর্ডারের-মাপ-ও-স্টাইল-Tab" class="tab-container">
+                  <button class="tab-button active" id="tab1">নাম ছাড়া মাপ</button>
+                  <button class="tab-button" id="tab2">নাম সহ মাপ</button>
+            
+                  <div class="mt-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                      <div class="text-center border border-gray-500 py-2">
+                        <h2>কল্লিদার পাঞ্জাবি</h2>
+                        <h4 class="font-bold">1 P.</h4>
+                      </div>
+                      <div class="text-center border border-gray-500 py-2">
+                        <h2>অর্ডার নং:</h2>
+                        <h4 class="font-bold"><span>13726(1)</span></h4>
+                      </div>
+                      <div class="text-center border border-gray-500 py-2">
+                        <h2>ডেলিভারী:</h2>
+                        <h4 class="font-bold"><span>9 Dec 2023</span></h4>
+                      </div>
+                    </div>
+                    <div id="content1" class="tab-content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque nemo corporis numquam pariatur? Vel minima perferendis repudiandae quae dicta.</p>
+                    </div>
+                    <div id="content2" class="tab-content hidden">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit provident veniam nisi! Cupiditate deleniti nemo atque quos doloribus? Iure, consectetur.
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+  
+            </div>
+          </div>
+          <!-- অর্ডারের-মাপ-ও-স্টাইল-POPUP end -->
    </section>
 
 
