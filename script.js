@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeTabs("কাস্টমারের-বিস্তারিত-বিবরণTab");
   initializeTabs("এসএমএস-পাঠান-Tab");
   initializeTabs("অর্ডারের-মাপ-ও-স্টাইল-Tab");
+  initializeTabs("মাপ-মানিরিসিট-tab");
   initializeTabs("মাপ-পরিন্ট-করুনTab");
 });
 
@@ -179,6 +180,9 @@ createPopup("অর্ডারের-মাপ-ও-স্টাইল-POPUP", "
 );
 
 createPopup("মাপ-প্রিন্ট-সেটিং-popup1", "মাপ-প্রিন্ট-সেটিং-popup2", "মাপ-প্রিন্ট-সেটিং-close"
+);
+
+createPopup("মাপ-প্রিন্ট-সেটিং-popup", "মাপ-প্রিন্ট-সেটিং-popup2", "মাপ-প্রিন্ট-সেটিং-close"
 );
 
 // Function to initialize the datepicker on a given input element
